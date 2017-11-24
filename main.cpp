@@ -56,6 +56,11 @@ int main( int argc, const char **argv ) {
 
     ofstream saida(arqPrint);
 
+    IntSet clq, clique, res;
+    vint_set_init( &clq );
+    vint_set_init( &clique );
+    vint_set_init( &res );
+
     int startFor=clock();
     for(int k = 0; k < nRes; k++) {
 
@@ -65,8 +70,7 @@ int main( int argc, const char **argv ) {
             n = lp_row(lp, k, idx, coef);
 
 
-            IntSet clique;
-            vint_set_init(&clique);
+            vint_set_clear(&clique);
             vint_set_add(&clique, idx, n);
 
             CliqueExtender *clqe = clqe_create();
@@ -113,8 +117,7 @@ int main( int argc, const char **argv ) {
 
 
                         // transforma o clique estendido em IntSet
-                        IntSet clq;
-                        vint_set_init(&clq);
+                        vint_set_clear( &clq );
                         vint_set_add(&clq, clq_set_clique_elements(clqSet, i), clq_set_clique_size(clqSet, i));
 
                         for (int j = 0; j < nRes; j++) {
@@ -122,8 +125,7 @@ int main( int argc, const char **argv ) {
                             if (resToCheck[j] > 0) {
 
                                 //pega a j-esima restricao
-                                IntSet res;
-                                vint_set_init(&res);
+                                vint_set_clear(&res);
                                 int n2 = lp_row(lp, j, idx, coef);
                                 vint_set_add(&res, idx, n2);
 
@@ -190,10 +192,12 @@ int main( int argc, const char **argv ) {
     saida.close();
     cgraph_free(&cg);
     lp_free(&lp);
+    vint_set_clean( &clq );
+    vint_set_clean( &clique );
     delete[] idx;
     delete[](coef);
     delete[](rowsToRemove);
-    delete(name);
+    delete[] name;
 
     return 0;
 }
