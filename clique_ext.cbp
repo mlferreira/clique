@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cgraph" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/cgraph" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="p0033.mps.gz" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="`pkg-config --cflags cbc`" />
+					<Add option="-DCBC" />
+					<Add option="-DPRECISE" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/cgraph" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags cbc` -fopenmp" />
+			<Add option="-DCBC" />
+			<Add option="-DPRECISE" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --libs cbc` -lgomp" />
+			<Add library="pthread" />
+		</Linker>
+		<Unit filename="BKGraph.cpp" />
+		<Unit filename="BKGraph.hpp" />
+		<Unit filename="BKVertex.cpp" />
+		<Unit filename="BKVertex.hpp" />
+		<Unit filename="bron_kerbosch.cpp" />
+		<Unit filename="bron_kerbosch.h" />
+		<Unit filename="build_cgraph.cpp" />
+		<Unit filename="build_cgraph.h" />
+		<Unit filename="cgraph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cgraph.h" />
+		<Unit filename="clique.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clique.h" />
+		<Unit filename="clique_extender.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clique_extender.h" />
+		<Unit filename="lp.cpp" />
+		<Unit filename="lp.h" />
+		<Unit filename="macros.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="memory.h" />
+		<Unit filename="node_heap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="node_heap.h" />
+		<Unit filename="strutils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strutils.h" />
+		<Unit filename="vectormgm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vectormgm.h" />
+		<Unit filename="vint_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vint_set.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

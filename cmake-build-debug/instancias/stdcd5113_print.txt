@@ -1,0 +1,146 @@
+Restricao 2712, 1 novos cliques
+    Original (2): 3671 3763 
+Restricao 2713, 1 novos cliques
+    Original (2): 3683 3775 
+Restricao 2714, 1 novos cliques
+    Original (2): 3684 3776 
+Restricao 2716, 1 novos cliques
+    Original (2): 3701 3793 
+Restricao 2717, 1 novos cliques
+    Original (2): 3702 3794 
+Restricao 2718, 1 novos cliques
+    Original (2): 3703 3795 
+Restricao 2719, 1 novos cliques
+    Original (2): 3704 3796 
+Restricao 2720, 1 novos cliques
+    Original (2): 3705 3797 
+Restricao 2721, 1 novos cliques
+    Original (2): 3706 3798 
+Restricao 2722, 1 novos cliques
+    Original (2): 3707 3799 
+Restricao 2723, 1 novos cliques
+    Original (2): 3708 3800 
+Restricao 2724, 1 novos cliques
+    Original (2): 3709 3801 
+Restricao 4422, 1 novos cliques
+    Original (3): 5890 9368 15591 
+    0 (5): 5890 9368 11469 12640 15591 
+        domina a restricao cons4422
+        domina a restricao cons7351
+
+Restricao 4596, 1 novos cliques
+    Original (3): 6062 9540 15625 
+    0 (5): 6062 9540 11641 12812 15625 
+        domina a restricao cons4596
+        domina a restricao cons7352
+
+Restricao 4617, 1 novos cliques
+    Original (3): 6082 9560 15598 
+    0 (5): 6082 9560 11661 12832 15598 
+        domina a restricao cons4617
+        domina a restricao cons7353
+
+Restricao 4666, 1 novos cliques
+    Original (3): 6130 9608 15626 
+    0 (5): 6130 9608 11709 12880 15626 
+        domina a restricao cons4666
+
+Restricao 4732, 1 novos cliques
+    Original (6): 6187 7377 8156 8728 11026 11766 
+    0 (7): 6187 7377 8156 8728 11026 11766 15723 
+        domina a restricao cons4732
+        domina a restricao cons6086
+
+Restricao 4755, 1 novos cliques
+    Original (6): 6205 7395 8174 8746 11044 11784 
+    0 (7): 6205 7395 8174 8746 11044 11784 15722 
+        domina a restricao cons4755
+        domina a restricao cons6089
+
+Restricao 4781, 1 novos cliques
+    Original (6): 6227 7417 8196 8768 11066 11806 
+    0 (7): 6227 7417 8196 8768 11066 11806 15720 
+        domina a restricao cons4781
+        domina a restricao cons6093
+
+Restricao 4820, 1 novos cliques
+    Original (6): 6252 7442 8221 8793 11091 11831 
+    0 (8): 6252 6969 7442 8221 8793 10585 11091 11831 
+        domina a restricao cons4820
+        domina a restricao cons5451
+
+Restricao 4821, 1 novos cliques
+    Original (6): 6253 7443 8222 8794 11092 11832 
+    0 (9): 6253 7443 8000 8222 8794 10281 11092 11832 14700 
+        domina a restricao cons4821
+        domina a restricao cons4822
+        domina a restricao cons5912
+        domina a restricao cons6006
+        domina a restricao cons6007
+
+Restricao 4851, 1 novos cliques
+    Original (6): 6268 7458 8237 8809 11107 11847 
+    0 (7): 6268 7458 8064 8237 8809 11107 11847 
+        domina a restricao cons4851
+        domina a restricao cons5929
+
+Restricao 5484, 1 novos cliques
+    Original (2): 7002 10618 
+    0 (3): 7002 8075 10618 
+        domina a restricao cons5484
+
+Restricao 5890, 1 novos cliques
+    Original (2): 7392 16100 
+    0 (3): 7392 11041 16100 
+        domina a restricao cons5890
+        domina a restricao cons7322
+
+Restricao 5892, 1 novos cliques
+    Original (2): 7403 16102 
+    0 (3): 7403 11052 16102 
+        domina a restricao cons5892
+
+Restricao 5896, 1 novos cliques
+    Original (2): 7420 16095 
+    0 (3): 7420 11069 16095 
+        domina a restricao cons5896
+        domina a restricao cons7323
+
+Restricao 5943, 1 novos cliques
+    Original (2): 7701 12405 
+    0 (6): 7701 9768 10038 12405 13854 14153 
+        domina a restricao cons5943
+        domina a restricao cons6987
+
+Restricao 5955, 1 novos cliques
+    Original (2): 7970 15040 
+    0 (3): 7970 13707 15040 
+        domina a restricao cons5955
+
+Restricao 6083, 1 novos cliques
+    Original (2): 8117 16017 
+    0 (3): 8117 10987 16017 
+        domina a restricao cons6083
+
+Restricao 6087, 1 novos cliques
+    Original (2): 8166 16015 
+    0 (3): 8166 11036 16015 
+        domina a restricao cons6087
+
+Restricao 6091, 1 novos cliques
+    Original (2): 8184 16028 
+    0 (3): 8184 11054 16028 
+        domina a restricao cons6091
+
+Restricao 7734, 1 novos cliques
+    Original (2): 16025 16081 
+    0 (3): 16025 16081 16101 
+        domina a restricao cons7734
+        domina a restricao cons7735
+
+
+
+Restricoes removidas:   36
+Restricoes adicionadas: 20
+
+Tempo execucao: 1485.6ms(Total: 6870.92ms)

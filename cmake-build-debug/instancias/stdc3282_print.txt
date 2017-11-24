@@ -1,0 +1,4441 @@
+Restricao 32112, 1 novos cliques
+    Original (3): 31170 31172 31175 
+    0 (4): 31167 31170 31172 31175 
+        domina a restricao clq4
+
+Restricao 32126, 1 novos cliques
+    Original (3): 31226 31233 31235 
+    0 (4): 31226 31233 31234 31235 
+        domina a restricao clq18
+        domina a restricao clq19
+
+Restricao 32135, 1 novos cliques
+    Original (2): 31241 31262 
+    0 (4): 31241 31262 31265 31267 
+        domina a restricao clq27
+
+Restricao 32154, 1 novos cliques
+    Original (2): 31338 31359 
+    0 (4): 31338 31359 31362 31364 
+        domina a restricao clq46
+
+Restricao 32160, 1 novos cliques
+    Original (3): 31388 31390 31393 
+    0 (4): 31385 31388 31390 31393 
+        domina a restricao clq52
+
+Restricao 32184, 1 novos cliques
+    Original (2): 31481 31502 
+    0 (4): 31481 31502 31505 31507 
+        domina a restricao clq76
+
+Restricao 32208, 1 novos cliques
+    Original (2): 31585 31606 
+    0 (4): 31585 31606 31609 31611 
+        domina a restricao clq100
+
+Restricao 32243, 1 novos cliques
+    Original (2): 31723 31744 
+    0 (4): 31723 31744 31747 31749 
+        domina a restricao clq135
+
+Restricao 32286, 1 novos cliques
+    Original (2): 31887 31908 
+    0 (4): 31887 31908 31911 31913 
+        domina a restricao clq178
+
+Restricao 32311, 1 novos cliques
+    Original (2): 32017 32038 
+    0 (4): 32017 32038 32041 32043 
+        domina a restricao clq203
+
+Restricao 32343, 1 novos cliques
+    Original (2): 32150 32171 
+    0 (4): 32150 32171 32174 32176 
+        domina a restricao clq235
+
+Restricao 32367, 1 novos cliques
+    Original (2): 32238 32259 
+    0 (4): 32238 32259 32262 32264 
+        domina a restricao clq259
+
+Restricao 32374, 1 novos cliques
+    Original (4): 32289 32291 32293 32296 
+    0 (8): 32289 32290 32291 32292 32293 32294 32295 32296 
+        domina a restricao clq266
+        domina a restricao clq267
+
+Restricao 32387, 1 novos cliques
+    Original (2): 32327 32348 
+    0 (4): 32327 32348 32351 32353 
+        domina a restricao clq279
+
+Restricao 32406, 1 novos cliques
+    Original (2): 32433 32454 
+    0 (4): 32433 32454 32457 32459 
+        domina a restricao clq298
+
+Restricao 32436, 1 novos cliques
+    Original (2): 32553 32574 
+    0 (4): 32553 32574 32577 32579 
+        domina a restricao clq328
+
+Restricao 32473, 1 novos cliques
+    Original (2): 32713 32734 
+    0 (4): 32713 32734 32737 32739 
+        domina a restricao clq365
+
+Restricao 32485, 1 novos cliques
+    Original (2): 32760 32777 
+    0 (3): 32760 32761 32777 
+        domina a restricao clq377
+
+Restricao 32488, 1 novos cliques
+    Original (2): 32778 32792 
+    0 (3): 32778 32792 32793 
+        domina a restricao clq380
+
+Restricao 32511, 1 novos cliques
+    Original (2): 32845 32866 
+    0 (4): 32845 32866 32869 32871 
+        domina a restricao clq403
+
+Restricao 32538, 1 novos cliques
+    Original (2): 32963 32984 
+    0 (4): 32963 32984 32987 32989 
+        domina a restricao clq430
+
+Restricao 32548, 1 novos cliques
+    Original (2): 32995 33016 
+    0 (4): 32995 33016 33019 33021 
+        domina a restricao clq440
+
+Restricao 32551, 1 novos cliques
+    Original (4): 33023 33025 33030 33032 
+    0 (5): 33023 33025 33030 33031 33032 
+        domina a restricao clq443
+        domina a restricao clq444
+
+Restricao 32554, 1 novos cliques
+    Original (2): 33035 33040 
+    0 (3): 33035 33040 33045 
+        domina a restricao clq446
+        domina a restricao clq447
+
+Restricao 32557, 1 novos cliques
+    Original (3): 33037 33042 33044 
+    0 (4): 33037 33042 33043 33044 
+        domina a restricao clq449
+        domina a restricao clq450
+
+Restricao 32569, 1 novos cliques
+    Original (3): 33114 33115 33123 
+    0 (4): 33114 33115 33116 33123 
+        domina a restricao clq461
+        domina a restricao clq462
+
+Restricao 32572, 1 novos cliques
+    Original (2): 33118 33128 
+    0 (3): 33118 33128 33129 
+        domina a restricao clq464
+        domina a restricao clq465
+
+Restricao 32574, 1 novos cliques
+    Original (3): 33119 33122 33126 
+    0 (4): 33119 33122 33126 33127 
+        domina a restricao clq466
+        domina a restricao clq467
+
+Restricao 32586, 1 novos cliques
+    Original (2): 33163 33184 
+    0 (4): 33163 33184 33187 33189 
+        domina a restricao clq478
+
+Restricao 32595, 1 novos cliques
+    Original (3): 33219 33226 33228 
+    0 (4): 33219 33226 33227 33228 
+        domina a restricao clq487
+        domina a restricao clq488
+
+Restricao 32622, 1 novos cliques
+    Original (2): 33319 33340 
+    0 (4): 33319 33340 33343 33345 
+        domina a restricao clq514
+
+Restricao 32653, 1 novos cliques
+    Original (2): 33440 33461 
+    0 (4): 33440 33461 33464 33466 
+        domina a restricao clq545
+
+Restricao 32692, 1 novos cliques
+    Original (2): 33601 33622 
+    0 (4): 33601 33622 33625 33627 
+        domina a restricao clq584
+
+Restricao 32699, 1 novos cliques
+    Original (3): 33642 33648 33650 
+    0 (4): 33642 33648 33649 33650 
+        domina a restricao clq591
+        domina a restricao clq592
+
+Restricao 32716, 1 novos cliques
+    Original (2): 33694 33706 
+    0 (3): 33694 33706 33707 
+        domina a restricao clq608
+
+Restricao 32743, 1 novos cliques
+    Original (2): 33785 33806 
+    0 (4): 33785 33806 33809 33811 
+        domina a restricao clq635
+
+Restricao 32758, 1 novos cliques
+    Original (2): 33849 33858 
+    0 (4): 33849 33858 33861 33863 
+        domina a restricao clq650
+
+Restricao 32772, 1 novos cliques
+    Original (7): 33923 33924 33927 33928 33937 33947 33949 
+    0 (8): 33923 33924 33927 33928 33933 33937 33947 33949 
+        domina a restricao clq664
+
+Restricao 32796, 1 novos cliques
+    Original (2): 33994 34015 
+    0 (4): 33994 34015 34018 34020 
+        domina a restricao clq688
+
+Restricao 32831, 1 novos cliques
+    Original (2): 34142 34163 
+    0 (4): 34142 34163 34166 34168 
+        domina a restricao clq723
+
+Restricao 32866, 1 novos cliques
+    Original (2): 34279 34300 
+    0 (4): 34279 34300 34303 34305 
+        domina a restricao clq758
+
+Restricao 32874, 1 novos cliques
+    Original (3): 34311 34323 34324 
+    0 (5): 34311 34323 34324 34327 34329 
+        domina a restricao clq766
+
+Restricao 32888, 1 novos cliques
+    Original (3): 34390 34397 34399 
+    0 (4): 34390 34397 34398 34399 
+        domina a restricao clq780
+        domina a restricao clq781
+
+Restricao 32910, 1 novos cliques
+    Original (2): 34458 34479 
+    0 (4): 34458 34479 34482 34484 
+        domina a restricao clq802
+
+Restricao 32931, 1 novos cliques
+    Original (2): 34560 34571 
+    0 (4): 34560 34571 34574 34576 
+        domina a restricao clq823
+
+Restricao 32950, 1 novos cliques
+    Original (2): 34669 34680 
+    0 (4): 34669 34680 34683 34685 
+        domina a restricao clq842
+
+Restricao 32974, 1 novos cliques
+    Original (2): 34755 34766 
+    0 (4): 34755 34766 34769 34771 
+        domina a restricao clq866
+
+Restricao 32997, 1 novos cliques
+    Original (2): 34859 34870 
+    0 (4): 34859 34870 34873 34875 
+        domina a restricao clq889
+
+Restricao 33015, 1 novos cliques
+    Original (2): 34924 34935 
+    0 (4): 34924 34935 34938 34940 
+        domina a restricao clq907
+
+Restricao 33037, 1 novos cliques
+    Original (2): 35018 35029 
+    0 (4): 35018 35029 35032 35034 
+        domina a restricao clq929
+
+Restricao 33044, 1 novos cliques
+    Original (2): 35050 35053 
+    0 (4): 35050 35053 35054 35055 
+        domina a restricao clq936
+
+Restricao 33097, 1 novos cliques
+    Original (2): 35314 35316 
+    0 (4): 35314 35316 35317 35318 
+        domina a restricao clq989
+        domina a restricao clq990
+
+Restricao 33105, 1 novos cliques
+    Original (2): 35330 35341 
+    0 (4): 35330 35341 35344 35346 
+        domina a restricao clq997
+
+Restricao 33134, 1 novos cliques
+    Original (2): 35449 35460 
+    0 (4): 35449 35460 35463 35465 
+        domina a restricao clq1026
+
+Restricao 33172, 1 novos cliques
+    Original (2): 35616 35627 
+    0 (4): 35616 35627 35630 35632 
+        domina a restricao clq1064
+
+Restricao 33192, 1 novos cliques
+    Original (2): 35705 35716 
+    0 (4): 35705 35716 35719 35721 
+        domina a restricao clq1084
+
+Restricao 33221, 1 novos cliques
+    Original (2): 35836 35847 
+    0 (4): 35836 35847 35850 35852 
+        domina a restricao clq1113
+
+Restricao 33239, 1 novos cliques
+    Original (2): 35936 35947 
+    0 (4): 35936 35947 35950 35952 
+        domina a restricao clq1131
+
+Restricao 33277, 1 novos cliques
+    Original (2): 36111 36122 
+    0 (4): 36111 36122 36125 36127 
+        domina a restricao clq1169
+
+Restricao 33305, 1 novos cliques
+    Original (2): 36233 36244 
+    0 (4): 36233 36244 36247 36249 
+        domina a restricao clq1197
+
+Restricao 33307, 1 novos cliques
+    Original (3): 36265 36270 36272 
+    0 (4): 36265 36270 36271 36272 
+        domina a restricao clq1199
+        domina a restricao clq1200
+
+Restricao 33325, 1 novos cliques
+    Original (2): 36330 36341 
+    0 (4): 36330 36341 36344 36346 
+        domina a restricao clq1217
+
+Restricao 33349, 1 novos cliques
+    Original (2): 36421 36432 
+    0 (4): 36421 36432 36435 36437 
+        domina a restricao clq1241
+
+Restricao 33369, 1 novos cliques
+    Original (2): 36498 36509 
+    0 (4): 36498 36509 36512 36514 
+        domina a restricao clq1261
+
+Restricao 33372, 1 novos cliques
+    Original (4): 36521 36523 36524 36532 
+    0 (5): 36521 36523 36524 36525 36532 
+        domina a restricao clq1264
+        domina a restricao clq1265
+
+Restricao 33375, 1 novos cliques
+    Original (3): 36528 36531 36535 
+    0 (4): 36528 36531 36535 36536 
+        domina a restricao clq1267
+        domina a restricao clq1268
+
+Restricao 33406, 1 novos cliques
+    Original (2): 36630 36641 
+    0 (4): 36630 36641 36644 36646 
+        domina a restricao clq1298
+
+Restricao 33444, 1 novos cliques
+    Original (2): 36782 36793 
+    0 (4): 36782 36793 36796 36798 
+        domina a restricao clq1336
+
+Restricao 33488, 1 novos cliques
+    Original (2): 36925 36936 
+    0 (4): 36925 36936 36939 36941 
+        domina a restricao clq1380
+
+Restricao 33530, 1 novos cliques
+    Original (2): 37086 37097 
+    0 (4): 37086 37097 37100 37102 
+        domina a restricao clq1422
+
+Restricao 33555, 1 novos cliques
+    Original (2): 37192 37203 
+    0 (4): 37192 37203 37206 37208 
+        domina a restricao clq1447
+
+Restricao 33562, 1 novos cliques
+    Original (2): 37213 37224 
+    0 (4): 37213 37224 37227 37229 
+        domina a restricao clq1454
+
+Restricao 33586, 1 novos cliques
+    Original (2): 37315 37326 
+    0 (4): 37315 37326 37329 37331 
+        domina a restricao clq1478
+
+Restricao 33616, 1 novos cliques
+    Original (2): 37441 37452 
+    0 (4): 37441 37452 37455 37457 
+        domina a restricao clq1508
+
+Restricao 33626, 1 novos cliques
+    Original (2): 37503 37508 
+    0 (3): 37503 37508 37509 
+        domina a restricao clq1518
+        domina a restricao clq1519
+
+Restricao 33630, 1 novos cliques
+    Original (2): 37513 37520 
+    0 (4): 37511 37512 37513 37520 
+        domina a restricao clq1522
+
+Restricao 33654, 1 novos cliques
+    Original (2): 37590 37601 
+    0 (4): 37590 37601 37604 37606 
+        domina a restricao clq1546
+
+Restricao 33656, 1 novos cliques
+    Original (3): 37620 37625 37627 
+    0 (4): 37620 37625 37626 37627 
+        domina a restricao clq1548
+        domina a restricao clq1549
+
+Restricao 33667, 1 novos cliques
+    Original (2): 37650 37653 
+    0 (3): 37650 37652 37653 
+        domina a restricao clq1559
+
+Restricao 33679, 1 novos cliques
+    Original (2): 37693 37704 
+    0 (4): 37693 37704 37707 37709 
+        domina a restricao clq1571
+
+Restricao 33717, 1 novos cliques
+    Original (2): 37859 37870 
+    0 (4): 37859 37870 37873 37875 
+        domina a restricao clq1609
+
+Restricao 33734, 1 novos cliques
+    Original (4): 37944 37950 37951 37955 
+    0 (5): 37944 37950 37951 37953 37955 
+        domina a restricao clq1626
+        domina a restricao clq1627
+
+Restricao 33747, 1 novos cliques
+    Original (2): 37982 37993 
+    0 (4): 37982 37993 37996 37998 
+        domina a restricao clq1639
+
+Restricao 33749, 1 novos cliques
+    Original (3): 37999 38000 38008 
+    0 (4): 37999 38000 38001 38008 
+        domina a restricao clq1641
+        domina a restricao clq1642
+
+Restricao 33753, 1 novos cliques
+    Original (2): 38003 38014 
+    0 (3): 38003 38014 38015 
+        domina a restricao clq1645
+        domina a restricao clq1646
+
+Restricao 33755, 1 novos cliques
+    Original (3): 38004 38007 38011 
+    0 (4): 38004 38007 38011 38012 
+        domina a restricao clq1647
+
+Restricao 33757, 1 novos cliques
+    Original (3): 38005 38009 38017 
+    0 (4): 38005 38009 38017 38018 
+        domina a restricao clq1649
+        domina a restricao clq1650
+
+Restricao 33775, 1 novos cliques
+    Original (2): 38090 38101 
+    0 (4): 38090 38101 38104 38106 
+        domina a restricao clq1667
+
+Restricao 33792, 1 novos cliques
+    Original (3): 38152 38154 38157 
+    0 (4): 38149 38152 38154 38157 
+        domina a restricao clq1684
+
+Restricao 33813, 1 novos cliques
+    Original (2): 38224 38235 
+    0 (4): 38224 38235 38238 38240 
+        domina a restricao clq1705
+
+Restricao 33826, 1 novos cliques
+    Original (3): 38289 38293 38294 
+    0 (5): 38289 38293 38294 38297 38299 
+        domina a restricao clq1718
+        domina a restricao clq1719
+
+Restricao 33838, 1 novos cliques
+    Original (2): 38335 38346 
+    0 (4): 38335 38346 38349 38351 
+        domina a restricao clq1730
+
+Restricao 33852, 1 novos cliques
+    Original (2): 38418 38429 
+    0 (4): 38418 38429 38432 38434 
+        domina a restricao clq1744
+
+Restricao 33887, 1 novos cliques
+    Original (2): 38553 38564 
+    0 (4): 38553 38564 38567 38569 
+        domina a restricao clq1779
+
+Restricao 33924, 1 novos cliques
+    Original (2): 38714 38725 
+    0 (4): 38714 38725 38728 38730 
+        domina a restricao clq1816
+
+Restricao 33944, 1 novos cliques
+    Original (4): 38815 38816 38824 38826 
+    0 (5): 38815 38816 38817 38824 38826 
+        domina a restricao clq1836
+        domina a restricao clq1837
+
+Restricao 33947, 1 novos cliques
+    Original (4): 38818 38822 38827 38837 
+    0 (5): 38818 38822 38827 38836 38837 
+        domina a restricao clq1839
+
+Restricao 33949, 1 novos cliques
+    Original (2): 38819 38838 
+    0 (3): 38819 38838 38840 
+        domina a restricao clq1841
+
+Restricao 33950, 1 novos cliques
+    Original (4): 38820 38823 38828 38831 
+    0 (5): 38820 38823 38828 38831 38832 
+        domina a restricao clq1842
+
+Restricao 33964, 1 novos cliques
+    Original (2): 38871 38882 
+    0 (4): 38871 38882 38885 38887 
+        domina a restricao clq1856
+
+Restricao 33985, 1 novos cliques
+    Original (2): 38967 38978 
+    0 (4): 38967 38978 38981 38983 
+        domina a restricao clq1877
+
+Restricao 33993, 1 novos cliques
+    Original (3): 39008 39014 39016 
+    0 (4): 39008 39014 39015 39016 
+        domina a restricao clq1885
+        domina a restricao clq1886
+
+Restricao 34011, 1 novos cliques
+    Original (2): 39081 39092 
+    0 (4): 39081 39092 39095 39097 
+        domina a restricao clq1903
+
+Restricao 34054, 1 novos cliques
+    Original (2): 39290 39301 
+    0 (4): 39290 39301 39304 39306 
+        domina a restricao clq1946
+
+Restricao 34083, 1 novos cliques
+    Original (3): 39415 39416 39424 
+    0 (4): 39415 39416 39417 39424 
+        domina a restricao clq1975
+        domina a restricao clq1976
+
+Restricao 34086, 1 novos cliques
+    Original (3): 39420 39423 39427 
+    0 (4): 39420 39423 39427 39428 
+        domina a restricao clq1978
+        domina a restricao clq1979
+
+Restricao 34098, 1 novos cliques
+    Original (2): 39471 39482 
+    0 (4): 39471 39482 39485 39487 
+        domina a restricao clq1990
+
+Restricao 34118, 1 novos cliques
+    Original (2): 39566 39577 
+    0 (4): 39566 39577 39580 39582 
+        domina a restricao clq2010
+
+Restricao 34161, 1 novos cliques
+    Original (2): 39764 39775 
+    0 (4): 39764 39775 39778 39780 
+        domina a restricao clq2053
+
+Restricao 34179, 1 novos cliques
+    Original (2): 39861 39872 
+    0 (4): 39861 39872 39875 39877 
+        domina a restricao clq2071
+
+Restricao 34213, 1 novos cliques
+    Original (2): 40036 40047 
+    0 (4): 40036 40047 40050 40052 
+        domina a restricao clq2105
+
+Restricao 34224, 1 novos cliques
+    Original (3): 40084 40085 40096 
+    0 (5): 40084 40085 40096 40098 40099 
+        domina a restricao clq2116
+        domina a restricao clq2117
+
+Restricao 34263, 1 novos cliques
+    Original (2): 40249 40260 
+    0 (4): 40249 40260 40263 40265 
+        domina a restricao clq2155
+
+Restricao 34296, 1 novos cliques
+    Original (2): 40382 40393 
+    0 (4): 40382 40393 40396 40398 
+        domina a restricao clq2188
+
+Restricao 34337, 1 novos cliques
+    Original (2): 40541 40552 
+    0 (4): 40541 40552 40555 40557 
+        domina a restricao clq2229
+
+Restricao 34347, 1 novos cliques
+    Original (2): 40599 40600 
+    0 (4): 40599 40600 40603 40605 
+        domina a restricao clq2239
+        domina a restricao clq2240
+
+Restricao 34356, 1 novos cliques
+    Original (2): 40622 40633 
+    0 (4): 40622 40633 40636 40638 
+        domina a restricao clq2248
+
+Restricao 34358, 1 novos cliques
+    Original (3): 40639 40640 40642 
+    0 (4): 40639 40640 40641 40642 
+        domina a restricao clq2250
+
+Restricao 34360, 1 novos cliques
+    Original (3): 40643 40649 40651 
+    0 (4): 40643 40649 40650 40651 
+        domina a restricao clq2252
+        domina a restricao clq2253
+
+Restricao 34378, 1 novos cliques
+    Original (3): 40702 40706 40707 
+    0 (5): 40702 40706 40707 40710 40712 
+        domina a restricao clq2270
+        domina a restricao clq2271
+
+Restricao 34386, 1 novos cliques
+    Original (2): 40719 40730 
+    0 (4): 40719 40730 40733 40735 
+        domina a restricao clq2278
+
+Restricao 34403, 1 novos cliques
+    Original (2): 40810 40821 
+    0 (4): 40810 40821 40824 40826 
+        domina a restricao clq2295
+
+Restricao 34427, 1 novos cliques
+    Original (2): 40914 40925 
+    0 (4): 40914 40925 40928 40930 
+        domina a restricao clq2319
+
+Restricao 34430, 1 novos cliques
+    Original (3): 40937 40940 40942 
+    0 (4): 40937 40940 40941 40942 
+        domina a restricao clq2322
+        domina a restricao clq2323
+
+Restricao 34452, 1 novos cliques
+    Original (2): 41011 41022 
+    0 (4): 41011 41022 41025 41027 
+        domina a restricao clq2344
+
+Restricao 34508, 1 novos cliques
+    Original (2): 41216 41227 
+    0 (4): 41216 41227 41230 41232 
+        domina a restricao clq2400
+
+Restricao 34538, 1 novos cliques
+    Original (6): 41337 41338 41341 41342 41352 41354 
+    0 (7): 41337 41338 41341 41342 41347 41352 41354 
+        domina a restricao clq2430
+        domina a restricao clq2431
+
+Restricao 34550, 1 novos cliques
+    Original (2): 41378 41389 
+    0 (4): 41378 41389 41392 41394 
+        domina a restricao clq2442
+
+Restricao 34557, 1 novos cliques
+    Original (2): 41399 41410 
+    0 (4): 41399 41410 41413 41415 
+        domina a restricao clq2449
+
+Restricao 34568, 1 novos cliques
+    Original (3): 41451 41454 41455 
+    0 (6): 41451 41452 41454 41455 41456 41457 
+        domina a restricao clq2460
+
+Restricao 34583, 1 novos cliques
+    Original (2): 41515 41526 
+    0 (4): 41515 41526 41529 41531 
+        domina a restricao clq2475
+
+Restricao 34590, 1 novos cliques
+    Original (3): 41542 41546 41554 
+    0 (4): 41542 41546 41554 41557 
+        domina a restricao clq2482
+
+Restricao 34626, 1 novos cliques
+    Original (2): 41669 41680 
+    0 (4): 41669 41680 41683 41685 
+        domina a restricao clq2518
+
+Restricao 34635, 1 novos cliques
+    Original (2): 41703 41712 
+    0 (4): 41703 41712 41715 41717 
+        domina a restricao clq2527
+
+Restricao 34661, 1 novos cliques
+    Original (3): 41811 41823 41824 
+    0 (5): 41811 41823 41824 41827 41829 
+        domina a restricao clq2553
+
+Restricao 34688, 1 novos cliques
+    Original (2): 41919 41922 
+    0 (4): 41919 41921 41922 41924 
+        domina a restricao clq2580
+
+Restricao 34722, 1 novos cliques
+    Original (2): 42112 42119 
+    0 (3): 42112 42119 42124 
+        domina a restricao clq2614
+
+Restricao 34726, 1 novos cliques
+    Original (3): 42116 42121 42123 
+    0 (4): 42116 42121 42122 42123 
+        domina a restricao clq2618
+        domina a restricao clq2619
+
+Restricao 34747, 1 novos cliques
+    Original (2): 42189 42191 
+    0 (3): 42189 42191 42194 
+        domina a restricao clq2639
+
+Restricao 34799, 1 novos cliques
+    Original (2): 42447 42452 
+    0 (4): 42447 42452 42453 42454 
+        domina a restricao clq2691
+
+Restricao 34965, 1 novos cliques
+    Original (2): 43224 43254 
+    0 (3): 43224 43252 43254 
+        domina a restricao clq2857
+
+Restricao 34987, 1 novos cliques
+    Original (3): 43323 43335 43336 
+    0 (5): 43323 43335 43336 43339 43341 
+        domina a restricao clq2879
+
+Restricao 35053, 1 novos cliques
+    Original (3): 43673 43685 43686 
+    0 (5): 43673 43685 43686 43689 43691 
+        domina a restricao clq2945
+
+Restricao 35128, 1 novos cliques
+    Original (3): 44076 44077 44085 
+    0 (4): 44076 44077 44078 44085 
+        domina a restricao clq3020
+
+Restricao 35132, 1 novos cliques
+    Original (3): 44081 44084 44092 
+    0 (4): 44081 44084 44091 44092 
+        domina a restricao clq3024
+
+Restricao 35151, 1 novos cliques
+    Original (4): 44185 44186 44200 44202 
+    0 (5): 44185 44186 44191 44200 44202 
+        domina a restricao clq3043
+        domina a restricao clq3047
+
+Restricao 35283, 1 novos cliques
+    Original (3): 44889 44896 44897 
+    0 (4): 44889 44896 44897 44899 
+        domina a restricao clq3175
+        domina a restricao clq3176
+
+Restricao 35322, 1 novos cliques
+    Original (4): 45074 45081 45085 45109 
+    0 (5): 45074 45081 45085 45109 45110 
+        domina a restricao clq3214
+
+Restricao 35361, 1 novos cliques
+    Original (2): 45268 45275 
+    0 (3): 45268 45275 45276 
+        domina a restricao clq3253
+        domina a restricao clq3254
+
+Restricao 35364, 1 novos cliques
+    Original (2): 45272 45278 
+    0 (3): 45272 45278 45279 
+        domina a restricao clq3256
+
+Restricao 35390, 1 novos cliques
+    Original (3): 45396 45397 45405 
+    0 (4): 45396 45397 45398 45405 
+        domina a restricao clq3282
+        domina a restricao clq3283
+
+Restricao 35395, 1 novos cliques
+    Original (2): 45400 45417 
+    0 (3): 45400 45415 45417 
+        domina a restricao clq3287
+
+Restricao 35396, 1 novos cliques
+    Original (3): 45401 45404 45408 
+    0 (4): 45401 45404 45408 45409 
+        domina a restricao clq3288
+        domina a restricao clq3289
+
+Restricao 35421, 1 novos cliques
+    Original (2): 45532 45533 
+    0 (3): 45532 45533 45535 
+        domina a restricao clq3313
+
+Restricao 35426, 1 novos cliques
+    Original (2): 45541 45549 
+    0 (4): 45541 45543 45544 45549 
+        domina a restricao clq3318
+
+Restricao 35446, 1 novos cliques
+    Original (2): 45632 45641 
+    0 (4): 45632 45641 45644 45646 
+        domina a restricao clq3338
+
+Restricao 35494, 1 novos cliques
+    Original (3): 45825 45828 45829 
+    0 (4): 45825 45827 45828 45829 
+        domina a restricao clq3386
+
+Restricao 35497, 1 novos cliques
+    Original (2): 45838 45842 
+    0 (3): 45838 45842 45847 
+        domina a restricao clq3389
+        domina a restricao clq3390
+
+Restricao 35499, 1 novos cliques
+    Original (3): 45839 45844 45846 
+    0 (4): 45839 45844 45845 45846 
+        domina a restricao clq3391
+        domina a restricao clq3392
+
+Restricao 35564, 1 novos cliques
+    Original (2): 46138 46140 
+    0 (4): 46138 46140 46141 46142 
+        domina a restricao clq3456
+        domina a restricao clq3457
+
+Restricao 35570, 1 novos cliques
+    Original (3): 46168 46171 46173 
+    0 (4): 46168 46171 46172 46173 
+        domina a restricao clq3462
+        domina a restricao clq3463
+
+Restricao 35585, 1 novos cliques
+    Original (2): 46216 46225 
+    0 (4): 46216 46225 46228 46230 
+        domina a restricao clq3477
+
+Restricao 35611, 1 novos cliques
+    Original (2): 46329 46335 
+    0 (3): 46329 46335 46336 
+        domina a restricao clq3503
+        domina a restricao clq3504
+
+Restricao 35762, 1 novos cliques
+    Original (2): 47132 47141 
+    0 (4): 47132 47141 47144 47146 
+        domina a restricao clq3654
+
+Restricao 35860, 1 novos cliques
+    Original (2): 47637 47641 
+    0 (3): 47637 47641 47646 
+        domina a restricao clq3752
+        domina a restricao clq3753
+
+Restricao 35862, 1 novos cliques
+    Original (3): 47638 47643 47645 
+    0 (4): 47638 47643 47644 47645 
+        domina a restricao clq3754
+        domina a restricao clq3755
+
+Restricao 35881, 1 novos cliques
+    Original (3): 47715 47727 47728 
+    0 (5): 47715 47727 47728 47731 47733 
+        domina a restricao clq3773
+
+Restricao 35901, 1 novos cliques
+    Original (2): 47793 47810 
+    0 (3): 47793 47794 47810 
+        domina a restricao clq3793
+
+Restricao 35962, 1 novos cliques
+    Original (3): 48051 48063 48064 
+    0 (5): 48051 48063 48064 48067 48069 
+        domina a restricao clq3854
+
+Restricao 36099, 1 novos cliques
+    Original (2): 48698 48701 
+    0 (3): 48698 48701 48706 
+        domina a restricao clq3991
+        domina a restricao clq3992
+
+Restricao 36112, 1 novos cliques
+    Original (2): 48778 48783 
+    0 (3): 48778 48783 48788 
+        domina a restricao clq4004
+        domina a restricao clq4005
+
+Restricao 36115, 1 novos cliques
+    Original (3): 48780 48785 48787 
+    0 (4): 48780 48785 48786 48787 
+        domina a restricao clq4007
+        domina a restricao clq4008
+
+Restricao 36143, 1 novos cliques
+    Original (3): 48917 48918 48926 
+    0 (4): 48917 48918 48919 48926 
+        domina a restricao clq4035
+        domina a restricao clq4036
+
+Restricao 36147, 1 novos cliques
+    Original (2): 48921 48934 
+    0 (3): 48921 48934 48935 
+        domina a restricao clq4039
+
+Restricao 36148, 1 novos cliques
+    Original (3): 48922 48925 48929 
+    0 (4): 48922 48925 48929 48930 
+        domina a restricao clq4040
+
+Restricao 36155, 1 novos cliques
+    Original (2): 48941 48945 
+    0 (4): 48941 48945 48948 48950 
+        domina a restricao clq4047
+
+Restricao 36184, 1 novos cliques
+    Original (2): 49059 49066 
+    0 (4): 49057 49058 49059 49066 
+        domina a restricao clq4076
+
+Restricao 36204, 1 novos cliques
+    Original (2): 49111 49134 
+    0 (3): 49111 49112 49134 
+        domina a restricao clq4096
+
+Restricao 36245, 1 novos cliques
+    Original (4): 49306 49314 49315 49318 
+    0 (6): 49306 49312 49313 49314 49315 49318 
+        domina a restricao clq4137
+
+Restricao 36246, 1 novos cliques
+    Original (3): 49307 49313 49321 
+    0 (5): 49307 49312 49313 49314 49321 
+        domina a restricao clq4138
+
+Restricao 36247, 1 novos cliques
+    Original (3): 49309 49311 49314 
+    0 (9): 49306 49307 49308 49309 49310 49311 49312 49313 49314 
+        domina a restricao clq4139
+
+Restricao 36248, 1 novos cliques
+    Original (2): 49310 49319 
+    0 (5): 49310 49312 49313 49314 49319 
+        domina a restricao clq4140
+
+Restricao 36249, 1 novos cliques
+    Original (2): 49312 49316 
+    0 (9): 49312 49313 49314 49315 49316 49317 49318 49319 49320 
+        domina a restricao clq4141
+
+Restricao 36280, 1 novos cliques
+    Original (2): 49480 49488 
+    0 (4): 49480 49483 49485 49488 
+        domina a restricao clq4172
+
+Restricao 36331, 1 novos cliques
+    Original (2): 49712 49719 
+    0 (4): 49710 49711 49712 49719 
+        domina a restricao clq4223
+
+Restricao 36342, 1 novos cliques
+    Original (3): 49742 49747 49749 
+    0 (4): 49742 49747 49748 49749 
+        domina a restricao clq4234
+        domina a restricao clq4235
+
+Restricao 36345, 1 novos cliques
+    Original (2): 49751 49754 
+    0 (3): 49751 49753 49754 
+        domina a restricao clq4237
+
+Restricao 36369, 1 novos cliques
+    Original (3): 49852 49853 49862 
+    0 (4): 49852 49853 49858 49862 
+        domina a restricao clq4261
+        domina a restricao clq4265
+
+Restricao 36440, 1 novos cliques
+    Original (3): 50144 50145 50153 
+    0 (4): 50144 50145 50146 50153 
+        domina a restricao clq4332
+        domina a restricao clq4333
+
+Restricao 36444, 1 novos cliques
+    Original (3): 50149 50152 50156 
+    0 (4): 50149 50152 50156 50157 
+        domina a restricao clq4336
+
+Restricao 36458, 1 novos cliques
+    Original (4): 50211 50212 50226 50228 
+    0 (5): 50211 50212 50217 50226 50228 
+        domina a restricao clq4350
+
+Restricao 36463, 1 novos cliques
+    Original (2): 50219 50223 
+    0 (3): 50219 50221 50223 
+        domina a restricao clq4355
+
+Restricao 36478, 1 novos cliques
+    Original (4): 50283 50287 50288 50296 
+    0 (6): 50283 50287 50288 50291 50293 50296 
+        domina a restricao clq4370
+        domina a restricao clq4371
+
+Restricao 36486, 1 novos cliques
+    Original (2): 50303 50312 
+    0 (4): 50303 50312 50315 50317 
+        domina a restricao clq4378
+
+Restricao 36493, 1 novos cliques
+    Original (4): 50334 50338 50347 50351 
+    0 (5): 50334 50338 50347 50351 50352 
+        domina a restricao clq4385
+        domina a restricao clq4386
+
+Restricao 36497, 1 novos cliques
+    Original (2): 50335 50355 
+    0 (3): 50335 50353 50355 
+        domina a restricao clq4389
+
+Restricao 36506, 1 novos cliques
+    Original (3): 50372 50377 50379 
+    0 (4): 50372 50377 50378 50379 
+        domina a restricao clq4398
+        domina a restricao clq4399
+
+Restricao 36529, 1 novos cliques
+    Original (2): 50455 50464 
+    0 (4): 50455 50464 50467 50469 
+        domina a restricao clq4421
+
+Restricao 36572, 1 novos cliques
+    Original (2): 50613 50622 
+    0 (4): 50613 50622 50625 50627 
+        domina a restricao clq4464
+
+Restricao 36606, 1 novos cliques
+    Original (2): 50748 50757 
+    0 (4): 50748 50757 50760 50762 
+        domina a restricao clq4498
+
+Restricao 36651, 1 novos cliques
+    Original (2): 50939 50948 
+    0 (4): 50939 50948 50951 50953 
+        domina a restricao clq4543
+
+Restricao 36658, 1 novos cliques
+    Original (2): 50958 50967 
+    0 (4): 50958 50967 50970 50972 
+        domina a restricao clq4550
+
+Restricao 36684, 1 novos cliques
+    Original (2): 51068 51077 
+    0 (4): 51068 51077 51080 51082 
+        domina a restricao clq4576
+
+Restricao 36720, 1 novos cliques
+    Original (2): 51200 51209 
+    0 (4): 51200 51209 51212 51214 
+        domina a restricao clq4612
+
+Restricao 36761, 1 novos cliques
+    Original (3): 51330 51334 51336 
+    0 (4): 51330 51331 51334 51336 
+        domina a restricao clq4653
+
+Restricao 36768, 1 novos cliques
+    Original (2): 51361 51370 
+    0 (4): 51361 51370 51373 51375 
+        domina a restricao clq4660
+
+Restricao 36791, 1 novos cliques
+    Original (2): 51469 51476 
+    0 (4): 51467 51468 51469 51476 
+        domina a restricao clq4683
+
+Restricao 36805, 1 novos cliques
+    Original (2): 51509 51518 
+    0 (4): 51509 51518 51521 51523 
+        domina a restricao clq4697
+
+Restricao 36845, 1 novos cliques
+    Original (3): 51659 51662 51670 
+    0 (4): 51659 51662 51670 51671 
+        domina a restricao clq4737
+
+Restricao 36847, 1 novos cliques
+    Original (3): 51660 51664 51689 
+    0 (4): 51660 51664 51688 51689 
+        domina a restricao clq4739
+
+Restricao 36866, 1 novos cliques
+    Original (2): 51732 51741 
+    0 (4): 51732 51741 51744 51746 
+        domina a restricao clq4758
+
+Restricao 36909, 1 novos cliques
+    Original (2): 51922 51931 
+    0 (4): 51922 51931 51934 51936 
+        domina a restricao clq4801
+
+Restricao 36942, 1 novos cliques
+    Original (2): 52073 52082 
+    0 (4): 52073 52082 52085 52087 
+        domina a restricao clq4834
+
+Restricao 36961, 1 novos cliques
+    Original (3): 52154 52166 52167 
+    0 (5): 52154 52166 52167 52170 52172 
+        domina a restricao clq4853
+
+Restricao 36973, 1 novos cliques
+    Original (2): 52203 52212 
+    0 (4): 52203 52212 52215 52217 
+        domina a restricao clq4865
+
+Restricao 36986, 1 novos cliques
+    Original (3): 52247 52259 52260 
+    0 (5): 52247 52259 52260 52263 52265 
+        domina a restricao clq4878
+
+Restricao 37006, 1 novos cliques
+    Original (3): 52331 52334 52336 
+    0 (4): 52331 52334 52335 52336 
+        domina a restricao clq4898
+        domina a restricao clq4899
+
+Restricao 37018, 1 novos cliques
+    Original (2): 52361 52370 
+    0 (4): 52361 52370 52373 52375 
+        domina a restricao clq4910
+
+Restricao 37048, 1 novos cliques
+    Original (2): 52488 52497 
+    0 (4): 52488 52497 52500 52502 
+        domina a restricao clq4940
+
+Restricao 37057, 1 novos cliques
+    Original (2): 52524 52533 
+    0 (4): 52524 52533 52536 52538 
+        domina a restricao clq4949
+
+Restricao 37090, 1 novos cliques
+    Original (3): 52663 52664 52672 
+    0 (5): 52663 52664 52667 52669 52672 
+        domina a restricao clq4982
+        domina a restricao clq4983
+
+Restricao 37099, 1 novos cliques
+    Original (2): 52693 52702 
+    0 (4): 52693 52702 52705 52707 
+        domina a restricao clq4991
+
+Restricao 37122, 1 novos cliques
+    Original (2): 52795 52804 
+    0 (3): 52795 52796 52804 
+        domina a restricao clq5014
+
+Restricao 37124, 1 novos cliques
+    Original (2): 52798 52806 
+    0 (4): 52798 52801 52803 52806 
+        domina a restricao clq5016
+
+Restricao 37141, 1 novos cliques
+    Original (2): 52847 52856 
+    0 (4): 52847 52856 52859 52861 
+        domina a restricao clq5033
+
+Restricao 37161, 1 novos cliques
+    Original (2): 52932 52941 
+    0 (4): 52932 52941 52944 52946 
+        domina a restricao clq5053
+
+Restricao 37164, 1 novos cliques
+    Original (2): 52950 52955 
+    0 (3): 52950 52955 52956 
+        domina a restricao clq5056
+
+Restricao 37174, 1 novos cliques
+    Original (2): 52989 52998 
+    0 (4): 52989 52998 53001 53003 
+        domina a restricao clq5066
+
+Restricao 37212, 1 novos cliques
+    Original (2): 53140 53149 
+    0 (4): 53140 53149 53152 53154 
+        domina a restricao clq5104
+
+Restricao 37234, 1 novos cliques
+    Original (2): 53261 53266 
+    0 (3): 53261 53266 53267 
+        domina a restricao clq5126
+        domina a restricao clq5127
+
+Restricao 37257, 1 novos cliques
+    Original (2): 53331 53340 
+    0 (4): 53331 53340 53343 53345 
+        domina a restricao clq5149
+
+Restricao 37264, 1 novos cliques
+    Original (2): 53350 53359 
+    0 (4): 53350 53359 53362 53364 
+        domina a restricao clq5156
+
+Restricao 37278, 1 novos cliques
+    Original (3): 53426 53427 53429 
+    0 (4): 53426 53427 53428 53429 
+        domina a restricao clq5170
+
+Restricao 37301, 1 novos cliques
+    Original (2): 53498 53507 
+    0 (4): 53498 53507 53510 53512 
+        domina a restricao clq5193
+
+Restricao 37344, 1 novos cliques
+    Original (2): 53672 53681 
+    0 (4): 53672 53681 53684 53686 
+        domina a restricao clq5236
+
+Restricao 37349, 1 novos cliques
+    Original (5): 53701 53703 53705 53706 53707 
+    0 (6): 53700 53701 53703 53705 53706 53707 
+        domina a restricao clq5241
+
+Restricao 37350, 1 novos cliques
+    Original (2): 53704 53708 
+    0 (4): 53700 53701 53704 53708 
+        domina a restricao clq5242
+
+Restricao 37359, 1 novos cliques
+    Original (3): 53740 53741 53749 
+    0 (4): 53740 53741 53742 53749 
+        domina a restricao clq5251
+
+Restricao 37362, 1 novos cliques
+    Original (3): 53743 53747 53755 
+    0 (4): 53743 53747 53755 53758 
+        domina a restricao clq5254
+
+Restricao 37364, 1 novos cliques
+    Original (3): 53745 53748 53752 
+    0 (4): 53745 53748 53752 53753 
+        domina a restricao clq5256
+
+Restricao 37370, 1 novos cliques
+    Original (2): 53773 53778 
+    0 (3): 53773 53778 53779 
+        domina a restricao clq5262
+        domina a restricao clq5263
+
+Restricao 37383, 1 novos cliques
+    Original (3): 53811 53823 53824 
+    0 (5): 53811 53823 53824 53827 53829 
+        domina a restricao clq5275
+
+Restricao 37387, 1 novos cliques
+    Original (2): 53832 53835 
+    0 (3): 53832 53835 53836 
+        domina a restricao clq5279
+
+Restricao 37389, 1 novos cliques
+    Original (2): 53833 53841 
+    0 (3): 53833 53841 53842 
+        domina a restricao clq5281
+        domina a restricao clq5282
+
+Restricao 37400, 1 novos cliques
+    Original (2): 53869 53878 
+    0 (4): 53869 53878 53881 53883 
+        domina a restricao clq5292
+
+Restricao 37411, 1 novos cliques
+    Original (2): 53930 53935 
+    0 (3): 53930 53931 53935 
+        domina a restricao clq5303
+        domina a restricao clq5304
+
+Restricao 37423, 1 novos cliques
+    Original (3): 53961 53973 53974 
+    0 (5): 53961 53973 53974 53977 53979 
+        domina a restricao clq5315
+
+Restricao 37436, 1 novos cliques
+    Original (2): 54011 54020 
+    0 (4): 54011 54020 54023 54025 
+        domina a restricao clq5328
+
+Restricao 37462, 1 novos cliques
+    Original (3): 54130 54137 54139 
+    0 (4): 54130 54137 54138 54139 
+        domina a restricao clq5354
+        domina a restricao clq5355
+
+Restricao 37473, 1 novos cliques
+    Original (2): 54169 54178 
+    0 (4): 54169 54178 54181 54183 
+        domina a restricao clq5365
+
+Restricao 37491, 1 novos cliques
+    Original (2): 54243 54252 
+    0 (4): 54243 54252 54255 54257 
+        domina a restricao clq5383
+
+Restricao 37504, 1 novos cliques
+    Original (2): 54287 54296 
+    0 (4): 54287 54296 54299 54301 
+        domina a restricao clq5396
+
+Restricao 37521, 1 novos cliques
+    Original (2): 54341 54361 
+    0 (3): 54341 54342 54361 
+        domina a restricao clq5413
+
+Restricao 37545, 1 novos cliques
+    Original (2): 54467 54476 
+    0 (4): 54467 54476 54479 54481 
+        domina a restricao clq5437
+
+Restricao 37589, 1 novos cliques
+    Original (2): 54638 54647 
+    0 (4): 54638 54647 54650 54652 
+        domina a restricao clq5481
+
+Restricao 37617, 1 novos cliques
+    Original (2): 54763 54772 
+    0 (4): 54763 54772 54775 54777 
+        domina a restricao clq5509
+
+Restricao 37641, 1 novos cliques
+    Original (2): 54881 54890 
+    0 (4): 54881 54890 54893 54895 
+        domina a restricao clq5533
+
+Restricao 37665, 1 novos cliques
+    Original (3): 54979 54991 54992 
+    0 (5): 54979 54991 54992 54995 54997 
+        domina a restricao clq5557
+
+Restricao 37676, 1 novos cliques
+    Original (3): 55019 55023 55025 
+    0 (4): 55019 55020 55023 55025 
+        domina a restricao clq5568
+
+Restricao 37683, 1 novos cliques
+    Original (2): 55037 55046 
+    0 (4): 55037 55046 55049 55051 
+        domina a restricao clq5575
+
+Restricao 37711, 1 novos cliques
+    Original (3): 55132 55144 55145 
+    0 (5): 55132 55144 55145 55148 55150 
+        domina a restricao clq5603
+
+Restricao 37723, 1 novos cliques
+    Original (2): 55181 55190 
+    0 (4): 55181 55190 55193 55195 
+        domina a restricao clq5615
+
+Restricao 37747, 1 novos cliques
+    Original (2): 55272 55277 
+    0 (3): 55272 55277 55278 
+        domina a restricao clq5639
+
+Restricao 37753, 1 novos cliques
+    Original (2): 55295 55304 
+    0 (4): 55295 55304 55307 55309 
+        domina a restricao clq5645
+
+Restricao 37774, 1 novos cliques
+    Original (2): 55376 55384 
+    0 (4): 55376 55383 55384 55385 
+        domina a restricao clq5666
+
+Restricao 37784, 1 novos cliques
+    Original (4): 55422 55424 55425 55433 
+    0 (5): 55422 55424 55425 55426 55433 
+        domina a restricao clq5676
+        domina a restricao clq5677
+
+Restricao 37787, 1 novos cliques
+    Original (2): 55428 55435 
+    0 (3): 55428 55435 55436 
+        domina a restricao clq5679
+        domina a restricao clq5680
+
+Restricao 37789, 1 novos cliques
+    Original (3): 55429 55432 55438 
+    0 (4): 55429 55432 55438 55439 
+        domina a restricao clq5681
+        domina a restricao clq5682
+
+Restricao 37798, 1 novos cliques
+    Original (2): 55457 55466 
+    0 (4): 55457 55466 55469 55471 
+        domina a restricao clq5690
+
+Restricao 37834, 1 novos cliques
+    Original (2): 55602 55611 
+    0 (4): 55602 55611 55614 55616 
+        domina a restricao clq5726
+
+Restricao 37841, 1 novos cliques
+    Original (2): 55621 55630 
+    0 (4): 55621 55630 55633 55635 
+        domina a restricao clq5733
+
+Restricao 37869, 1 novos cliques
+    Original (2): 55732 55741 
+    0 (4): 55732 55741 55744 55746 
+        domina a restricao clq5761
+
+Restricao 37872, 1 novos cliques
+    Original (2): 55748 55752 
+    0 (3): 55748 55752 55757 
+        domina a restricao clq5764
+        domina a restricao clq5765
+
+Restricao 37874, 1 novos cliques
+    Original (2): 55758 55760 
+    0 (4): 55758 55759 55760 55761 
+        domina a restricao clq5766
+
+Restricao 37881, 1 novos cliques
+    Original (3): 55786 55790 55792 
+    0 (4): 55786 55790 55791 55792 
+        domina a restricao clq5773
+        domina a restricao clq5774
+
+Restricao 37901, 1 novos cliques
+    Original (2): 55856 55865 
+    0 (4): 55856 55865 55868 55870 
+        domina a restricao clq5793
+
+Restricao 37925, 1 novos cliques
+    Original (2): 55979 55988 
+    0 (4): 55979 55988 55991 55993 
+        domina a restricao clq5817
+
+Restricao 37958, 1 novos cliques
+    Original (2): 56115 56124 
+    0 (4): 56115 56124 56127 56129 
+        domina a restricao clq5850
+
+Restricao 37963, 1 novos cliques
+    Original (4): 56156 56157 56171 56173 
+    0 (5): 56156 56157 56162 56171 56173 
+        domina a restricao clq5855
+
+Restricao 37968, 1 novos cliques
+    Original (2): 56164 56168 
+    0 (3): 56164 56166 56168 
+        domina a restricao clq5860
+
+Restricao 37997, 1 novos cliques
+    Original (2): 56289 56298 
+    0 (4): 56289 56298 56301 56303 
+        domina a restricao clq5889
+
+Restricao 38012, 1 novos cliques
+    Original (2): 56383 56390 
+    0 (4): 56381 56382 56383 56390 
+        domina a restricao clq5904
+
+Restricao 38016, 1 novos cliques
+    Original (2): 56385 56410 
+    0 (3): 56385 56408 56410 
+        domina a restricao clq5908
+
+Restricao 38018, 1 novos cliques
+    Original (3): 56386 56389 56394 
+    0 (4): 56386 56389 56393 56394 
+        domina a restricao clq5910
+
+Restricao 38033, 1 novos cliques
+    Original (2): 56442 56451 
+    0 (4): 56442 56451 56454 56456 
+        domina a restricao clq5925
+
+Restricao 38053, 1 novos cliques
+    Original (2): 56532 56543 
+    0 (3): 56532 56543 56544 
+        domina a restricao clq5945
+
+Restricao 38054, 1 novos cliques
+    Original (2): 56536 56540 
+    0 (3): 56536 56540 56541 
+        domina a restricao clq5946
+        domina a restricao clq5947
+
+Restricao 38066, 1 novos cliques
+    Original (2): 56577 56586 
+    0 (4): 56577 56586 56589 56591 
+        domina a restricao clq5958
+
+Restricao 38076, 1 novos cliques
+    Original (7): 56619 56620 56623 56624 56633 56642 56644 
+    0 (8): 56619 56620 56623 56624 56629 56633 56642 56644 
+        domina a restricao clq5968
+
+Restricao 38078, 1 novos cliques
+    Original (3): 56621 56635 56639 
+    0 (4): 56621 56635 56637 56639 
+        domina a restricao clq5970
+
+Restricao 38081, 1 novos cliques
+    Original (3): 56646 56648 56650 
+    0 (5): 56646 56647 56648 56649 56650 
+        domina a restricao clq5973
+
+Restricao 38100, 1 novos cliques
+    Original (2): 56749 56758 
+    0 (4): 56749 56758 56761 56763 
+        domina a restricao clq5992
+
+Restricao 38112, 1 novos cliques
+    Original (2): 56819 56826 
+    0 (4): 56817 56818 56819 56826 
+        domina a restricao clq6004
+
+Restricao 38119, 1 novos cliques
+    Original (2): 56842 56844 
+    0 (3): 56842 56844 56849 
+        domina a restricao clq6011
+        domina a restricao clq6012
+
+Restricao 38128, 1 novos cliques
+    Original (2): 56867 56876 
+    0 (4): 56867 56876 56879 56881 
+        domina a restricao clq6020
+
+Restricao 38152, 1 novos cliques
+    Original (3): 56988 56995 56997 
+    0 (4): 56988 56995 56996 56997 
+        domina a restricao clq6044
+        domina a restricao clq6045
+
+Restricao 38165, 1 novos cliques
+    Original (2): 57028 57037 
+    0 (4): 57028 57037 57040 57042 
+        domina a restricao clq6057
+
+Restricao 38187, 1 novos cliques
+    Original (2): 57138 57147 
+    0 (4): 57138 57147 57150 57152 
+        domina a restricao clq6079
+
+Restricao 38197, 1 novos cliques
+    Original (3): 57215 57216 57224 
+    0 (4): 57215 57216 57217 57224 
+        domina a restricao clq6089
+        domina a restricao clq6090
+
+Restricao 38200, 1 novos cliques
+    Original (3): 57220 57223 57227 
+    0 (4): 57220 57223 57227 57228 
+        domina a restricao clq6092
+        domina a restricao clq6093
+
+Restricao 38207, 1 novos cliques
+    Original (2): 57235 57244 
+    0 (4): 57235 57244 57247 57249 
+        domina a restricao clq6099
+
+Restricao 38232, 1 novos cliques
+    Original (2): 57352 57361 
+    0 (4): 57352 57361 57364 57366 
+        domina a restricao clq6124
+
+Restricao 38253, 1 novos cliques
+    Original (2): 57456 57457 
+    0 (4): 57456 57457 57460 57462 
+        domina a restricao clq6145
+        domina a restricao clq6146
+
+Restricao 38261, 1 novos cliques
+    Original (2): 57470 57479 
+    0 (4): 57470 57479 57482 57484 
+        domina a restricao clq6153
+
+Restricao 38290, 1 novos cliques
+    Original (2): 57583 57587 
+    0 (4): 57583 57587 57590 57592 
+        domina a restricao clq6182
+
+Restricao 38308, 1 novos cliques
+    Original (2): 57646 57655 
+    0 (4): 57646 57655 57658 57660 
+        domina a restricao clq6200
+
+Restricao 38315, 1 novos cliques
+    Original (2): 57665 57674 
+    0 (4): 57665 57674 57677 57679 
+        domina a restricao clq6207
+
+Restricao 38346, 1 novos cliques
+    Original (2): 57798 57807 
+    0 (4): 57798 57807 57810 57812 
+        domina a restricao clq6238
+
+Restricao 38370, 1 novos cliques
+    Original (2): 57899 57908 
+    0 (4): 57899 57908 57911 57913 
+        domina a restricao clq6262
+
+Restricao 38373, 1 novos cliques
+    Original (4): 57930 57931 57939 57948 
+    0 (5): 57930 57931 57932 57939 57948 
+        domina a restricao clq6265
+
+Restricao 38376, 1 novos cliques
+    Original (4): 57933 57937 57949 57954 
+    0 (5): 57933 57937 57949 57953 57954 
+        domina a restricao clq6268
+
+Restricao 38379, 1 novos cliques
+    Original (2): 57934 57957 
+    0 (3): 57934 57955 57957 
+        domina a restricao clq6271
+
+Restricao 38381, 1 novos cliques
+    Original (3): 57935 57938 57946 
+    0 (4): 57935 57938 57945 57946 
+        domina a restricao clq6273
+
+Restricao 38403, 1 novos cliques
+    Original (2): 58020 58029 
+    0 (4): 58020 58029 58032 58034 
+        domina a restricao clq6295
+
+Restricao 38423, 1 novos cliques
+    Original (2): 58127 58136 
+    0 (4): 58127 58136 58139 58141 
+        domina a restricao clq6315
+
+Restricao 38430, 1 novos cliques
+    Original (3): 58160 58161 58163 
+    0 (4): 58160 58161 58162 58163 
+        domina a restricao clq6322
+        domina a restricao clq6323
+
+Restricao 38432, 1 novos cliques
+    Original (2): 58165 58167 
+    0 (3): 58165 58167 58168 
+        domina a restricao clq6324
+        domina a restricao clq6325
+
+Restricao 38470, 1 novos cliques
+    Original (2): 58306 58315 
+    0 (4): 58306 58315 58318 58320 
+        domina a restricao clq6362
+
+Restricao 38492, 1 novos cliques
+    Original (2): 58412 58421 
+    0 (4): 58412 58421 58424 58426 
+        domina a restricao clq6384
+
+Restricao 38508, 1 novos cliques
+    Original (3): 58487 58496 58503 
+    0 (4): 58487 58496 58498 58503 
+        domina a restricao clq6400
+
+Restricao 38509, 1 novos cliques
+    Original (5): 58488 58493 58494 58500 58502 
+    0 (6): 58488 58493 58494 58500 58501 58502 
+        domina a restricao clq6401
+        domina a restricao clq6402
+
+Restricao 38520, 1 novos cliques
+    Original (2): 58520 58529 
+    0 (4): 58520 58529 58532 58534 
+        domina a restricao clq6412
+
+Restricao 38538, 1 novos cliques
+    Original (2): 58618 58627 
+    0 (4): 58618 58627 58630 58632 
+        domina a restricao clq6430
+
+Restricao 38548, 1 novos cliques
+    Original (3): 58676 58678 58680 
+    0 (7): 58676 58677 58678 58679 58680 58681 58682 
+        domina a restricao clq6440
+        domina a restricao clq6441
+
+Restricao 38555, 1 novos cliques
+    Original (3): 58703 58709 58711 
+    0 (4): 58703 58709 58710 58711 
+        domina a restricao clq6447
+        domina a restricao clq6448
+
+Restricao 38557, 1 novos cliques
+    Original (2): 58704 58712 
+    0 (3): 58704 58707 58712 
+        domina a restricao clq6449
+
+Restricao 38563, 1 novos cliques
+    Original (2): 58719 58728 
+    0 (4): 58719 58728 58731 58733 
+        domina a restricao clq6455
+
+Restricao 38589, 1 novos cliques
+    Original (2): 58829 58838 
+    0 (4): 58829 58838 58841 58843 
+        domina a restricao clq6481
+
+Restricao 38611, 1 novos cliques
+    Original (2): 58920 58929 
+    0 (4): 58920 58929 58932 58934 
+        domina a restricao clq6503
+
+Restricao 38729, 1 novos cliques
+    Original (3): 59548 59556 59559 
+    0 (5): 59548 59556 59559 59560 59561 
+        domina a restricao clq6621
+
+Restricao 38740, 1 novos cliques
+    Original (2): 59573 59582 
+    0 (4): 59573 59582 59585 59587 
+        domina a restricao clq6632
+
+Restricao 38824, 1 novos cliques
+    Original (3): 59981 59984 59988 
+    0 (4): 59981 59984 59988 59989 
+        domina a restricao clq6716
+        domina a restricao clq6717
+
+Restricao 38922, 1 novos cliques
+    Original (2): 60480 60485 
+    0 (3): 60480 60485 60486 
+        domina a restricao clq6814
+
+Restricao 38991, 1 novos cliques
+    Original (2): 60779 60781 
+    0 (4): 60779 60781 60782 60783 
+        domina a restricao clq6883
+        domina a restricao clq6884
+
+Restricao 39002, 1 novos cliques
+    Original (2): 60821 60824 
+    0 (4): 60821 60824 60825 60826 
+        domina a restricao clq6894
+
+Restricao 39007, 1 novos cliques
+    Original (4): 60842 60845 60850 60852 
+    0 (5): 60842 60845 60850 60851 60852 
+        domina a restricao clq6899
+        domina a restricao clq6900
+
+Restricao 39009, 1 novos cliques
+    Original (2): 60843 60848 
+    0 (3): 60843 60848 60853 
+        domina a restricao clq6901
+        domina a restricao clq6902
+
+Restricao 39034, 1 novos cliques
+    Original (2): 60945 60948 
+    0 (4): 60945 60946 60947 60948 
+        domina a restricao clq6926
+
+Restricao 39089, 1 novos cliques
+    Original (2): 61215 61217 
+    0 (4): 61215 61216 61217 61218 
+        domina a restricao clq6981
+
+Restricao 39091, 1 novos cliques
+    Original (2): 61224 61227 
+    0 (3): 61224 61227 61228 
+        domina a restricao clq6983
+        domina a restricao clq6984
+
+Restricao 39222, 1 novos cliques
+    Original (4): 61773 61774 61779 61781 
+    0 (5): 61773 61774 61779 61780 61781 
+        domina a restricao clq7114
+        domina a restricao clq7115
+
+Restricao 39301, 1 novos cliques
+    Original (2): 62133 62143 
+    0 (3): 62133 62143 62144 
+        domina a restricao clq7193
+
+Restricao 39340, 1 novos cliques
+    Original (3): 62322 62327 62329 
+    0 (4): 62322 62327 62328 62329 
+        domina a restricao clq7232
+        domina a restricao clq7233
+
+Restricao 39363, 1 novos cliques
+    Original (3): 62427 62433 62452 
+    0 (4): 62427 62433 62452 62454 
+        domina a restricao clq7255
+        domina a restricao clq7256
+
+Restricao 39373, 1 novos cliques
+    Original (3): 62434 62437 62445 
+    0 (4): 62434 62437 62445 62446 
+        domina a restricao clq7265
+
+Restricao 39402, 1 novos cliques
+    Original (2): 62604 62610 
+    0 (4): 62598 62599 62604 62610 
+        domina a restricao clq7294
+
+Restricao 39505, 1 novos cliques
+    Original (2): 63029 63044 
+    0 (3): 63029 63039 63044 
+        domina a restricao clq7397
+
+Restricao 39508, 1 novos cliques
+    Original (3): 63035 63041 63043 
+    0 (4): 63035 63041 63042 63043 
+        domina a restricao clq7400
+        domina a restricao clq7401
+
+Restricao 39547, 1 novos cliques
+    Original (2): 63225 63232 
+    0 (4): 63223 63224 63225 63232 
+        domina a restricao clq7439
+
+Restricao 39600, 1 novos cliques
+    Original (2): 63452 63459 
+    0 (3): 63452 63459 63464 
+        domina a restricao clq7492
+
+Restricao 39604, 1 novos cliques
+    Original (3): 63456 63461 63463 
+    0 (4): 63456 63461 63462 63463 
+        domina a restricao clq7496
+        domina a restricao clq7497
+
+Restricao 39667, 1 novos cliques
+    Original (3): 63721 63722 63730 
+    0 (4): 63721 63722 63723 63730 
+        domina a restricao clq7559
+        domina a restricao clq7560
+
+Restricao 39671, 1 novos cliques
+    Original (3): 63726 63729 63733 
+    0 (4): 63726 63729 63733 63734 
+        domina a restricao clq7563
+
+Restricao 39697, 1 novos cliques
+    Original (3): 63842 63843 63851 
+    0 (4): 63842 63843 63844 63851 
+        domina a restricao clq7589
+        domina a restricao clq7590
+
+Restricao 39700, 1 novos cliques
+    Original (3): 63845 63849 63856 
+    0 (4): 63845 63849 63856 63857 
+        domina a restricao clq7592
+
+Restricao 39702, 1 novos cliques
+    Original (2): 63846 63860 
+    0 (3): 63846 63858 63860 
+        domina a restricao clq7594
+
+Restricao 39710, 1 novos cliques
+    Original (2): 63876 63886 
+    0 (4): 63876 63878 63879 63886 
+        domina a restricao clq7602
+
+Restricao 39740, 1 novos cliques
+    Original (2): 63996 64006 
+    0 (3): 63996 64006 64007 
+        domina a restricao clq7632
+        domina a restricao clq7633
+
+Restricao 39743, 1 novos cliques
+    Original (2): 63999 64003 
+    0 (3): 63999 64003 64004 
+        domina a restricao clq7635
+        domina a restricao clq7636
+
+Restricao 39761, 1 novos cliques
+    Original (2): 64123 64130 
+    0 (4): 64121 64122 64123 64130 
+        domina a restricao clq7653
+
+Restricao 39832, 1 novos cliques
+    Original (2): 64471 64478 
+    0 (4): 64469 64470 64471 64478 
+        domina a restricao clq7724
+
+Restricao 39914, 1 novos cliques
+    Original (3): 64853 64865 64866 
+    0 (5): 64853 64865 64866 64869 64871 
+        domina a restricao clq7806
+
+Restricao 39915, 1 novos cliques
+    Original (2): 64859 64873 
+    0 (3): 64859 64860 64873 
+        domina a restricao clq7807
+
+Restricao 40014, 1 novos cliques
+    Original (3): 65453 65455 65456 
+    0 (4): 65453 65455 65456 65457 
+        domina a restricao clq7906
+
+Restricao 40040, 1 novos cliques
+    Original (3): 65564 65565 65573 
+    0 (4): 65564 65565 65566 65573 
+        domina a restricao clq7932
+        domina a restricao clq7933
+
+Restricao 40043, 1 novos cliques
+    Original (3): 65569 65572 65576 
+    0 (4): 65569 65572 65576 65577 
+        domina a restricao clq7935
+        domina a restricao clq7936
+
+Restricao 40078, 1 novos cliques
+    Original (2): 65760 65769 
+    0 (4): 65760 65769 65772 65774 
+        domina a restricao clq7970
+
+Restricao 40089, 1 novos cliques
+    Original (2): 65817 65824 
+    0 (3): 65817 65824 65829 
+        domina a restricao clq7981
+
+Restricao 40093, 1 novos cliques
+    Original (3): 65821 65826 65828 
+    0 (4): 65821 65826 65827 65828 
+        domina a restricao clq7985
+        domina a restricao clq7986
+
+Restricao 40122, 1 novos cliques
+    Original (3): 66016 66017 66025 
+    0 (4): 66016 66017 66018 66025 
+        domina a restricao clq8014
+        domina a restricao clq8015
+
+Restricao 40126, 1 novos cliques
+    Original (3): 66021 66024 66028 
+    0 (4): 66021 66024 66028 66029 
+        domina a restricao clq8018
+
+Restricao 40154, 1 novos cliques
+    Original (3): 66207 66212 66214 
+    0 (4): 66207 66212 66213 66214 
+        domina a restricao clq8046
+        domina a restricao clq8047
+
+Restricao 40174, 1 novos cliques
+    Original (2): 66264 66287 
+    0 (3): 66264 66265 66287 
+        domina a restricao clq8066
+
+Restricao 40211, 1 novos cliques
+    Original (2): 66444 66448 
+    0 (3): 66444 66448 66453 
+        domina a restricao clq8103
+        domina a restricao clq8104
+
+Restricao 40213, 1 novos cliques
+    Original (3): 66445 66450 66452 
+    0 (4): 66445 66450 66451 66452 
+        domina a restricao clq8105
+        domina a restricao clq8106
+
+Restricao 40225, 1 novos cliques
+    Original (3): 66501 66504 66512 
+    0 (4): 66501 66504 66512 66513 
+        domina a restricao clq8117
+
+Restricao 40226, 1 novos cliques
+    Original (3): 66505 66507 66510 
+    0 (4): 66505 66507 66508 66510 
+        domina a restricao clq8118
+        domina a restricao clq8119
+
+Restricao 40233, 1 novos cliques
+    Original (3): 66525 66537 66538 
+    0 (5): 66525 66537 66538 66541 66543 
+        domina a restricao clq8125
+
+Restricao 40313, 1 novos cliques
+    Original (3): 66991 66992 67000 
+    0 (5): 66991 66992 66995 66997 67000 
+        domina a restricao clq8205
+        domina a restricao clq8206
+
+Restricao 40339, 1 novos cliques
+    Original (3): 67092 67104 67105 
+    0 (5): 67092 67104 67105 67108 67110 
+        domina a restricao clq8231
+
+Restricao 40347, 1 novos cliques
+    Original (2): 67138 67144 
+    0 (3): 67138 67144 67149 
+        domina a restricao clq8239
+        domina a restricao clq8240
+
+Restricao 40350, 1 novos cliques
+    Original (3): 67141 67146 67148 
+    0 (4): 67141 67146 67147 67148 
+        domina a restricao clq8242
+        domina a restricao clq8243
+
+Restricao 40352, 3 novos cliques
+    Original (2): 67150 67153 
+    0 (6): 67150 67151 67152 67153 67154 67158 
+        domina a restricao clq8244
+
+    1 (6): 67150 67151 67152 67153 67154 67157 
+        domina a restricao clq8245
+
+    2 (7): 67150 67151 67152 67153 67154 67155 67156 
+        domina a restricao clq8246
+
+Restricao 40360, 1 novos cliques
+    Original (2): 67169 67196 
+    0 (3): 67169 67194 67196 
+        domina a restricao clq8252
+
+Restricao 40362, 1 novos cliques
+    Original (3): 67170 67173 67181 
+    0 (4): 67170 67173 67180 67181 
+        domina a restricao clq8254
+
+Restricao 40375, 1 novos cliques
+    Original (3): 67229 67231 67234 
+    0 (4): 67226 67229 67231 67234 
+        domina a restricao clq8267
+
+Restricao 40384, 1 novos cliques
+    Original (5): 67265 67271 67275 67281 67288 
+    0 (6): 67265 67271 67275 67281 67288 67289 
+        domina a restricao clq8276
+        domina a restricao clq8277
+
+Restricao 40387, 1 novos cliques
+    Original (5): 67266 67268 67269 67277 67280 
+    0 (6): 67266 67268 67269 67270 67277 67280 
+        domina a restricao clq8279
+        domina a restricao clq8280
+
+Restricao 40392, 1 novos cliques
+    Original (3): 67272 67279 67286 
+    0 (4): 67272 67279 67285 67286 
+        domina a restricao clq8284
+
+Restricao 40396, 1 novos cliques
+    Original (2): 67294 67300 
+    0 (3): 67294 67300 67305 
+        domina a restricao clq8288
+        domina a restricao clq8289
+
+Restricao 40399, 1 novos cliques
+    Original (3): 67297 67302 67304 
+    0 (4): 67297 67302 67303 67304 
+        domina a restricao clq8291
+        domina a restricao clq8292
+
+Restricao 40403, 1 novos cliques
+    Original (2): 67328 67332 
+    0 (3): 67328 67332 67337 
+        domina a restricao clq8295
+        domina a restricao clq8296
+
+Restricao 40405, 1 novos cliques
+    Original (3): 67329 67334 67336 
+    0 (4): 67329 67334 67335 67336 
+        domina a restricao clq8297
+        domina a restricao clq8298
+
+Restricao 40427, 1 novos cliques
+    Original (3): 67426 67429 67433 
+    0 (4): 67426 67429 67433 67434 
+        domina a restricao clq8319
+        domina a restricao clq8320
+
+Restricao 40431, 1 novos cliques
+    Original (2): 67441 67447 
+    0 (3): 67441 67447 67452 
+        domina a restricao clq8323
+        domina a restricao clq8324
+
+Restricao 40434, 1 novos cliques
+    Original (3): 67444 67449 67451 
+    0 (4): 67444 67449 67450 67451 
+        domina a restricao clq8326
+        domina a restricao clq8327
+
+Restricao 40446, 1 novos cliques
+    Original (2): 67517 67523 
+    0 (3): 67517 67523 67528 
+        domina a restricao clq8338
+        domina a restricao clq8339
+
+Restricao 40449, 1 novos cliques
+    Original (3): 67520 67525 67527 
+    0 (4): 67520 67525 67526 67527 
+        domina a restricao clq8341
+        domina a restricao clq8342
+
+Restricao 40469, 1 novos cliques
+    Original (2): 67591 67593 
+    0 (3): 67590 67591 67593 
+        domina a restricao clq8361
+
+Restricao 40475, 1 novos cliques
+    Original (2): 67623 67629 
+    0 (3): 67623 67629 67634 
+        domina a restricao clq8367
+        domina a restricao clq8368
+
+Restricao 40478, 1 novos cliques
+    Original (3): 67626 67631 67633 
+    0 (4): 67626 67631 67632 67633 
+        domina a restricao clq8370
+        domina a restricao clq8371
+
+Restricao 40495, 1 novos cliques
+    Original (2): 67709 67715 
+    0 (3): 67709 67715 67720 
+        domina a restricao clq8387
+        domina a restricao clq8388
+
+Restricao 40498, 1 novos cliques
+    Original (3): 67712 67717 67719 
+    0 (4): 67712 67717 67718 67719 
+        domina a restricao clq8390
+        domina a restricao clq8391
+
+Restricao 40507, 1 novos cliques
+    Original (3): 67767 67768 67776 
+    0 (4): 67767 67768 67769 67776 
+        domina a restricao clq8399
+        domina a restricao clq8400
+
+Restricao 40510, 1 novos cliques
+    Original (3): 67772 67775 67779 
+    0 (4): 67772 67775 67779 67780 
+        domina a restricao clq8402
+        domina a restricao clq8403
+
+Restricao 40516, 1 novos cliques
+    Original (2): 67804 67810 
+    0 (3): 67804 67810 67815 
+        domina a restricao clq8408
+        domina a restricao clq8409
+
+Restricao 40519, 1 novos cliques
+    Original (3): 67807 67812 67814 
+    0 (4): 67807 67812 67813 67814 
+        domina a restricao clq8411
+        domina a restricao clq8412
+
+Restricao 40561, 1 novos cliques
+    Original (2): 68026 68032 
+    0 (3): 68026 68032 68037 
+        domina a restricao clq8453
+        domina a restricao clq8454
+
+Restricao 40564, 1 novos cliques
+    Original (3): 68029 68034 68036 
+    0 (4): 68029 68034 68035 68036 
+        domina a restricao clq8456
+        domina a restricao clq8457
+
+Restricao 40588, 1 novos cliques
+    Original (2): 68137 68143 
+    0 (3): 68137 68143 68148 
+        domina a restricao clq8480
+        domina a restricao clq8481
+
+Restricao 40591, 1 novos cliques
+    Original (3): 68140 68145 68147 
+    0 (4): 68140 68145 68146 68147 
+        domina a restricao clq8483
+        domina a restricao clq8484
+
+Restricao 40601, 1 novos cliques
+    Original (2): 68200 68206 
+    0 (3): 68200 68206 68211 
+        domina a restricao clq8493
+        domina a restricao clq8494
+
+Restricao 40604, 1 novos cliques
+    Original (3): 68203 68208 68210 
+    0 (4): 68203 68208 68209 68210 
+        domina a restricao clq8496
+        domina a restricao clq8497
+
+Restricao 40621, 1 novos cliques
+    Original (4): 68300 68301 68311 68313 
+    0 (5): 68300 68301 68306 68311 68313 
+        domina a restricao clq8513
+        domina a restricao clq8517
+
+Restricao 40629, 1 novos cliques
+    Original (2): 68323 68329 
+    0 (3): 68323 68329 68334 
+        domina a restricao clq8521
+        domina a restricao clq8522
+
+Restricao 40632, 1 novos cliques
+    Original (3): 68326 68331 68333 
+    0 (4): 68326 68331 68332 68333 
+        domina a restricao clq8524
+        domina a restricao clq8525
+
+Restricao 40639, 1 novos cliques
+    Original (3): 68375 68378 68383 
+    0 (4): 68375 68377 68378 68383 
+        domina a restricao clq8531
+
+Restricao 40654, 1 novos cliques
+    Original (2): 68436 68442 
+    0 (3): 68436 68442 68447 
+        domina a restricao clq8546
+        domina a restricao clq8547
+
+Restricao 40657, 1 novos cliques
+    Original (3): 68439 68444 68446 
+    0 (4): 68439 68444 68445 68446 
+        domina a restricao clq8549
+        domina a restricao clq8550
+
+Restricao 40660, 1 novos cliques
+    Original (3): 68462 68467 68469 
+    0 (4): 68462 68467 68468 68469 
+        domina a restricao clq8552
+        domina a restricao clq8553
+
+Restricao 40667, 1 novos cliques
+    Original (3): 68500 68501 68509 
+    0 (4): 68500 68501 68502 68509 
+        domina a restricao clq8559
+
+Restricao 40671, 1 novos cliques
+    Original (3): 68505 68508 68516 
+    0 (4): 68505 68508 68515 68516 
+        domina a restricao clq8563
+
+Restricao 40674, 1 novos cliques
+    Original (2): 68523 68529 
+    0 (3): 68523 68529 68534 
+        domina a restricao clq8566
+        domina a restricao clq8567
+
+Restricao 40677, 1 novos cliques
+    Original (3): 68526 68531 68533 
+    0 (4): 68526 68531 68532 68533 
+        domina a restricao clq8569
+        domina a restricao clq8570
+
+Restricao 40707, 1 novos cliques
+    Original (2): 68638 68644 
+    0 (3): 68638 68644 68649 
+        domina a restricao clq8599
+        domina a restricao clq8600
+
+Restricao 40710, 1 novos cliques
+    Original (3): 68641 68646 68648 
+    0 (4): 68641 68646 68647 68648 
+        domina a restricao clq8602
+        domina a restricao clq8603
+
+Restricao 40718, 1 novos cliques
+    Original (2): 68673 68674 
+    0 (4): 68673 68674 68677 68679 
+        domina a restricao clq8610
+        domina a restricao clq8611
+
+Restricao 40734, 1 novos cliques
+    Original (2): 68729 68735 
+    0 (3): 68729 68735 68740 
+        domina a restricao clq8626
+        domina a restricao clq8627
+
+Restricao 40737, 1 novos cliques
+    Original (3): 68732 68737 68739 
+    0 (4): 68732 68737 68738 68739 
+        domina a restricao clq8629
+        domina a restricao clq8630
+
+Restricao 40740, 1 novos cliques
+    Original (2): 68742 68748 
+    0 (3): 68742 68748 68753 
+        domina a restricao clq8632
+        domina a restricao clq8633
+
+Restricao 40743, 1 novos cliques
+    Original (3): 68745 68750 68752 
+    0 (4): 68745 68750 68751 68752 
+        domina a restricao clq8635
+        domina a restricao clq8636
+
+Restricao 40750, 1 novos cliques
+    Original (2): 68766 68775 
+    0 (4): 68766 68775 68778 68780 
+        domina a restricao clq8642
+
+Restricao 40761, 1 novos cliques
+    Original (2): 68842 68848 
+    0 (3): 68842 68848 68853 
+        domina a restricao clq8653
+        domina a restricao clq8654
+
+Restricao 40764, 1 novos cliques
+    Original (3): 68845 68850 68852 
+    0 (4): 68845 68850 68851 68852 
+        domina a restricao clq8656
+        domina a restricao clq8657
+
+Restricao 40775, 1 novos cliques
+    Original (2): 68891 68895 
+    0 (3): 68891 68893 68895 
+        domina a restricao clq8667
+        domina a restricao clq8669
+
+Restricao 40792, 1 novos cliques
+    Original (3): 68951 68954 68955 
+    0 (4): 68951 68953 68954 68955 
+        domina a restricao clq8684
+
+Restricao 40796, 1 novos cliques
+    Original (2): 68976 68982 
+    0 (3): 68976 68982 68987 
+        domina a restricao clq8688
+        domina a restricao clq8689
+
+Restricao 40799, 1 novos cliques
+    Original (3): 68979 68984 68986 
+    0 (4): 68979 68984 68985 68986 
+        domina a restricao clq8691
+        domina a restricao clq8692
+
+Restricao 40830, 1 novos cliques
+    Original (2): 69116 69122 
+    0 (3): 69116 69122 69127 
+        domina a restricao clq8722
+        domina a restricao clq8723
+
+Restricao 40833, 1 novos cliques
+    Original (3): 69119 69124 69126 
+    0 (4): 69119 69124 69125 69126 
+        domina a restricao clq8725
+        domina a restricao clq8726
+
+Restricao 40845, 1 novos cliques
+    Original (2): 69192 69198 
+    0 (3): 69192 69198 69203 
+        domina a restricao clq8737
+        domina a restricao clq8738
+
+Restricao 40848, 1 novos cliques
+    Original (3): 69195 69200 69202 
+    0 (4): 69195 69200 69201 69202 
+        domina a restricao clq8740
+        domina a restricao clq8741
+
+Restricao 40866, 1 novos cliques
+    Original (2): 69322 69328 
+    0 (3): 69322 69328 69333 
+        domina a restricao clq8758
+        domina a restricao clq8759
+
+Restricao 40869, 1 novos cliques
+    Original (3): 69325 69330 69332 
+    0 (4): 69325 69330 69331 69332 
+        domina a restricao clq8761
+        domina a restricao clq8762
+
+Restricao 40880, 1 novos cliques
+    Original (2): 69395 69401 
+    0 (3): 69395 69401 69406 
+        domina a restricao clq8772
+        domina a restricao clq8773
+
+Restricao 40883, 1 novos cliques
+    Original (3): 69398 69403 69405 
+    0 (4): 69398 69403 69404 69405 
+        domina a restricao clq8775
+        domina a restricao clq8776
+
+Restricao 40897, 1 novos cliques
+    Original (2): 69479 69485 
+    0 (3): 69479 69485 69490 
+        domina a restricao clq8789
+        domina a restricao clq8790
+
+Restricao 40900, 1 novos cliques
+    Original (3): 69482 69487 69489 
+    0 (4): 69482 69487 69488 69489 
+        domina a restricao clq8792
+        domina a restricao clq8793
+
+Restricao 40913, 1 novos cliques
+    Original (2): 69536 69543 
+    0 (3): 69536 69543 69548 
+        domina a restricao clq8805
+
+Restricao 40917, 1 novos cliques
+    Original (3): 69540 69545 69547 
+    0 (4): 69540 69545 69546 69547 
+        domina a restricao clq8809
+        domina a restricao clq8810
+
+Restricao 40931, 1 novos cliques
+    Original (2): 69592 69598 
+    0 (3): 69592 69598 69603 
+        domina a restricao clq8823
+        domina a restricao clq8824
+
+Restricao 40934, 1 novos cliques
+    Original (3): 69595 69600 69602 
+    0 (4): 69595 69600 69601 69602 
+        domina a restricao clq8826
+        domina a restricao clq8827
+
+Restricao 40950, 1 novos cliques
+    Original (2): 69673 69679 
+    0 (3): 69673 69679 69684 
+        domina a restricao clq8842
+        domina a restricao clq8843
+
+Restricao 40953, 1 novos cliques
+    Original (3): 69676 69681 69683 
+    0 (4): 69676 69681 69682 69683 
+        domina a restricao clq8845
+        domina a restricao clq8846
+
+Restricao 40971, 1 novos cliques
+    Original (2): 69760 69766 
+    0 (3): 69760 69766 69771 
+        domina a restricao clq8863
+        domina a restricao clq8864
+
+Restricao 40974, 1 novos cliques
+    Original (3): 69763 69768 69770 
+    0 (4): 69763 69768 69769 69770 
+        domina a restricao clq8866
+        domina a restricao clq8867
+
+Restricao 40994, 1 novos cliques
+    Original (2): 69862 69868 
+    0 (3): 69862 69868 69873 
+        domina a restricao clq8886
+        domina a restricao clq8887
+
+Restricao 40997, 1 novos cliques
+    Original (3): 69865 69870 69872 
+    0 (4): 69865 69870 69871 69872 
+        domina a restricao clq8889
+        domina a restricao clq8890
+
+Restricao 41005, 1 novos cliques
+    Original (3): 69892 69904 69905 
+    0 (5): 69892 69904 69905 69908 69910 
+        domina a restricao clq8897
+
+Restricao 41019, 1 novos cliques
+    Original (2): 69964 69967 
+    0 (4): 69964 69967 69968 69969 
+        domina a restricao clq8911
+
+Restricao 41026, 1 novos cliques
+    Original (2): 69991 69997 
+    0 (3): 69991 69997 70002 
+        domina a restricao clq8918
+        domina a restricao clq8919
+
+Restricao 41029, 1 novos cliques
+    Original (3): 69994 69999 70001 
+    0 (4): 69994 69999 70000 70001 
+        domina a restricao clq8921
+        domina a restricao clq8922
+
+Restricao 41044, 1 novos cliques
+    Original (2): 70069 70075 
+    0 (3): 70069 70075 70080 
+        domina a restricao clq8936
+        domina a restricao clq8937
+
+Restricao 41047, 1 novos cliques
+    Original (3): 70072 70077 70079 
+    0 (4): 70072 70077 70078 70079 
+        domina a restricao clq8939
+        domina a restricao clq8940
+
+Restricao 41083, 1 novos cliques
+    Original (2): 70234 70240 
+    0 (3): 70234 70240 70245 
+        domina a restricao clq8975
+        domina a restricao clq8976
+
+Restricao 41086, 1 novos cliques
+    Original (3): 70237 70242 70244 
+    0 (4): 70237 70242 70243 70244 
+        domina a restricao clq8978
+        domina a restricao clq8979
+
+Restricao 41088, 1 novos cliques
+    Original (2): 70247 70252 
+    0 (3): 70247 70252 70257 
+        domina a restricao clq8980
+        domina a restricao clq8981
+
+Restricao 41091, 1 novos cliques
+    Original (3): 70249 70254 70256 
+    0 (4): 70249 70254 70255 70256 
+        domina a restricao clq8983
+        domina a restricao clq8984
+
+Restricao 41102, 1 novos cliques
+    Original (2): 70306 70312 
+    0 (3): 70306 70312 70317 
+        domina a restricao clq8994
+        domina a restricao clq8995
+
+Restricao 41105, 1 novos cliques
+    Original (3): 70309 70314 70316 
+    0 (4): 70309 70314 70315 70316 
+        domina a restricao clq8997
+        domina a restricao clq8998
+
+Restricao 41108, 1 novos cliques
+    Original (2): 70319 70325 
+    0 (3): 70319 70325 70330 
+        domina a restricao clq9000
+        domina a restricao clq9001
+
+Restricao 41111, 1 novos cliques
+    Original (3): 70322 70327 70329 
+    0 (4): 70322 70327 70328 70329 
+        domina a restricao clq9003
+        domina a restricao clq9004
+
+Restricao 41122, 1 novos cliques
+    Original (2): 70377 70381 
+    0 (3): 70377 70381 70386 
+        domina a restricao clq9014
+        domina a restricao clq9015
+
+Restricao 41124, 1 novos cliques
+    Original (3): 70378 70383 70385 
+    0 (4): 70378 70383 70384 70385 
+        domina a restricao clq9016
+        domina a restricao clq9017
+
+Restricao 41131, 1 novos cliques
+    Original (2): 70407 70413 
+    0 (3): 70407 70413 70418 
+        domina a restricao clq9023
+        domina a restricao clq9024
+
+Restricao 41134, 1 novos cliques
+    Original (3): 70410 70415 70417 
+    0 (4): 70410 70415 70416 70417 
+        domina a restricao clq9026
+        domina a restricao clq9027
+
+Restricao 41153, 1 novos cliques
+    Original (2): 70512 70518 
+    0 (3): 70512 70518 70523 
+        domina a restricao clq9045
+        domina a restricao clq9046
+
+Restricao 41156, 1 novos cliques
+    Original (3): 70515 70520 70522 
+    0 (4): 70515 70520 70521 70522 
+        domina a restricao clq9048
+        domina a restricao clq9049
+
+Restricao 41178, 1 novos cliques
+    Original (2): 70626 70631 
+    0 (3): 70626 70631 70632 
+        domina a restricao clq9070
+        domina a restricao clq9071
+
+Restricao 41182, 1 novos cliques
+    Original (2): 70637 70643 
+    0 (3): 70637 70643 70648 
+        domina a restricao clq9074
+        domina a restricao clq9075
+
+Restricao 41185, 1 novos cliques
+    Original (3): 70640 70645 70647 
+    0 (4): 70640 70645 70646 70647 
+        domina a restricao clq9077
+        domina a restricao clq9078
+
+Restricao 41208, 1 novos cliques
+    Original (2): 70757 70763 
+    0 (3): 70757 70763 70768 
+        domina a restricao clq9100
+        domina a restricao clq9101
+
+Restricao 41211, 1 novos cliques
+    Original (3): 70760 70765 70767 
+    0 (4): 70760 70765 70766 70767 
+        domina a restricao clq9103
+        domina a restricao clq9104
+
+Restricao 41213, 1 novos cliques
+    Original (3): 70772 70778 70780 
+    0 (4): 70772 70778 70780 70785 
+        domina a restricao clq9105
+        domina a restricao clq9106
+
+Restricao 41215, 1 novos cliques
+    Original (4): 70773 70776 70782 70784 
+    0 (5): 70773 70776 70782 70783 70784 
+        domina a restricao clq9107
+        domina a restricao clq9108
+
+Restricao 41226, 1 novos cliques
+    Original (2): 70826 70832 
+    0 (3): 70826 70832 70837 
+        domina a restricao clq9118
+        domina a restricao clq9119
+
+Restricao 41229, 1 novos cliques
+    Original (3): 70829 70834 70836 
+    0 (4): 70829 70834 70835 70836 
+        domina a restricao clq9121
+        domina a restricao clq9122
+
+Restricao 41239, 1 novos cliques
+    Original (2): 70883 70890 
+    0 (4): 70881 70882 70883 70890 
+        domina a restricao clq9131
+
+Restricao 41258, 1 novos cliques
+    Original (2): 70947 70953 
+    0 (3): 70947 70953 70958 
+        domina a restricao clq9150
+        domina a restricao clq9151
+
+Restricao 41261, 1 novos cliques
+    Original (3): 70950 70955 70957 
+    0 (4): 70950 70955 70956 70957 
+        domina a restricao clq9153
+        domina a restricao clq9154
+
+Restricao 41275, 1 novos cliques
+    Original (2): 71034 71037 
+    0 (4): 71034 71037 71038 71039 
+        domina a restricao clq9167
+
+Restricao 41283, 1 novos cliques
+    Original (2): 71076 71082 
+    0 (3): 71076 71082 71087 
+        domina a restricao clq9175
+        domina a restricao clq9176
+
+Restricao 41286, 1 novos cliques
+    Original (3): 71079 71084 71086 
+    0 (4): 71079 71084 71085 71086 
+        domina a restricao clq9178
+        domina a restricao clq9179
+
+Restricao 41311, 1 novos cliques
+    Original (2): 71172 71178 
+    0 (3): 71172 71178 71183 
+        domina a restricao clq9203
+        domina a restricao clq9204
+
+Restricao 41314, 1 novos cliques
+    Original (3): 71175 71180 71182 
+    0 (4): 71175 71180 71181 71182 
+        domina a restricao clq9206
+        domina a restricao clq9207
+
+Restricao 41336, 1 novos cliques
+    Original (2): 71268 71274 
+    0 (3): 71268 71274 71279 
+        domina a restricao clq9228
+        domina a restricao clq9229
+
+Restricao 41339, 1 novos cliques
+    Original (3): 71271 71276 71278 
+    0 (4): 71271 71276 71277 71278 
+        domina a restricao clq9231
+        domina a restricao clq9232
+
+Restricao 41349, 1 novos cliques
+    Original (2): 71334 71337 
+    0 (3): 71334 71337 71342 
+        domina a restricao clq9241
+        domina a restricao clq9242
+
+Restricao 41372, 1 novos cliques
+    Original (2): 71405 71411 
+    0 (3): 71405 71411 71416 
+        domina a restricao clq9264
+        domina a restricao clq9265
+
+Restricao 41375, 1 novos cliques
+    Original (3): 71408 71413 71415 
+    0 (4): 71408 71413 71414 71415 
+        domina a restricao clq9267
+        domina a restricao clq9268
+
+Restricao 41389, 1 novos cliques
+    Original (2): 71488 71494 
+    0 (3): 71488 71494 71499 
+        domina a restricao clq9281
+        domina a restricao clq9282
+
+Restricao 41392, 1 novos cliques
+    Original (3): 71491 71496 71498 
+    0 (4): 71491 71496 71497 71498 
+        domina a restricao clq9284
+        domina a restricao clq9285
+
+Restricao 41409, 1 novos cliques
+    Original (2): 71570 71577 
+    0 (4): 71568 71569 71570 71577 
+        domina a restricao clq9301
+
+Restricao 41431, 1 novos cliques
+    Original (2): 71652 71658 
+    0 (3): 71652 71658 71663 
+        domina a restricao clq9323
+        domina a restricao clq9324
+
+Restricao 41434, 1 novos cliques
+    Original (3): 71655 71660 71662 
+    0 (4): 71655 71660 71661 71662 
+        domina a restricao clq9326
+        domina a restricao clq9327
+
+Restricao 41463, 1 novos cliques
+    Original (2): 71762 71768 
+    0 (3): 71762 71768 71773 
+        domina a restricao clq9355
+        domina a restricao clq9356
+
+Restricao 41466, 1 novos cliques
+    Original (3): 71765 71770 71772 
+    0 (4): 71765 71770 71771 71772 
+        domina a restricao clq9358
+        domina a restricao clq9359
+
+Restricao 41484, 1 novos cliques
+    Original (2): 71867 71873 
+    0 (3): 71867 71873 71878 
+        domina a restricao clq9376
+        domina a restricao clq9377
+
+Restricao 41487, 1 novos cliques
+    Original (3): 71870 71875 71877 
+    0 (4): 71870 71875 71876 71877 
+        domina a restricao clq9379
+        domina a restricao clq9380
+
+Restricao 41512, 1 novos cliques
+    Original (2): 71971 71977 
+    0 (3): 71971 71977 71982 
+        domina a restricao clq9404
+        domina a restricao clq9405
+
+Restricao 41515, 1 novos cliques
+    Original (3): 71974 71979 71981 
+    0 (4): 71974 71979 71980 71981 
+        domina a restricao clq9407
+        domina a restricao clq9408
+
+Restricao 41518, 1 novos cliques
+    Original (2): 71984 71990 
+    0 (3): 71984 71990 71995 
+        domina a restricao clq9410
+        domina a restricao clq9411
+
+Restricao 41521, 1 novos cliques
+    Original (3): 71987 71992 71994 
+    0 (4): 71987 71992 71993 71994 
+        domina a restricao clq9413
+        domina a restricao clq9414
+
+Restricao 41545, 1 novos cliques
+    Original (2): 72129 72135 
+    0 (3): 72129 72135 72140 
+        domina a restricao clq9437
+        domina a restricao clq9438
+
+Restricao 41548, 1 novos cliques
+    Original (3): 72132 72137 72139 
+    0 (4): 72132 72137 72138 72139 
+        domina a restricao clq9440
+        domina a restricao clq9441
+
+Restricao 41564, 1 novos cliques
+    Original (2): 72219 72225 
+    0 (3): 72219 72225 72230 
+        domina a restricao clq9456
+        domina a restricao clq9457
+
+Restricao 41567, 1 novos cliques
+    Original (3): 72222 72227 72229 
+    0 (4): 72222 72227 72228 72229 
+        domina a restricao clq9459
+        domina a restricao clq9460
+
+Restricao 41598, 1 novos cliques
+    Original (2): 72358 72364 
+    0 (3): 72358 72364 72369 
+        domina a restricao clq9490
+        domina a restricao clq9491
+
+Restricao 41601, 1 novos cliques
+    Original (3): 72361 72366 72368 
+    0 (4): 72361 72366 72367 72368 
+        domina a restricao clq9493
+        domina a restricao clq9494
+
+Restricao 41623, 1 novos cliques
+    Original (2): 72457 72471 
+    0 (3): 72457 72458 72471 
+        domina a restricao clq9515
+
+Restricao 41644, 1 novos cliques
+    Original (2): 72522 72528 
+    0 (3): 72522 72528 72533 
+        domina a restricao clq9536
+        domina a restricao clq9537
+
+Restricao 41647, 1 novos cliques
+    Original (3): 72525 72530 72532 
+    0 (4): 72525 72530 72531 72532 
+        domina a restricao clq9539
+        domina a restricao clq9540
+
+Restricao 41671, 1 novos cliques
+    Original (2): 72649 72655 
+    0 (3): 72649 72655 72660 
+        domina a restricao clq9563
+        domina a restricao clq9564
+
+Restricao 41674, 1 novos cliques
+    Original (3): 72652 72657 72659 
+    0 (4): 72652 72657 72658 72659 
+        domina a restricao clq9566
+        domina a restricao clq9567
+
+Restricao 41688, 1 novos cliques
+    Original (2): 72729 72735 
+    0 (3): 72729 72735 72740 
+        domina a restricao clq9580
+        domina a restricao clq9581
+
+Restricao 41691, 1 novos cliques
+    Original (3): 72732 72737 72739 
+    0 (4): 72732 72737 72738 72739 
+        domina a restricao clq9583
+        domina a restricao clq9584
+
+Restricao 41716, 1 novos cliques
+    Original (2): 72849 72855 
+    0 (3): 72849 72855 72860 
+        domina a restricao clq9608
+        domina a restricao clq9609
+
+Restricao 41719, 1 novos cliques
+    Original (3): 72852 72857 72859 
+    0 (4): 72852 72857 72858 72859 
+        domina a restricao clq9611
+        domina a restricao clq9612
+
+Restricao 41749, 1 novos cliques
+    Original (2): 72993 72999 
+    0 (3): 72993 72999 73004 
+        domina a restricao clq9641
+        domina a restricao clq9642
+
+Restricao 41752, 1 novos cliques
+    Original (3): 72996 73001 73003 
+    0 (4): 72996 73001 73002 73003 
+        domina a restricao clq9644
+        domina a restricao clq9645
+
+Restricao 41754, 1 novos cliques
+    Original (3): 73005 73011 73033 
+    0 (4): 73005 73011 73033 73035 
+        domina a restricao clq9646
+        domina a restricao clq9647
+
+Restricao 41764, 1 novos cliques
+    Original (3): 73012 73015 73023 
+    0 (4): 73012 73015 73023 73024 
+        domina a restricao clq9656
+
+Restricao 41772, 1 novos cliques
+    Original (2): 73087 73097 
+    0 (3): 73087 73097 73098 
+        domina a restricao clq9664
+        domina a restricao clq9665
+
+Restricao 41778, 1 novos cliques
+    Original (2): 73103 73109 
+    0 (3): 73103 73109 73114 
+        domina a restricao clq9670
+        domina a restricao clq9671
+
+Restricao 41781, 1 novos cliques
+    Original (3): 73106 73111 73113 
+    0 (4): 73106 73111 73112 73113 
+        domina a restricao clq9673
+        domina a restricao clq9674
+
+Restricao 41797, 1 novos cliques
+    Original (2): 73185 73191 
+    0 (3): 73185 73191 73196 
+        domina a restricao clq9689
+        domina a restricao clq9690
+
+Restricao 41800, 1 novos cliques
+    Original (3): 73188 73193 73195 
+    0 (4): 73188 73193 73194 73195 
+        domina a restricao clq9692
+        domina a restricao clq9693
+
+Restricao 41802, 1 novos cliques
+    Original (3): 73214 73215 73223 
+    0 (4): 73214 73215 73216 73223 
+        domina a restricao clq9694
+        domina a restricao clq9695
+
+Restricao 41806, 1 novos cliques
+    Original (3): 73219 73222 73226 
+    0 (4): 73219 73222 73226 73227 
+        domina a restricao clq9698
+
+Restricao 41825, 1 novos cliques
+    Original (2): 73289 73295 
+    0 (3): 73289 73295 73300 
+        domina a restricao clq9717
+        domina a restricao clq9718
+
+Restricao 41828, 1 novos cliques
+    Original (3): 73292 73297 73299 
+    0 (4): 73292 73297 73298 73299 
+        domina a restricao clq9720
+        domina a restricao clq9721
+
+Restricao 41838, 1 novos cliques
+    Original (2): 73347 73352 
+    0 (3): 73347 73352 73357 
+        domina a restricao clq9730
+        domina a restricao clq9731
+
+Restricao 41841, 1 novos cliques
+    Original (3): 73349 73354 73356 
+    0 (4): 73349 73354 73355 73356 
+        domina a restricao clq9733
+        domina a restricao clq9734
+
+Restricao 41845, 1 novos cliques
+    Original (2): 73370 73376 
+    0 (3): 73370 73376 73381 
+        domina a restricao clq9737
+        domina a restricao clq9738
+
+Restricao 41848, 1 novos cliques
+    Original (3): 73373 73378 73380 
+    0 (4): 73373 73378 73379 73380 
+        domina a restricao clq9740
+        domina a restricao clq9741
+
+Restricao 41854, 1 novos cliques
+    Original (2): 73403 73407 
+    0 (3): 73403 73407 73412 
+        domina a restricao clq9746
+        domina a restricao clq9747
+
+Restricao 41856, 1 novos cliques
+    Original (3): 73404 73409 73411 
+    0 (4): 73404 73409 73410 73411 
+        domina a restricao clq9748
+        domina a restricao clq9749
+
+Restricao 41869, 1 novos cliques
+    Original (2): 73454 73459 
+    0 (3): 73454 73459 73460 
+        domina a restricao clq9761
+
+Restricao 41872, 1 novos cliques
+    Original (2): 73467 73473 
+    0 (3): 73467 73473 73478 
+        domina a restricao clq9764
+        domina a restricao clq9765
+
+Restricao 41875, 1 novos cliques
+    Original (3): 73470 73475 73477 
+    0 (4): 73470 73475 73476 73477 
+        domina a restricao clq9767
+        domina a restricao clq9768
+
+Restricao 41912, 1 novos cliques
+    Original (2): 73632 73638 
+    0 (3): 73632 73638 73643 
+        domina a restricao clq9804
+        domina a restricao clq9805
+
+Restricao 41915, 1 novos cliques
+    Original (3): 73635 73640 73642 
+    0 (4): 73635 73640 73641 73642 
+        domina a restricao clq9807
+        domina a restricao clq9808
+
+Restricao 41937, 1 novos cliques
+    Original (2): 73726 73732 
+    0 (3): 73726 73732 73737 
+        domina a restricao clq9829
+        domina a restricao clq9830
+
+Restricao 41940, 1 novos cliques
+    Original (3): 73729 73734 73736 
+    0 (4): 73729 73734 73735 73736 
+        domina a restricao clq9832
+        domina a restricao clq9833
+
+Restricao 41945, 1 novos cliques
+    Original (2): 73748 73754 
+    0 (3): 73748 73754 73759 
+        domina a restricao clq9837
+        domina a restricao clq9838
+
+Restricao 41948, 1 novos cliques
+    Original (3): 73751 73756 73758 
+    0 (4): 73751 73756 73757 73758 
+        domina a restricao clq9840
+        domina a restricao clq9841
+
+Restricao 41968, 1 novos cliques
+    Original (2): 73851 73857 
+    0 (3): 73851 73857 73862 
+        domina a restricao clq9860
+        domina a restricao clq9861
+
+Restricao 41971, 1 novos cliques
+    Original (3): 73854 73859 73861 
+    0 (4): 73854 73859 73860 73861 
+        domina a restricao clq9863
+        domina a restricao clq9864
+
+Restricao 41988, 1 novos cliques
+    Original (2): 73947 73953 
+    0 (3): 73947 73953 73958 
+        domina a restricao clq9880
+        domina a restricao clq9881
+
+Restricao 41991, 1 novos cliques
+    Original (3): 73950 73955 73957 
+    0 (4): 73950 73955 73956 73957 
+        domina a restricao clq9883
+        domina a restricao clq9884
+
+Restricao 42009, 1 novos cliques
+    Original (2): 74041 74047 
+    0 (3): 74041 74047 74052 
+        domina a restricao clq9901
+        domina a restricao clq9902
+
+Restricao 42012, 1 novos cliques
+    Original (3): 74044 74049 74051 
+    0 (4): 74044 74049 74050 74051 
+        domina a restricao clq9904
+        domina a restricao clq9905
+
+Restricao 42024, 1 novos cliques
+    Original (2): 74112 74117 
+    0 (3): 74112 74117 74118 
+        domina a restricao clq9916
+        domina a restricao clq9917
+
+Restricao 42032, 1 novos cliques
+    Original (2): 74148 74154 
+    0 (3): 74148 74154 74159 
+        domina a restricao clq9924
+        domina a restricao clq9925
+
+Restricao 42035, 1 novos cliques
+    Original (3): 74151 74156 74158 
+    0 (4): 74151 74156 74157 74158 
+        domina a restricao clq9927
+        domina a restricao clq9928
+
+Restricao 42042, 1 novos cliques
+    Original (3): 74164 74176 74177 
+    0 (5): 74164 74176 74177 74180 74182 
+        domina a restricao clq9934
+
+Restricao 42060, 1 novos cliques
+    Original (2): 74278 74284 
+    0 (3): 74278 74284 74289 
+        domina a restricao clq9952
+        domina a restricao clq9953
+
+Restricao 42063, 1 novos cliques
+    Original (3): 74281 74286 74288 
+    0 (4): 74281 74286 74287 74288 
+        domina a restricao clq9955
+        domina a restricao clq9956
+
+Restricao 42070, 1 novos cliques
+    Original (3): 74294 74306 74307 
+    0 (5): 74294 74306 74307 74310 74312 
+        domina a restricao clq9962
+
+Restricao 42090, 1 novos cliques
+    Original (2): 74399 74405 
+    0 (3): 74399 74405 74410 
+        domina a restricao clq9982
+        domina a restricao clq9983
+
+Restricao 42093, 1 novos cliques
+    Original (3): 74402 74407 74409 
+    0 (4): 74402 74407 74408 74409 
+        domina a restricao clq9985
+        domina a restricao clq9986
+
+Restricao 42100, 1 novos cliques
+    Original (3): 74415 74427 74428 
+    0 (5): 74415 74427 74428 74431 74433 
+        domina a restricao clq9992
+
+Restricao 42130, 1 novos cliques
+    Original (3): 74552 74564 74565 
+    0 (5): 74552 74564 74565 74568 74570 
+        domina a restricao clq10022
+
+Restricao 42141, 1 novos cliques
+    Original (2): 74599 74605 
+    0 (3): 74599 74605 74610 
+        domina a restricao clq10033
+        domina a restricao clq10034
+
+Restricao 42144, 1 novos cliques
+    Original (3): 74602 74607 74609 
+    0 (4): 74602 74607 74608 74609 
+        domina a restricao clq10036
+        domina a restricao clq10037
+
+Restricao 42160, 1 novos cliques
+    Original (3): 74664 74676 74677 
+    0 (5): 74664 74676 74677 74680 74682 
+        domina a restricao clq10052
+
+Restricao 42177, 1 novos cliques
+    Original (2): 74727 74733 
+    0 (3): 74727 74733 74738 
+        domina a restricao clq10069
+        domina a restricao clq10070
+
+Restricao 42180, 1 novos cliques
+    Original (3): 74730 74735 74737 
+    0 (4): 74730 74735 74736 74737 
+        domina a restricao clq10072
+        domina a restricao clq10073
+
+Restricao 42190, 1 novos cliques
+    Original (3): 74769 74781 74782 
+    0 (5): 74769 74781 74782 74785 74787 
+        domina a restricao clq10082
+
+Restricao 42193, 1 novos cliques
+    Original (2): 74800 74806 
+    0 (3): 74800 74806 74811 
+        domina a restricao clq10085
+        domina a restricao clq10086
+
+Restricao 42196, 1 novos cliques
+    Original (3): 74803 74808 74810 
+    0 (4): 74803 74808 74809 74810 
+        domina a restricao clq10088
+        domina a restricao clq10089
+
+Restricao 42213, 1 novos cliques
+    Original (3): 74868 74880 74881 
+    0 (5): 74868 74880 74881 74884 74886 
+        domina a restricao clq10105
+
+Restricao 42229, 1 novos cliques
+    Original (2): 74929 74935 
+    0 (3): 74929 74935 74940 
+        domina a restricao clq10121
+        domina a restricao clq10122
+
+Restricao 42232, 1 novos cliques
+    Original (3): 74932 74937 74939 
+    0 (4): 74932 74937 74938 74939 
+        domina a restricao clq10124
+        domina a restricao clq10125
+
+Restricao 42240, 1 novos cliques
+    Original (3): 74959 74971 74972 
+    0 (5): 74959 74971 74972 74975 74977 
+        domina a restricao clq10132
+
+Restricao 42250, 1 novos cliques
+    Original (2): 75000 75006 
+    0 (3): 75000 75006 75011 
+        domina a restricao clq10142
+        domina a restricao clq10143
+
+Restricao 42253, 1 novos cliques
+    Original (3): 75003 75008 75010 
+    0 (4): 75003 75008 75009 75010 
+        domina a restricao clq10145
+        domina a restricao clq10146
+
+Restricao 42262, 1 novos cliques
+    Original (2): 75032 75048 
+    0 (4): 75032 75048 75051 75053 
+        domina a restricao clq10154
+
+Restricao 42272, 1 novos cliques
+    Original (3): 75071 75083 75084 
+    0 (5): 75071 75083 75084 75087 75089 
+        domina a restricao clq10164
+
+Restricao 42283, 1 novos cliques
+    Original (2): 75123 75129 
+    0 (3): 75123 75129 75134 
+        domina a restricao clq10175
+        domina a restricao clq10176
+
+Restricao 42286, 1 novos cliques
+    Original (3): 75126 75131 75133 
+    0 (4): 75126 75131 75132 75133 
+        domina a restricao clq10178
+        domina a restricao clq10179
+
+Restricao 42298, 1 novos cliques
+    Original (3): 75179 75191 75192 
+    0 (5): 75179 75191 75192 75195 75197 
+        domina a restricao clq10190
+
+Restricao 42302, 1 novos cliques
+    Original (2): 75209 75215 
+    0 (3): 75209 75215 75220 
+        domina a restricao clq10194
+        domina a restricao clq10195
+
+Restricao 42305, 1 novos cliques
+    Original (3): 75212 75217 75219 
+    0 (4): 75212 75217 75218 75219 
+        domina a restricao clq10197
+        domina a restricao clq10198
+
+Restricao 42312, 1 novos cliques
+    Original (2): 75233 75234 
+    0 (4): 75233 75234 75237 75239 
+        domina a restricao clq10204
+        domina a restricao clq10205
+
+Restricao 42328, 1 novos cliques
+    Original (2): 75294 75300 
+    0 (3): 75294 75300 75305 
+        domina a restricao clq10220
+        domina a restricao clq10221
+
+Restricao 42331, 1 novos cliques
+    Original (3): 75297 75302 75304 
+    0 (4): 75297 75302 75303 75304 
+        domina a restricao clq10223
+        domina a restricao clq10224
+
+Restricao 42343, 1 novos cliques
+    Original (3): 75341 75353 75354 
+    0 (5): 75341 75353 75354 75357 75359 
+        domina a restricao clq10235
+
+Restricao 42349, 1 novos cliques
+    Original (2): 75382 75388 
+    0 (3): 75382 75388 75393 
+        domina a restricao clq10241
+        domina a restricao clq10242
+
+Restricao 42352, 1 novos cliques
+    Original (3): 75385 75390 75392 
+    0 (4): 75385 75390 75391 75392 
+        domina a restricao clq10244
+        domina a restricao clq10245
+
+Restricao 42355, 1 novos cliques
+    Original (2): 75395 75401 
+    0 (3): 75395 75401 75406 
+        domina a restricao clq10247
+        domina a restricao clq10248
+
+Restricao 42358, 1 novos cliques
+    Original (3): 75398 75403 75405 
+    0 (4): 75398 75403 75404 75405 
+        domina a restricao clq10250
+        domina a restricao clq10251
+
+Restricao 42375, 1 novos cliques
+    Original (3): 75448 75460 75461 
+    0 (5): 75448 75460 75461 75464 75466 
+        domina a restricao clq10267
+
+Restricao 42384, 1 novos cliques
+    Original (2): 75501 75507 
+    0 (3): 75501 75507 75512 
+        domina a restricao clq10276
+        domina a restricao clq10277
+
+Restricao 42387, 1 novos cliques
+    Original (3): 75504 75509 75511 
+    0 (4): 75504 75509 75510 75511 
+        domina a restricao clq10279
+        domina a restricao clq10280
+
+Restricao 42395, 1 novos cliques
+    Original (3): 75525 75537 75538 
+    0 (5): 75525 75537 75538 75541 75543 
+        domina a restricao clq10287
+
+Restricao 42397, 1 novos cliques
+    Original (2): 75548 75559 
+    0 (5): 75548 75553 75554 75555 75559 
+        domina a restricao clq10289
+
+Restricao 42398, 1 novos cliques
+    Original (2): 75549 75550 
+    0 (5): 75549 75550 75553 75554 75555 
+        domina a restricao clq10290
+
+Restricao 42399, 1 novos cliques
+    Original (2): 75551 75555 
+    0 (6): 75550 75551 75552 75553 75554 75555 
+        domina a restricao clq10291
+
+Restricao 42400, 1 novos cliques
+    Original (3): 75552 75554 75561 
+    0 (5): 75552 75553 75554 75555 75561 
+        domina a restricao clq10292
+
+Restricao 42401, 1 novos cliques
+    Original (2): 75553 75556 
+    0 (9): 75553 75554 75555 75556 75557 75558 75559 75560 75561 
+        domina a restricao clq10293
+        domina a restricao clq10294
+
+Restricao 42413, 1 novos cliques
+    Original (2): 75604 75611 
+    0 (4): 75602 75603 75604 75611 
+        domina a restricao clq10305
+
+Restricao 42424, 1 novos cliques
+    Original (2): 75635 75641 
+    0 (3): 75635 75641 75646 
+        domina a restricao clq10316
+        domina a restricao clq10317
+
+Restricao 42427, 1 novos cliques
+    Original (3): 75638 75643 75645 
+    0 (4): 75638 75643 75644 75645 
+        domina a restricao clq10319
+        domina a restricao clq10320
+
+Restricao 42436, 1 novos cliques
+    Original (3): 75664 75676 75677 
+    0 (5): 75664 75676 75677 75680 75682 
+        domina a restricao clq10328
+
+Restricao 42460, 1 novos cliques
+    Original (2): 75776 75782 
+    0 (3): 75776 75782 75787 
+        domina a restricao clq10352
+        domina a restricao clq10353
+
+Restricao 42463, 1 novos cliques
+    Original (3): 75779 75784 75786 
+    0 (4): 75779 75784 75785 75786 
+        domina a restricao clq10355
+        domina a restricao clq10356
+
+Restricao 42472, 1 novos cliques
+    Original (3): 75799 75811 75812 
+    0 (5): 75799 75811 75812 75815 75817 
+        domina a restricao clq10364
+
+Restricao 42475, 1 novos cliques
+    Original (2): 75820 75827 
+    0 (4): 75818 75819 75820 75827 
+        domina a restricao clq10367
+
+Restricao 42497, 1 novos cliques
+    Original (2): 75917 75923 
+    0 (3): 75917 75923 75928 
+        domina a restricao clq10389
+        domina a restricao clq10390
+
+Restricao 42500, 1 novos cliques
+    Original (3): 75920 75925 75927 
+    0 (4): 75920 75925 75926 75927 
+        domina a restricao clq10392
+        domina a restricao clq10393
+
+Restricao 42509, 1 novos cliques
+    Original (3): 75940 75952 75953 
+    0 (5): 75940 75952 75953 75956 75958 
+        domina a restricao clq10401
+
+Restricao 42526, 1 novos cliques
+    Original (3): 76021 76026 76028 
+    0 (4): 76021 76026 76027 76028 
+        domina a restricao clq10418
+        domina a restricao clq10419
+
+Restricao 42531, 1 novos cliques
+    Original (2): 76045 76051 
+    0 (3): 76045 76051 76056 
+        domina a restricao clq10423
+        domina a restricao clq10424
+
+Restricao 42534, 1 novos cliques
+    Original (3): 76048 76053 76055 
+    0 (4): 76048 76053 76054 76055 
+        domina a restricao clq10426
+        domina a restricao clq10427
+
+Restricao 42543, 1 novos cliques
+    Original (3): 76068 76080 76081 
+    0 (5): 76068 76080 76081 76084 76086 
+        domina a restricao clq10435
+
+Restricao 42556, 1 novos cliques
+    Original (2): 76165 76171 
+    0 (3): 76165 76171 76176 
+        domina a restricao clq10448
+        domina a restricao clq10449
+
+Restricao 42559, 1 novos cliques
+    Original (3): 76168 76173 76175 
+    0 (4): 76168 76173 76174 76175 
+        domina a restricao clq10451
+        domina a restricao clq10452
+
+Restricao 42568, 1 novos cliques
+    Original (3): 76188 76200 76201 
+    0 (5): 76188 76200 76201 76204 76206 
+        domina a restricao clq10460
+
+Restricao 42579, 1 novos cliques
+    Original (3): 76261 76269 76271 
+    0 (4): 76261 76269 76270 76271 
+        domina a restricao clq10471
+        domina a restricao clq10472
+
+Restricao 42610, 1 novos cliques
+    Original (2): 76343 76351 
+    0 (3): 76343 76351 76352 
+        domina a restricao clq10502
+
+Restricao 42612, 1 novos cliques
+    Original (2): 76347 76354 
+    0 (3): 76347 76354 76355 
+        domina a restricao clq10504
+
+Restricao 42625, 1 novos cliques
+    Original (3): 76385 76397 76398 
+    0 (5): 76385 76397 76398 76401 76403 
+        domina a restricao clq10517
+
+Restricao 42628, 1 novos cliques
+    Original (2): 76405 76411 
+    0 (3): 76405 76411 76416 
+        domina a restricao clq10520
+        domina a restricao clq10521
+
+Restricao 42631, 1 novos cliques
+    Original (3): 76408 76413 76415 
+    0 (4): 76408 76413 76414 76415 
+        domina a restricao clq10523
+        domina a restricao clq10524
+
+Restricao 42650, 1 novos cliques
+    Original (3): 76477 76489 76490 
+    0 (5): 76477 76489 76490 76493 76495 
+        domina a restricao clq10542
+
+Restricao 42653, 1 novos cliques
+    Original (2): 76508 76514 
+    0 (3): 76508 76514 76519 
+        domina a restricao clq10545
+        domina a restricao clq10546
+
+Restricao 42656, 1 novos cliques
+    Original (3): 76511 76516 76518 
+    0 (4): 76511 76516 76517 76518 
+        domina a restricao clq10548
+        domina a restricao clq10549
+
+Restricao 42669, 1 novos cliques
+    Original (3): 76566 76578 76579 
+    0 (5): 76566 76578 76579 76582 76584 
+        domina a restricao clq10561
+
+Restricao 42678, 1 novos cliques
+    Original (2): 76635 76641 
+    0 (3): 76635 76641 76646 
+        domina a restricao clq10570
+        domina a restricao clq10571
+
+Restricao 42681, 1 novos cliques
+    Original (3): 76638 76643 76645 
+    0 (4): 76638 76643 76644 76645 
+        domina a restricao clq10573
+        domina a restricao clq10574
+
+Restricao 42698, 1 novos cliques
+    Original (3): 76697 76709 76710 
+    0 (5): 76697 76709 76710 76713 76715 
+        domina a restricao clq10590
+
+Restricao 42712, 1 novos cliques
+    Original (2): 76760 76766 
+    0 (3): 76760 76766 76771 
+        domina a restricao clq10604
+        domina a restricao clq10605
+
+Restricao 42715, 1 novos cliques
+    Original (3): 76763 76768 76770 
+    0 (4): 76763 76768 76769 76770 
+        domina a restricao clq10607
+        domina a restricao clq10608
+
+Restricao 42727, 1 novos cliques
+    Original (2): 76789 76812 
+    0 (3): 76789 76790 76812 
+        domina a restricao clq10619
+
+Restricao 42743, 1 novos cliques
+    Original (3): 76864 76876 76877 
+    0 (5): 76864 76876 76877 76880 76882 
+        domina a restricao clq10635
+
+Restricao 42752, 1 novos cliques
+    Original (2): 76948 76954 
+    0 (3): 76948 76954 76959 
+        domina a restricao clq10644
+        domina a restricao clq10645
+
+Restricao 42755, 1 novos cliques
+    Original (3): 76951 76956 76958 
+    0 (4): 76951 76956 76957 76958 
+        domina a restricao clq10647
+        domina a restricao clq10648
+
+Restricao 42774, 1 novos cliques
+    Original (3): 77012 77024 77025 
+    0 (5): 77012 77024 77025 77028 77030 
+        domina a restricao clq10666
+
+Restricao 42792, 1 novos cliques
+    Original (3): 77089 77101 77102 
+    0 (5): 77089 77101 77102 77105 77107 
+        domina a restricao clq10684
+
+Restricao 42813, 1 novos cliques
+    Original (3): 77185 77197 77198 
+    0 (5): 77185 77197 77198 77201 77203 
+        domina a restricao clq10705
+
+Restricao 42820, 1 novos cliques
+    Original (3): 77208 77220 77221 
+    0 (5): 77208 77220 77221 77224 77226 
+        domina a restricao clq10712
+
+Restricao 42823, 1 novos cliques
+    Original (2): 77231 77239 
+    0 (3): 77231 77239 77240 
+        domina a restricao clq10715
+        domina a restricao clq10716
+
+Restricao 42847, 1 novos cliques
+    Original (3): 77309 77321 77322 
+    0 (5): 77309 77321 77322 77325 77327 
+        domina a restricao clq10739
+
+Restricao 42875, 1 novos cliques
+    Original (3): 77429 77441 77442 
+    0 (5): 77429 77441 77442 77445 77447 
+        domina a restricao clq10767
+
+Restricao 42900, 1 novos cliques
+    Original (4): 77524 77526 77527 77535 
+    0 (5): 77524 77526 77527 77528 77535 
+        domina a restricao clq10792
+        domina a restricao clq10793
+
+Restricao 42903, 1 novos cliques
+    Original (3): 77531 77534 77538 
+    0 (4): 77531 77534 77538 77539 
+        domina a restricao clq10795
+        domina a restricao clq10796
+
+Restricao 42918, 1 novos cliques
+    Original (3): 77577 77589 77590 
+    0 (5): 77577 77589 77590 77593 77595 
+        domina a restricao clq10810
+
+Restricao 42937, 1 novos cliques
+    Original (3): 77685 77697 77698 
+    0 (5): 77685 77697 77698 77701 77703 
+        domina a restricao clq10829
+
+Restricao 42954, 1 novos cliques
+    Original (3): 77777 77778 77786 
+    0 (4): 77777 77778 77779 77786 
+        domina a restricao clq10846
+        domina a restricao clq10847
+
+Restricao 42958, 1 novos cliques
+    Original (3): 77782 77785 77789 
+    0 (4): 77782 77785 77789 77790 
+        domina a restricao clq10850
+
+Restricao 42971, 1 novos cliques
+    Original (3): 77834 77846 77847 
+    0 (5): 77834 77846 77847 77850 77852 
+        domina a restricao clq10863
+
+Restricao 43002, 1 novos cliques
+    Original (3): 77975 77987 77988 
+    0 (5): 77975 77987 77988 77991 77993 
+        domina a restricao clq10894
+
+Restricao 43046, 1 novos cliques
+    Original (3): 78136 78148 78149 
+    0 (5): 78136 78148 78149 78152 78154 
+        domina a restricao clq10938
+
+Restricao 43076, 1 novos cliques
+    Original (3): 78265 78277 78278 
+    0 (5): 78265 78277 78278 78281 78283 
+        domina a restricao clq10968
+
+Restricao 43092, 1 novos cliques
+    Original (4): 78342 78346 78348 78351 
+    0 (5): 78342 78343 78346 78348 78351 
+        domina a restricao clq10984
+
+Restricao 43099, 1 novos cliques
+    Original (3): 78362 78374 78375 
+    0 (5): 78362 78374 78375 78378 78380 
+        domina a restricao clq10991
+
+Restricao 43121, 1 novos cliques
+    Original (3): 78454 78466 78467 
+    0 (5): 78454 78466 78467 78470 78472 
+        domina a restricao clq11013
+
+Restricao 43125, 1 novos cliques
+    Original (2): 78481 78485 
+    0 (3): 78481 78485 78486 
+        domina a restricao clq11017
+        domina a restricao clq11018
+
+Restricao 43148, 1 novos cliques
+    Original (3): 78565 78577 78578 
+    0 (5): 78565 78577 78578 78581 78583 
+        domina a restricao clq11040
+
+Restricao 43174, 1 novos cliques
+    Original (3): 78673 78685 78686 
+    0 (5): 78673 78685 78686 78689 78691 
+        domina a restricao clq11066
+
+Restricao 43200, 1 novos cliques
+    Original (3): 78779 78791 78792 
+    0 (5): 78779 78791 78792 78795 78797 
+        domina a restricao clq11092
+
+Restricao 43207, 1 novos cliques
+    Original (2): 78821 78822 
+    0 (4): 78821 78822 78825 78827 
+        domina a restricao clq11099
+
+Restricao 43227, 1 novos cliques
+    Original (3): 78920 78932 78933 
+    0 (5): 78920 78932 78933 78936 78938 
+        domina a restricao clq11119
+
+Restricao 43254, 1 novos cliques
+    Original (3): 79030 79042 79043 
+    0 (5): 79030 79042 79043 79046 79048 
+        domina a restricao clq11146
+
+Restricao 43269, 1 novos cliques
+    Original (2): 79108 79117 
+    0 (4): 79108 79117 79120 79122 
+        domina a restricao clq11161
+
+Restricao 43289, 1 novos cliques
+    Original (3): 79187 79199 79200 
+    0 (5): 79187 79199 79200 79203 79205 
+        domina a restricao clq11181
+
+Restricao 43318, 1 novos cliques
+    Original (3): 79310 79322 79323 
+    0 (5): 79310 79322 79323 79326 79328 
+        domina a restricao clq11210
+
+Restricao 43326, 1 novos cliques
+    Original (2): 79363 79376 
+    0 (3): 79363 79376 79377 
+        domina a restricao clq11218
+
+Restricao 43327, 1 novos cliques
+    Original (2): 79364 79379 
+    0 (3): 79364 79379 79380 
+        domina a restricao clq11219
+        domina a restricao clq11220
+
+Restricao 43344, 1 novos cliques
+    Original (3): 79419 79431 79432 
+    0 (5): 79419 79431 79432 79435 79437 
+        domina a restricao clq11236
+
+Restricao 43369, 1 novos cliques
+    Original (3): 79537 79549 79550 
+    0 (5): 79537 79549 79550 79553 79555 
+        domina a restricao clq11261
+
+Restricao 43384, 1 novos cliques
+    Original (2): 79601 79617 
+    0 (3): 79601 79602 79617 
+        domina a restricao clq11276
+
+Restricao 43394, 1 novos cliques
+    Original (3): 79642 79654 79655 
+    0 (5): 79642 79654 79655 79658 79660 
+        domina a restricao clq11286
+
+Restricao 43414, 1 novos cliques
+    Original (3): 79748 79760 79761 
+    0 (5): 79748 79760 79761 79764 79766 
+        domina a restricao clq11306
+
+Restricao 43420, 1 novos cliques
+    Original (4): 79793 79795 79799 79802 
+    0 (5): 79793 79795 79799 79800 79802 
+        domina a restricao clq11312
+        domina a restricao clq11313
+
+Restricao 43434, 1 novos cliques
+    Original (3): 79853 79865 79866 
+    0 (5): 79853 79865 79866 79869 79871 
+        domina a restricao clq11326
+
+Restricao 43444, 1 novos cliques
+    Original (3): 79892 79904 79905 
+    0 (5): 79892 79904 79905 79908 79910 
+        domina a restricao clq11336
+
+Restricao 43449, 1 novos cliques
+    Original (3): 79927 79932 79933 
+    0 (4): 79927 79932 79933 79934 
+        domina a restricao clq11341
+        domina a restricao clq11342
+
+Restricao 43456, 1 novos cliques
+    Original (3): 79950 79954 79955 
+    0 (5): 79950 79954 79955 79958 79960 
+        domina a restricao clq11348
+        domina a restricao clq11349
+
+Restricao 43469, 1 novos cliques
+    Original (2): 80006 80015 
+    0 (4): 80006 80015 80018 80020 
+        domina a restricao clq11361
+
+Restricao 43479, 1 novos cliques
+    Original (3): 80039 80051 80052 
+    0 (5): 80039 80051 80052 80055 80057 
+        domina a restricao clq11371
+
+Restricao 43484, 1 novos cliques
+    Original (2): 80084 80087 
+    0 (3): 80084 80087 80088 
+        domina a restricao clq11376
+        domina a restricao clq11377
+
+Restricao 43491, 1 novos cliques
+    Original (2): 80094 80103 
+    0 (4): 80094 80103 80106 80108 
+        domina a restricao clq11383
+
+Restricao 43500, 1 novos cliques
+    Original (3): 80121 80133 80134 
+    0 (5): 80121 80133 80134 80137 80139 
+        domina a restricao clq11392
+
+Restricao 43515, 1 novos cliques
+    Original (3): 80200 80212 80213 
+    0 (5): 80200 80212 80213 80216 80218 
+        domina a restricao clq11407
+
+Restricao 43530, 1 novos cliques
+    Original (3): 80247 80248 80255 
+    0 (5): 80247 80248 80255 80256 80257 
+        domina a restricao clq11422
+
+Restricao 43548, 1 novos cliques
+    Original (3): 80339 80351 80352 
+    0 (5): 80339 80351 80352 80355 80357 
+        domina a restricao clq11440
+
+Restricao 43561, 1 novos cliques
+    Original (3): 80422 80434 80435 
+    0 (5): 80422 80434 80435 80438 80440 
+        domina a restricao clq11453
+
+Restricao 43597, 1 novos cliques
+    Original (3): 80595 80607 80608 
+    0 (5): 80595 80607 80608 80611 80613 
+        domina a restricao clq11489
+
+Restricao 43611, 1 novos cliques
+    Original (2): 80675 80684 
+    0 (4): 80675 80684 80687 80689 
+        domina a restricao clq11503
+
+Restricao 43619, 1 novos cliques
+    Original (3): 80698 80710 80711 
+    0 (5): 80698 80710 80711 80714 80716 
+        domina a restricao clq11511
+
+Restricao 43645, 1 novos cliques
+    Original (3): 80820 80832 80833 
+    0 (5): 80820 80832 80833 80836 80838 
+        domina a restricao clq11537
+
+Restricao 43665, 1 novos cliques
+    Original (3): 80908 80920 80921 
+    0 (5): 80908 80920 80921 80924 80926 
+        domina a restricao clq11557
+
+Restricao 43672, 1 novos cliques
+    Original (3): 80931 80943 80944 
+    0 (5): 80931 80943 80944 80947 80949 
+        domina a restricao clq11564
+
+Restricao 43695, 1 novos cliques
+    Original (3): 81033 81045 81046 
+    0 (5): 81033 81045 81046 81049 81051 
+        domina a restricao clq11587
+
+Restricao 43699, 1 novos cliques
+    Original (3): 81061 81067 81079 
+    0 (4): 81061 81067 81079 81081 
+        domina a restricao clq11591
+        domina a restricao clq11592
+
+Restricao 43701, 1 novos cliques
+    Original (3): 81062 81069 81073 
+    0 (10): 81061 81062 81066 81067 81068 81069 81070 81071 81072 81073 
+        domina a restricao clq11593
+
+Restricao 43703, 1 novos cliques
+    Original (3): 81063 81064 81072 
+    0 (4): 81063 81064 81065 81072 
+        domina a restricao clq11595
+        domina a restricao clq11596
+
+Restricao 43706, 1 novos cliques
+    Original (3): 81066 81070 81078 
+    0 (4): 81066 81070 81077 81078 
+        domina a restricao clq11598
+
+Restricao 43707, 1 novos cliques
+    Original (3): 81068 81071 81075 
+    0 (4): 81068 81071 81075 81076 
+        domina a restricao clq11599
+        domina a restricao clq11600
+
+Restricao 43720, 1 novos cliques
+    Original (3): 81138 81139 81147 
+    0 (4): 81138 81139 81140 81147 
+        domina a restricao clq11612
+        domina a restricao clq11613
+
+Restricao 43735, 1 novos cliques
+    Original (3): 81167 81179 81180 
+    0 (5): 81167 81179 81180 81183 81185 
+        domina a restricao clq11627
+
+Restricao 43761, 1 novos cliques
+    Original (3): 81282 81294 81295 
+    0 (5): 81282 81294 81295 81298 81300 
+        domina a restricao clq11653
+
+Restricao 43769, 1 novos cliques
+    Original (3): 81318 81330 81331 
+    0 (5): 81318 81330 81331 81334 81336 
+        domina a restricao clq11661
+
+Restricao 43780, 1 novos cliques
+    Original (2): 81400 81404 
+    0 (3): 81399 81400 81404 
+        domina a restricao clq11672
+
+Restricao 43792, 1 novos cliques
+    Original (3): 81433 81445 81446 
+    0 (5): 81433 81445 81446 81449 81451 
+        domina a restricao clq11684
+
+Restricao 43817, 1 novos cliques
+    Original (3): 81559 81571 81572 
+    0 (5): 81559 81571 81572 81575 81577 
+        domina a restricao clq11709
+
+Restricao 43848, 1 novos cliques
+    Original (3): 81708 81720 81721 
+    0 (5): 81708 81720 81721 81724 81726 
+        domina a restricao clq11740
+
+Restricao 43881, 1 novos cliques
+    Original (3): 81868 81880 81881 
+    0 (5): 81868 81880 81881 81884 81886 
+        domina a restricao clq11773
+
+Restricao 43895, 1 novos cliques
+    Original (3): 81947 81959 81960 
+    0 (5): 81947 81959 81960 81963 81965 
+        domina a restricao clq11787
+
+Restricao 43913, 1 novos cliques
+    Original (3): 82046 82058 82059 
+    0 (5): 82046 82058 82059 82062 82064 
+        domina a restricao clq11805
+
+Restricao 43944, 1 novos cliques
+    Original (3): 82172 82184 82185 
+    0 (5): 82172 82184 82185 82188 82190 
+        domina a restricao clq11836
+
+Restricao 43964, 1 novos cliques
+    Original (3): 82258 82270 82271 
+    0 (5): 82258 82270 82271 82274 82276 
+        domina a restricao clq11856
+
+Restricao 43986, 1 novos cliques
+    Original (3): 82368 82380 82381 
+    0 (5): 82368 82380 82381 82384 82386 
+        domina a restricao clq11878
+
+Restricao 44009, 1 novos cliques
+    Original (3): 82466 82478 82479 
+    0 (5): 82466 82478 82479 82482 82484 
+        domina a restricao clq11901
+
+Restricao 44031, 1 novos cliques
+    Original (3): 82575 82587 82588 
+    0 (5): 82575 82587 82588 82591 82593 
+        domina a restricao clq11923
+
+Restricao 44046, 1 novos cliques
+    Original (3): 82653 82665 82666 
+    0 (5): 82653 82665 82666 82669 82671 
+        domina a restricao clq11938
+
+Restricao 44086, 1 novos cliques
+    Original (3): 82898 82910 82911 
+    0 (5): 82898 82910 82911 82914 82916 
+        domina a restricao clq11978
+
+Restricao 44102, 1 novos cliques
+    Original (3): 82971 82983 82984 
+    0 (5): 82971 82983 82984 82987 82989 
+        domina a restricao clq11994
+
+Restricao 44129, 1 novos cliques
+    Original (3): 83098 83110 83111 
+    0 (5): 83098 83110 83111 83114 83116 
+        domina a restricao clq12021
+
+Restricao 44135, 1 novos cliques
+    Original (2): 83134 83136 
+    0 (3): 83134 83136 83138 
+        domina a restricao clq12027
+        domina a restricao clq12028
+
+Restricao 44150, 1 novos cliques
+    Original (3): 83198 83210 83212 
+    0 (4): 83198 83207 83210 83212 
+        domina a restricao clq12042
+
+Restricao 44161, 1 novos cliques
+    Original (3): 83242 83254 83255 
+    0 (5): 83242 83254 83255 83258 83260 
+        domina a restricao clq12053
+
+Restricao 44174, 1 novos cliques
+    Original (3): 83305 83317 83318 
+    0 (5): 83305 83317 83318 83321 83323 
+        domina a restricao clq12066
+
+Restricao 44183, 1 novos cliques
+    Original (2): 83363 83365 
+    0 (3): 83363 83365 83366 
+        domina a restricao clq12075
+        domina a restricao clq12076
+
+Restricao 44197, 1 novos cliques
+    Original (3): 83412 83424 83425 
+    0 (5): 83412 83424 83425 83428 83430 
+        domina a restricao clq12089
+
+Restricao 44211, 1 novos cliques
+    Original (3): 83504 83516 83517 
+    0 (5): 83504 83516 83517 83520 83522 
+        domina a restricao clq12103
+
+Restricao 44215, 1 novos cliques
+    Original (2): 83525 83531 
+    0 (3): 83525 83527 83531 
+        domina a restricao clq12107
+
+Restricao 44236, 1 novos cliques
+    Original (3): 83630 83642 83643 
+    0 (5): 83630 83642 83643 83646 83648 
+        domina a restricao clq12128
+
+Restricao 44264, 1 novos cliques
+    Original (3): 83749 83761 83762 
+    0 (5): 83749 83761 83762 83765 83767 
+        domina a restricao clq12156
+
+Restricao 44290, 1 novos cliques
+    Original (3): 83861 83873 83874 
+    0 (5): 83861 83873 83874 83877 83879 
+        domina a restricao clq12182
+
+Restricao 44312, 1 novos cliques
+    Original (2): 83977 83986 
+    0 (4): 83977 83986 83989 83991 
+        domina a restricao clq12204
+
+Restricao 44331, 1 novos cliques
+    Original (3): 84041 84053 84054 
+    0 (5): 84041 84053 84054 84057 84059 
+        domina a restricao clq12223
+
+Restricao 44358, 1 novos cliques
+    Original (3): 84192 84204 84205 
+    0 (5): 84192 84204 84205 84208 84210 
+        domina a restricao clq12250
+
+Restricao 44387, 1 novos cliques
+    Original (3): 84327 84339 84340 
+    0 (5): 84327 84339 84340 84343 84345 
+        domina a restricao clq12279
+
+Restricao 44403, 1 novos cliques
+    Original (3): 84416 84428 84429 
+    0 (5): 84416 84428 84429 84432 84434 
+        domina a restricao clq12295
+
+Restricao 44455, 1 novos cliques
+    Original (3): 84614 84626 84627 
+    0 (5): 84614 84626 84627 84630 84632 
+        domina a restricao clq12347
+
+Restricao 44471, 1 novos cliques
+    Original (3): 84694 84706 84707 
+    0 (5): 84694 84706 84707 84710 84712 
+        domina a restricao clq12363
+
+Restricao 44478, 1 novos cliques
+    Original (3): 84717 84729 84730 
+    0 (5): 84717 84729 84730 84733 84735 
+        domina a restricao clq12370
+
+Restricao 44494, 1 novos cliques
+    Original (3): 84818 84830 84831 
+    0 (5): 84818 84830 84831 84834 84836 
+        domina a restricao clq12386
+
+Restricao 44511, 1 novos cliques
+    Original (2): 84941 84957 
+    0 (3): 84941 84942 84957 
+        domina a restricao clq12403
+
+Restricao 44527, 1 novos cliques
+    Original (3): 84995 85007 85008 
+    0 (5): 84995 85007 85008 85011 85013 
+        domina a restricao clq12419
+
+Restricao 44547, 1 novos cliques
+    Original (3): 85115 85127 85128 
+    0 (5): 85115 85127 85128 85131 85133 
+        domina a restricao clq12439
+
+Restricao 44556, 1 novos cliques
+    Original (4): 85139 85140 85144 85162 
+    0 (5): 85139 85140 85144 85161 85162 
+        domina a restricao clq12448
+
+Restricao 44580, 1 novos cliques
+    Original (3): 85251 85263 85264 
+    0 (5): 85251 85263 85264 85267 85269 
+        domina a restricao clq12472
+
+Restricao 44607, 1 novos cliques
+    Original (3): 85374 85386 85387 
+    0 (5): 85374 85386 85387 85390 85392 
+        domina a restricao clq12499
+
+Restricao 44614, 1 novos cliques
+    Original (3): 85425 85426 85434 
+    0 (4): 85425 85426 85427 85434 
+        domina a restricao clq12506
+        domina a restricao clq12507
+
+Restricao 44663, 1 novos cliques
+    Original (2): 85706 85713 
+    0 (4): 85704 85705 85706 85713 
+        domina a restricao clq12555
+
+Restricao 44728, 1 novos cliques
+    Original (4): 86035 86036 86046 86048 
+    0 (5): 86035 86036 86041 86046 86048 
+        domina a restricao clq12620
+        domina a restricao clq12624
+
+Restricao 44834, 1 novos cliques
+    Original (4): 86592 86594 86599 86601 
+    0 (5): 86592 86594 86599 86600 86601 
+        domina a restricao clq12726
+        domina a restricao clq12727
+
+Restricao 44836, 1 novos cliques
+    Original (3): 86609 86610 86618 
+    0 (4): 86609 86610 86611 86618 
+        domina a restricao clq12728
+        domina a restricao clq12729
+
+Restricao 44875, 1 novos cliques
+    Original (2): 86803 86812 
+    0 (4): 86803 86812 86815 86817 
+        domina a restricao clq12767
+
+Restricao 44916, 1 novos cliques
+    Original (3): 87021 87023 87025 
+    0 (7): 87021 87022 87023 87024 87025 87026 87027 
+        domina a restricao clq12808
+        domina a restricao clq12809
+
+Restricao 44981, 1 novos cliques
+    Original (3): 87366 87367 87375 
+    0 (4): 87366 87367 87368 87375 
+        domina a restricao clq12873
+        domina a restricao clq12874
+
+Restricao 44986, 1 novos cliques
+    Original (2): 87370 87387 
+    0 (3): 87370 87385 87387 
+        domina a restricao clq12878
+
+Restricao 44987, 1 novos cliques
+    Original (3): 87371 87374 87378 
+    0 (4): 87371 87374 87378 87379 
+        domina a restricao clq12879
+        domina a restricao clq12880
+
+Restricao 45001, 1 novos cliques
+    Original (2): 87423 87430 
+    0 (4): 87421 87422 87423 87430 
+        domina a restricao clq12893
+
+Restricao 45051, 1 novos cliques
+    Original (3): 87635 87647 87648 
+    0 (5): 87635 87647 87648 87651 87653 
+        domina a restricao clq12943
+
+Restricao 45126, 1 novos cliques
+    Original (2): 87927 87930 
+    0 (4): 87927 87930 87931 87932 
+        domina a restricao clq13018
+
+Restricao 45141, 1 novos cliques
+    Original (3): 87980 87992 87993 
+    0 (5): 87980 87992 87993 87996 87998 
+        domina a restricao clq13033
+
+Restricao 45182, 1 novos cliques
+    Original (2): 88186 88189 
+    0 (3): 88186 88189 88190 
+        domina a restricao clq13074
+        domina a restricao clq13075
+
+Restricao 45218, 1 novos cliques
+    Original (4): 88325 88327 88329 88332 
+    0 (8): 88325 88326 88327 88328 88329 88330 88331 88332 
+        domina a restricao clq13110
+        domina a restricao clq13111
+
+Restricao 45236, 1 novos cliques
+    Original (2): 88383 88386 
+    0 (4): 88383 88386 88387 88388 
+        domina a restricao clq13128
+
+Restricao 45391, 1 novos cliques
+    Original (2): 89080 89082 
+    0 (3): 89079 89080 89082 
+        domina a restricao clq13283
+
+Restricao 45519, 1 novos cliques
+    Original (2): 89605 89608 
+    0 (4): 89605 89608 89609 89610 
+        domina a restricao clq13411
+
+Restricao 45536, 1 novos cliques
+    Original (4): 89669 89673 89677 89679 
+    0 (5): 89669 89673 89674 89677 89679 
+        domina a restricao clq13428
+
+Restricao 45552, 1 novos cliques
+    Original (3): 89733 89736 89744 
+    0 (4): 89733 89736 89744 89745 
+        domina a restricao clq13444
+
+Restricao 45575, 1 novos cliques
+    Original (3): 89838 89840 89843 
+    0 (4): 89835 89838 89840 89843 
+        domina a restricao clq13467
+
+Restricao 45608, 1 novos cliques
+    Original (2): 89956 89965 
+    0 (4): 89956 89965 89968 89970 
+        domina a restricao clq13500
+
+Restricao 45641, 1 novos cliques
+    Original (2): 90099 90109 
+    0 (3): 90099 90109 90110 
+        domina a restricao clq13533
+        domina a restricao clq13534
+
+Restricao 45643, 1 novos cliques
+    Original (3): 90100 90103 90107 
+    0 (4): 90100 90103 90107 90108 
+        domina a restricao clq13535
+        domina a restricao clq13536
+
+Restricao 45683, 1 novos cliques
+    Original (3): 90274 90276 90277 
+    0 (4): 90274 90276 90277 90278 
+        domina a restricao clq13575
+        domina a restricao clq13576
+
+Restricao 45716, 1 novos cliques
+    Original (3): 90409 90413 90416 
+    0 (4): 90409 90413 90416 90417 
+        domina a restricao clq13608
+        domina a restricao clq13609
+
+Restricao 45739, 1 novos cliques
+    Original (2): 90495 90499 
+    0 (4): 90495 90498 90499 90500 
+        domina a restricao clq13631
+
+Restricao 46007, 1 novos cliques
+    Original (4): 91648 91649 91656 91658 
+    0 (5): 91648 91649 91656 91657 91658 
+        domina a restricao clq13899
+        domina a restricao clq13900
+
+Restricao 46081, 1 novos cliques
+    Original (3): 91965 91970 91972 
+    0 (4): 91965 91970 91971 91972 
+        domina a restricao clq13973
+        domina a restricao clq13974
+
+Restricao 46092, 1 novos cliques
+    Original (2): 92008 92017 
+    0 (4): 92008 92017 92020 92022 
+        domina a restricao clq13984
+
+Restricao 46110, 1 novos cliques
+    Original (2): 92069 92080 
+    0 (3): 92069 92080 92081 
+        domina a restricao clq14002
+
+Restricao 46111, 1 novos cliques
+    Original (2): 92073 92077 
+    0 (3): 92073 92077 92078 
+        domina a restricao clq14003
+        domina a restricao clq14004
+
+Restricao 46134, 1 novos cliques
+    Original (3): 92173 92174 92182 
+    0 (4): 92173 92174 92175 92182 
+        domina a restricao clq14026
+        domina a restricao clq14027
+
+Restricao 46137, 1 novos cliques
+    Original (3): 92178 92181 92185 
+    0 (4): 92178 92181 92185 92186 
+        domina a restricao clq14029
+        domina a restricao clq14030
+
+Restricao 46151, 1 novos cliques
+    Original (3): 92224 92238 92240 
+    0 (4): 92224 92235 92238 92240 
+        domina a restricao clq14043
+
+Restricao 46214, 1 novos cliques
+    Original (3): 92483 92489 92506 
+    0 (4): 92483 92489 92506 92507 
+        domina a restricao clq14106
+        domina a restricao clq14107
+
+Restricao 46219, 1 novos cliques
+    Original (2): 92487 92494 
+    0 (4): 92485 92486 92487 92494 
+        domina a restricao clq14111
+
+Restricao 46247, 1 novos cliques
+    Original (3): 92628 92629 92637 
+    0 (4): 92628 92629 92630 92637 
+        domina a restricao clq14139
+        domina a restricao clq14140
+
+Restricao 46250, 1 novos cliques
+    Original (3): 92631 92635 92642 
+    0 (4): 92631 92635 92642 92643 
+        domina a restricao clq14142
+
+Restricao 46252, 1 novos cliques
+    Original (2): 92632 92646 
+    0 (3): 92632 92644 92646 
+        domina a restricao clq14144
+
+Restricao 46282, 1 novos cliques
+    Original (3): 92767 92768 92776 
+    0 (4): 92767 92768 92769 92776 
+        domina a restricao clq14174
+        domina a restricao clq14175
+
+Restricao 46285, 1 novos cliques
+    Original (3): 92772 92775 92779 
+    0 (4): 92772 92775 92779 92780 
+        domina a restricao clq14177
+        domina a restricao clq14178
+
+Restricao 46311, 1 novos cliques
+    Original (3): 92904 92905 92913 
+    0 (4): 92904 92905 92906 92913 
+        domina a restricao clq14203
+        domina a restricao clq14204
+
+Restricao 46314, 1 novos cliques
+    Original (3): 92909 92912 92916 
+    0 (4): 92909 92912 92916 92917 
+        domina a restricao clq14206
+        domina a restricao clq14207
+
+Restricao 46351, 1 novos cliques
+    Original (2): 93032 93053 
+    0 (4): 93032 93053 93056 93058 
+        domina a restricao clq14243
+
+Restricao 46370, 1 novos cliques
+    Original (2): 93119 93140 
+    0 (4): 93119 93140 93143 93145 
+        domina a restricao clq14262
+
+Restricao 46380, 1 novos cliques
+    Original (4): 93173 93177 93182 93189 
+    0 (10): 93173 93174 93175 93176 93177 93178 93179 93180 93182 93189 
+        domina a restricao clq14272
+
+Restricao 46381, 1 novos cliques
+    Original (4): 93173 93177 93185 93188 
+    0 (10): 93173 93174 93175 93176 93177 93178 93179 93180 93185 93188 
+        domina a restricao clq14273
+
+Restricao 46382, 1 novos cliques
+    Original (3): 93174 93181 93192 
+    0 (10): 93173 93174 93175 93176 93177 93178 93179 93180 93181 93192 
+        domina a restricao clq14274
+
+Restricao 46383, 1 novos cliques
+    Original (2): 93174 93190 
+    0 (13): 93173 93174 93175 93176 93177 93178 93179 93180 93188 93189 93190 93191 93192 
+        domina a restricao clq14275
+        domina a restricao clq14278
+
+Restricao 46384, 1 novos cliques
+    Original (3): 93175 93178 93184 
+    0 (15): 93173 93174 93175 93176 93177 93178 93179 93180 93181 93182 93183 93184 93185 93186 93187 
+        domina a restricao clq14276
+        domina a restricao clq14277
+        domina a restricao clq14279
+
+Restricao 46397, 1 novos cliques
+    Original (2): 93204 93225 
+    0 (4): 93204 93225 93228 93230 
+        domina a restricao clq14289
+
+Restricao 46409, 1 novos cliques
+    Original (3): 93276 93283 93285 
+    0 (4): 93276 93283 93284 93285 
+        domina a restricao clq14301
+        domina a restricao clq14302
+
+Restricao 46422, 1 novos cliques
+    Original (2): 93305 93326 
+    0 (4): 93305 93326 93329 93331 
+        domina a restricao clq14314
+
+Restricao 46452, 1 novos cliques
+    Original (2): 93431 93452 
+    0 (4): 93431 93452 93455 93457 
+        domina a restricao clq14344
+
+Restricao 46516, 1 novos cliques
+    Original (2): 93708 93729 
+    0 (4): 93708 93729 93732 93734 
+        domina a restricao clq14408
+
+
+
+Restricoes removidas:   1175
+Restricoes adicionadas: 816
+
+Tempo execucao: 35886.9ms(Total: 68929ms)

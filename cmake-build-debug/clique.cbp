@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="clique"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/melinalopes/clique/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/melinalopes/clique/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/melinalopes/clique/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clique">
+				<Option output="/home/melinalopes/clique/cmake-build-debug/clique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/melinalopes/clique/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clique"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clique/fast">
+				<Option output="/home/melinalopes/clique/cmake-build-debug/clique" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/melinalopes/clique/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../include/c++/7.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clique/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/melinalopes/clique/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/melinalopes/clique/BKGraph.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/BKGraph.hpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/BKVertex.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/BKVertex.hpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/bron_kerbosch.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/bron_kerbosch.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/build_cgraph.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/build_cgraph.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/cgraph.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/cgraph.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/clique.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/clique.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/clique_extender.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/clique_extender.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/lp.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/lp.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/macros.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/main.cpp">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/memory.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/memory.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/node_heap.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/node_heap.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/strutils.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/strutils.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/vectormgm.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/vectormgm.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/vint_set.c">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/vint_set.h">
+			<Option target="clique"/>
+		</Unit>
+		<Unit filename="/home/melinalopes/clique/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

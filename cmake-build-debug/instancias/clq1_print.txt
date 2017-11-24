@@ -1,0 +1,20 @@
+Restricao 0, 1 novos cliques
+    Original (2): 0 1 
+    0 (3): 0 1 2 
+        domina a restricao r1
+        domina a restricao r2
+        domina a restricao r3
+
+Restricao 3, 1 novos cliques
+    Original (2): 3 4 
+    0 (3): 3 4 5 
+        domina a restricao r4
+        domina a restricao r5
+        domina a restricao r6
+
+
+
+Restricoes removidas:   6
+Restricoes adicionadas: 2
+
+Tempo execucao: 0.815ms(Total: 1.665ms)
