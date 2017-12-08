@@ -13,8 +13,9 @@ extern "C" {
 }
 
 
-void clq_preproccess(LinearProgram *mip, string file);
+void clq_preproccess(LinearProgram *mip, string file = "resultado.lp");
 
+int check_dominance(int* var, int* res, int sizeRes);
 
 
 int main(int argc, const char **argv) {
@@ -24,7 +25,7 @@ int main(int argc, const char **argv) {
         arqSaida.pop_back();
     }
     arqSaida.pop_back();
-    arqSaida += "_new.mip";
+    arqSaida += "_new";
 
 
 
@@ -36,9 +37,20 @@ int main(int argc, const char **argv) {
     int endLeitura=clock();
 
 
+    fstream tempo("0000_tempos.txt", fstream::app);
+    tempo << "\n" << argv[1] << " "
+          << "leitura: " << (endLeitura-startLeitura)/double(CLOCKS_PER_SEC)*1000 << " ";
+    tempo.close();
+
 
     clq_preproccess(lp, argv[1]);
 
+
+    int end=clock();
+
+    tempo.open("0000_tempos.txt", fstream::app);
+    tempo << "total: " << (end-startLeitura)/double(CLOCKS_PER_SEC)*1000 << " ";
+    tempo.close();
 
 
     lp_write_lp(lp, arqSaida.c_str());
@@ -84,6 +96,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
     int* rowsToRemove = new int[nRes];
     int* idx = new int[nVar];
+    int* vetor = new int[nVar];
     double* coef = new double[nVar];
     fill(coef, coef+nVar, 1.0);
     int resToCheck[nRes];
@@ -163,19 +176,28 @@ void clq_preproccess(LinearProgram *mip, string file) {
                     // nao tem complemento
                     if(clq_set_clique_elements(clqSet, i)[clq_set_clique_size(clqSet, i)-1] < nVar) {
 
+
+                        fill(vetor, vetor+nVar, 0);
+
                         printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
                         saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
-                        for (int j = 0; j < clq_set_clique_size(clqSet, i); j++) {
+
+                        for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+
                             saida << clq_set_clique_elements(clqSet, i)[j] << " ";
                             printf("%d ", clq_set_clique_elements(clqSet, i)[j]);
+
+                            //monta vetor de 0/1
+                            vetor[clq_set_clique_elements(clqSet, i)[j]] = 1;
                         }
+
                         saida << "\n";
                         printf("\n");
 
 
                         // transforma o clique estendido em IntSet
-                        vint_set_clear( &clq );
-                        vint_set_add(&clq, clq_set_clique_elements(clqSet, i), clq_set_clique_size(clqSet, i));
+                        //vint_set_clear( &clq );
+                        //vint_set_add(&clq, clq_set_clique_elements(clqSet, i), clq_set_clique_size(clqSet, i));
 
                         for (int j=0; j<nRes; j++) {
 
@@ -184,11 +206,10 @@ void clq_preproccess(LinearProgram *mip, string file) {
                                 //pega a j-esima restricao
                                 vint_set_clear(&res);
                                 int n2 = lp_row(mip, j, idx, coef);
-                                vint_set_add(&res, idx, n2);
+                                //vint_set_add(&res, idx, n2);
 
                                 //se o clique domina a restricao
-                                // USAR VETOR DE INCIDENCIA (INVES DA BUSCA BINARIA) -> VERIFICAR DOMINANCIA A MAO!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                                if (clq_dominates(&clq, &res) == 1) {
+                                if (check_dominance(vetor, idx, n2) == 1) {
                                     if(resToCheck[k] == 2){
                                         string nome = "clq00" + to_string(contadorNome);
                                         contadorNome++; rowsAdded++;
@@ -220,7 +241,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
                     }
 
                         // tem complemento
-                        // FALAR COM O SAMUEL!!
                     else {
 //                        string nome = "clq00" + to_string(contadorNome);
 //                        contadorNome++;
@@ -278,14 +298,14 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
 
     fstream tempo("0000_tempos.txt", fstream::app);
-    tempo << file << " "
-          //<< "leitura: " << (endLeitura-startLeitura)/double(CLOCKS_PER_SEC)*1000 << " "
-          << "grafo: " << (endGraph-startGraph)/double(CLOCKS_PER_SEC)*1000 << " "
-          << "preprocessamento: " << (endPreprocess-startPreprocess)/double(CLOCKS_PER_SEC)*1000 << " "
-          << "clique: " << timeClique << " "
-          << "restricoes: " << timeRestr << " "
-          << "for: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << " "
-          << "\n";
+    tempo //<< file << " "
+            //<< "leitura: " << (endLeitura-startLeitura)/double(CLOCKS_PER_SEC)*1000 << " "
+            << "grafo: " << (endGraph-startGraph)/double(CLOCKS_PER_SEC)*1000 << " "
+            << "preprocessamento: " << (endPreprocess-startPreprocess)/double(CLOCKS_PER_SEC)*1000 << " "
+            << "clique: " << timeClique << " "
+            << "restricoes: " << timeRestr << " "
+            << "for: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << " "
+            ;//<< "\n";
 
 
     fstream resultado("0000_resultados.txt", fstream::app);
@@ -304,8 +324,22 @@ void clq_preproccess(LinearProgram *mip, string file) {
     vint_set_clean( &clq );
     vint_set_clean( &clique );
     delete[] idx;
+    delete[] vetor;
     delete[](coef);
     delete[](rowsToRemove);
     delete[] name;
+
+}
+
+
+int check_dominance(int* var, int* res, int sizeRes) {
+
+    int d = 1;
+
+    for(int i=0; i<sizeRes; i++) {
+        d *= var[res[i]];
+    }
+
+    return d;
 
 }
