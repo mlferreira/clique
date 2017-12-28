@@ -15,6 +15,9 @@ extern "C" {
 #include <omp.h>
 #endif
 
+#define LIMITE_GREEDY 1000
+//#define PARALELO
+
 void clq_preproccess(LinearProgram *mip, string file = "resultado.lp");
 
 int check_dominance(int* var, int* res, int sizeRes);
@@ -67,10 +70,11 @@ int main(int argc, const char **argv) {
 
 
 void clq_preproccess(LinearProgram *mip, string file) {
-    int n=0, rowsRemoved=0, rowsAdded=0, contadorNome=0;
+    int n=0, rowsAdded=0, contadorNome=0;
 #ifdef DEBUG
     int startRest, endRestr, startClique, endClique, start=clock();
     double timeClique=0.0, timeRestr=0.0;
+    char* nomeRes = new char[512];
 #endif
     char* name = new char[512];
 
@@ -81,6 +85,12 @@ void clq_preproccess(LinearProgram *mip, string file) {
     }
     arqPrint.pop_back();
     arqPrint += "_print.txt";
+    string arqRes = file;
+    while( arqRes.back() != '.') {
+        arqRes.pop_back();
+    }
+    arqRes.pop_back();
+    arqRes += "_restricoes.txt";
 #endif
 
 #ifdef DEBUG
@@ -102,17 +112,42 @@ void clq_preproccess(LinearProgram *mip, string file) {
     int nRes = lp_rows(mip);
     int nVar = lp_cols(mip);
 
-    int* rowsToRemove = new int[nRes];
+#ifdef PARALELO
+    int** rowsToRemoveT = new int*[omp_get_num_threads()];
+    int** idxT = new int*[omp_get_num_threads()];
+    double** coefT = new double*[omp_get_num_threads()];
+    int** vetorT = new int*[omp_get_num_threads()];
+    int* rowsRemovedT = new int[omp_get_num_threads()];
+    for(int i=0; i<omp_get_num_threads(); i++) {
+        vetorT[i] = new int[nVar];
+        rowsToRemoveT[i] = new int[nVar];
+        idxT[i] = new int[nVar];
+        coefT[i] = new double[nVar];
+        fill(coefT[i], coefT[i]+nVar, 1.0);
+        rowsRemovedT[i] = 0;
+    }
+#else
+    int* rowsToRemove = new int[nVar];
     int* idx = new int[nVar];
-    int* vetor = new int[nVar];
     double* coef = new double[nVar];
+    int* vetor = new int[nVar];
+    int rowsRemoved = 0;
+#endif
+
     int resToCheck[nRes];
-//#pragma omp parallel for lastprivate(n, idx, coef)
     for(int i=0; i<nRes; i++) {
+#ifdef PARALELO
+        n = lp_row(mip, i, idxT[0], coefT[0]);
+        resToCheck[i] = check_clique(mip, i, idxT[0], coefT[0], n);
+    }
+    fill(coefT[0], coefT[0]+nVar, 1.0);
+#else
         n = lp_row(mip, i, idx, coef);
         resToCheck[i] = check_clique(mip, i, idx, coef, n);
     }
     fill(coef, coef+nVar, 1.0);
+#endif
+
 #ifdef DEBUG
     int endPreprocess=clock();
 #endif
@@ -120,6 +155,15 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
 #ifdef DEBUG
     ofstream saida(arqPrint);
+
+    ofstream tempoRes(arqRes);
+    tempoRes << file;
+
+    fstream resMax("0000_restricoes.txt", fstream::app);
+    resMax << "\n" << file << " ";
+    int indiceMaior, nVarMaior, nExpansoes;
+    char *resMaior = new char[512];
+    double tempoMaior = 0.0;
 #endif
 
 
@@ -131,7 +175,20 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #ifdef DEBUG
     int startFor=clock();
 #endif
+
+#ifdef PARALELO
+#pragma omp parallel for
+#endif
+
     for(int k=0; k<nRes; k++) {
+
+#ifdef PARALELO
+        int *vetor = vetorT[omp_get_thread_num()];
+        int *idx = idxT[omp_get_thread_num()];
+        double *coef = coefT[omp_get_thread_num()];
+        int *rowsToRemove = rowsToRemoveT[omp_get_thread_num()];
+        int *rowsRemoved = rowsToRemoveT[omp_get_thread_num()];
+#endif
 
         if(resToCheck[k] > 0) {
 
@@ -139,6 +196,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
 
 #ifdef DEBUG
+            tempoRes << "\n" << k << " " << lp_row_name(mip, k, nomeRes) << " " << n << " ";
+
             startClique=clock();
 #endif
 
@@ -154,15 +213,35 @@ void clq_preproccess(LinearProgram *mip, string file) {
             */
             clqe_set_costs(clqe, costs, cgraph_size(cg));
             int cliqueW = n;
-            int status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_EXACT);
+            int status;
+            if(n > LIMITE_GREEDY) {
+                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_PRIORITY_GREEDY);
+            }
+            else {
+                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_EXACT);
+            }
+
+
 
 #ifdef DEBUG
             endClique=clock();
             timeClique += (endClique-startClique)/double(CLOCKS_PER_SEC)*1000;
+
+            tempoRes << (endClique-startClique)/double(CLOCKS_PER_SEC)*1000 << " " << status << " ";
+
+            if (tempoMaior < (endClique-startClique)/double(CLOCKS_PER_SEC)*1000) {
+                indiceMaior = k;
+                nVarMaior = n;
+                nExpansoes = status;
+                resMaior = nomeRes;
+                tempoMaior = (endClique-startClique)/double(CLOCKS_PER_SEC)*1000;
+            }
 #endif
 
 
+
             if (status > 0) {
+
 #ifdef DEBUG
                 //printf("\n%s - lifting module found %d new cliques:\n", lp_row_name(mip, k, name), status);
                 saida << "Restricao " << k << ", " << status << " novos cliques\n";
@@ -185,6 +264,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #endif
                 for (int i=0; i<clq_set_number_of_cliques(clqSet); i++) {
 
+
+
                     // nao tem complemento
                     if(clq_set_clique_elements(clqSet, i)[clq_set_clique_size(clqSet, i)-1] < nVar) {
 
@@ -193,6 +274,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #ifdef DEBUG
                         //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
                         saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
+
+                        tempoRes << clq_set_clique_size(clqSet, i)-n << " ";
 #endif
 
                         for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
@@ -208,7 +291,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
                         saida << "\n";
                         //printf("\n");
 
-//#pragma omp parallel for private(idx, coef)
                         for (int j=0; j<nRes; j++) {
 
                             if (resToCheck[j] > 0) {
@@ -219,11 +301,13 @@ void clq_preproccess(LinearProgram *mip, string file) {
                                 //se o clique domina a restricao
                                 if (check_dominance(vetor, idx, n2) == 1) {
 
+
                                     rowsToRemove[rowsRemoved] = j;
                                     if (j!=k) {
                                         resToCheck[j] = 0;
                                     }
                                     rowsRemoved++;
+
 #ifdef DEBUG
                                     //cout << "        domina a restricao " << lp_row_name(mip, j, name) << endl;
                                     saida << "        domina a restricao " << lp_row_name(mip, j, name) << "\n";
@@ -291,16 +375,30 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
     }
 
-
-    if (rowsRemoved > 0) {
+#ifdef PARALELO
+    int rowsRemoved = 0;
+    for(int i=0; i<omp_get_num_threads(); i++) {
+        lp_remove_rows(mip, rowsRemovedT[i], rowsToRemoveT[i]);
+        rowsRemoved += rowsRemovedT[i];
+    }
+#else
+    if(rowsRemoved > 0) {
         lp_remove_rows(mip, rowsRemoved, rowsToRemove);
     }
+#endif
 
 #ifdef DEBUG
     int endFor=clock();
 #endif
 
+
+
 #ifdef DEBUG
+
+
+
+    resMax << indiceMaior << " " << resMaior << " " << nVarMaior << " " << tempoMaior << " " << nExpansoes;
+
     saida << "\n\nRestricoes removidas:   " << rowsRemoved
           << "\nRestricoes adicionadas: " << rowsAdded << "\n"
           << "\nTempo execucao: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << "ms"
@@ -334,18 +432,31 @@ void clq_preproccess(LinearProgram *mip, string file) {
     resultado.close();
     tempo.close();
     saida.close();
+    resMax.close();
 #endif
 
     cgraph_free(&cg);
     vint_set_clean( &clq );
     vint_set_clean( &clique );
-    delete[] idx;
-    delete[] vetor;
-    delete[](coef);
-    delete[](rowsToRemove);
     delete[] name;
-
-
+#ifdef PARALELO
+    for(int i=0; i<omp_get_num_threads(); i++) {
+        delete[] vetorT[i];
+        delete[] idxT[i];
+        delete[] coefT[i];
+        delete[] rowsToRemoveT[i];
+    }
+    delete[] vetorT;
+    delete[] idxT;
+    delete[] coefT;
+    delete[] rowsToRemoveT;
+    delete[] rowsRemovedT;
+#else
+    delete[] vetor;
+    delete[] idx;
+    delete[] coef;
+    delete[] rowsToRemove;
+#endif
 
 }
 
