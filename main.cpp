@@ -127,7 +127,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
         rowsRemovedT[i] = 0;
     }
 #else
-    int* rowsToRemove = new int[nVar];
+    int* rowsToRemove = new int[nRes];
     int* idx = new int[nVar];
     double* coef = new double[nVar];
     int* vetor = new int[nVar];
@@ -213,9 +213,9 @@ void clq_preproccess(LinearProgram *mip, string file) {
             */
             clqe_set_costs(clqe, costs, cgraph_size(cg));
             int cliqueW = n;
-            int status;
+            int status=0;
             if(n > LIMITE_GREEDY) {
-                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_PRIORITY_GREEDY);
+//                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_PRIORITY_GREEDY);
             }
             else {
                 status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_EXACT);
