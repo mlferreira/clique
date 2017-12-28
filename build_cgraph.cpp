@@ -16,7 +16,7 @@ extern "C"
 	#include "memory.h"
 	#include "node_heap.h"
 	#include "build_cgraph.h"
-	#include "lp.h"
+    #include "lp.h"
 }
 
 using namespace std;
@@ -82,6 +82,37 @@ void cliqueComplementDetection(CGraph* cgraph, const vector<pair<int, double> >&
 
 /* Searches for cliques involving variables and complements of variables in this constraint. */
 void mixedCliqueDetection(CGraph* cgraph, const vector<pair<int, double> >& columns, double sumNegCoefs, double rhs, vector< pair< int, int > > &cvec);
+
+//void pairwiseAnalysis(CGraph* cgraph, const vector<pair<int, double> >& columns, const double sumNegCoefs, const double rhs)
+//{
+//    int nElements = (int)columns.size();
+//    int nCols = cgraph_size(cgraph) / 2;
+//    for(int j1 = 0; j1 < nElements; j1++)
+//    {
+//        const int cidx1 = columns[j1].first;
+//        const double coef1 = columns[j1].second;
+//
+//        for(int j2 = j1+1; j2 < nElements; j2++)
+//        {
+//            const int cidx2 = columns[j2].first;
+//            const double coef2 = columns[j2].second;
+//            const double negDiscount = sumNegCoefs - min(0.0, coef1) - min(0.0, coef2);
+//
+//            if(coef1 + coef2 + negDiscount > rhs + EPS)
+//                cvec.push_back( pair<int,int>(cidx1, cidx2) );
+//
+//            if(coef1 + negDiscount > rhs + EPS) /* cidx1 = 1 and cidx2 = 0 */
+//                cvec.push_back( pair<int,int>(cidx1, cidx2+nCols) );
+//
+//            if(coef2 + negDiscount > rhs + EPS) /* cidx1 = 0 and cidx2 = 1 */
+//                cvec.push_back( pair<int,int>(cidx1+nCols, cidx2) );
+//
+//            if(negDiscount > rhs + EPS) /* cidx1 = 0 and cidx2 = 0 */
+//                cvec.push_back( pair<int,int>(cidx1+nCols, cidx2+nCols) );
+//        }
+//        fetchConflicts( false, cgraph );
+//    }
+//}
 
 void processClique( const int n, const int *idx, CGraph *cgraph, vector< pair< int, int > > &cvec)
 {
@@ -514,7 +545,7 @@ CGraph *build_cgraph_osi( const void *_solver )
 CGraph* build_cgraph_lp(const void *_lp)
 {
     recomputeDegree = 0;
-	startCG = CoinCpuTime();
+    startCG = CoinCpuTime();
     const int threads = max(4, omp_get_num_procs());
     vector<vector< pair< int, int > > > cvecs(threads);
 
@@ -545,8 +576,8 @@ CGraph* build_cgraph_lp(const void *_lp)
     for(int idxRow = 0; idxRow < nRows; idxRow++)
     {
 
-    	/*if(CoinCpuTime() - startCG >= MAX_TIME_CG)
-    		break;*/
+        /*if(CoinCpuTime() - startCG >= MAX_TIME_CG)
+            break;*/
 
         const int numThread = omp_get_thread_num();
         const int nElements = lp_row(lp, idxRow, idxs, coefs);
@@ -591,8 +622,8 @@ CGraph* build_cgraph_lp(const void *_lp)
 
         /* special case: GUB constraints */
         if ( DBL_EQUAL( minCoef, maxCoef ) &&  DBL_EQUAL( maxCoef, rhs * mult ) &&
-            DBL_EQUAL(minCoef, 1.0) && ((sense=='E') || (sense=='L'))
-            && (nElements > 3) )
+             DBL_EQUAL(minCoef, 1.0) && ((sense=='E') || (sense=='L'))
+             && (nElements > 3) )
         {
             processClique( nElements, idxs, cgraph, cvecs[numThread] );
         }

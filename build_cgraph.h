@@ -3,7 +3,7 @@
 
 extern "C"
 {
-    #include "cgraph.h"
+#include "cgraph.h"
 }
 
 CGraph *build_cgraph_osi( const void *_solver );
