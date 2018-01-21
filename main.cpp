@@ -15,7 +15,7 @@ extern "C" {
 #include <omp.h>
 #endif
 
-#define LIMITE_GREEDY 1000
+#define LIMITE_GREEDY 100000
 //#define PARALELO
 
 void clq_preproccess(LinearProgram *mip, string file = "resultado.lp");
@@ -129,6 +129,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #else
     int* rowsToRemove = new int[nRes];
     int* idx = new int[nVar];
+    int* idxCompl = new int[nVar];
     double* coef = new double[nVar];
     int* vetor = new int[nVar];
     int rowsRemoved = 0;
@@ -243,12 +244,11 @@ void clq_preproccess(LinearProgram *mip, string file) {
             if (status > 0) {
 
 #ifdef DEBUG
-                //printf("\n%s - lifting module found %d new cliques:\n", lp_row_name(mip, k, name), status);
-                saida << "Restricao " << k << ", " << status << " novos cliques\n";
-                //printf("   Original (%d): ", lp_row(mip, k, idx, coef));
+
+                saida << "Restricao " << k << " (" << lp_row_name(mip, k, nomeRes) << "), " << status << " novos cliques\n";
                 saida << "    Original" << " (" << lp_row(mip, k, idx, coef) << "): ";
                 for (int j = 0; j < n; j++) {
-                    saida << idx[j] << " ";
+                    saida << idx[j] << " (" << lp_col_name(mip, idx[j], nomeRes) << ") ";
                     //printf("%d ", idx[j]);
                 }
                 saida << "\n";
@@ -266,11 +266,34 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
 
 
+                    //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
+                    saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
+
+
+                    for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+                       if(clq_set_clique_elements(clqSet, i)[j] >= nVar){
+
+                           saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]-nVar << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
+                       }
+                        else{
+
+                            saida << clq_set_clique_elements(clqSet, i)[j] << " (" << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j], nomeRes) << ") ";
+
+                        }
+
+                    }
+                    saida << "\n";
+
+
+
+
+
                     // nao tem complemento
                     if(clq_set_clique_elements(clqSet, i)[clq_set_clique_size(clqSet, i)-1] < nVar) {
 
 
                         fill(vetor, vetor+nVar, 0);
+                        fill(coef, coef+nVar, 1.0);
 #ifdef DEBUG
                         //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
                         saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
@@ -342,34 +365,86 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
                         // tem complemento
                     else {
-//                        string nome = "clq00" + to_string(contadorNome);
-//                        contadorNome++;
-//                        rowsAdded++;
-//
-//                        cout << endl << endl << nome << " COMPLEMENTO!!!" << endl << endl; cout.flush();
-//
-//                        int* elem = const_cast<int*>(clq_set_clique_elements(clqSet, i));
-//
-//                        for(int j=0; j<clq_set_clique_size(clqSet, i); j++) {
-//                            if (elem[j] >= nVar) {
-//                                elem[j] = elem[j]-nVar;
-//                                coef[j] = -1.0;
-//                            }
-//                        }
-//
-//
-//                        lp_add_row(mip, clq_set_clique_size(clqSet, i), elem, coef, nome.c_str(), 'L', 1);
+
+                        fill(vetor, vetor+nVar, 0);
+                        fill(coef, coef+nVar, 1.0);
+#ifdef DEBUG
+                        //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
+                        saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
+
+                        tempoRes << clq_set_clique_size(clqSet, i)-n << " ";
+#endif
+
+                        for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+
+#ifdef DEBUG
+                            saida << clq_set_clique_elements(clqSet, i)[j] << " ";
+                            //printf("%d ", clq_set_clique_elements(clqSet, i)[j]);
+#endif
+                            if (clq_set_clique_elements(clqSet, i)[j] < nVar) {
+                                //monta vetor de 0/1
+                                vetor[clq_set_clique_elements(clqSet, i)[j]] = 1;
+                                idxCompl[j] = clq_set_clique_elements(clqSet, i)[j];
+                            }
+                            else if(vetor[clq_set_clique_elements(clqSet, i)[j]-nVar] == 0){
+                                idxCompl[j] = clq_set_clique_elements(clqSet, i)[j]-nVar;
+                                coef[j] = -1.0;
+                            }
+                        }
+
+#ifdef DEBUG
+                        saida << "\n";
+                        //printf("\n");
+#endif
+
+                        for (int j=0; j<nRes; j++) {
+
+                            if (resToCheck[j] > 0) {
+
+                                //pega a j-esima restricao
+                                int n2 = lp_row(mip, j, idx, coef);
+
+                                //se o clique domina a restricao
+                                if (check_dominance(vetor, idx, n2) == 1) {
 
 
+                                    rowsToRemove[rowsRemoved] = j;
+                                    if (j!=k) {
+                                        resToCheck[j] = 0;
+                                    }
+                                    rowsRemoved++;
+
+#ifdef DEBUG
+                                    //cout << "        domina a restricao " << lp_row_name(mip, j, name) << endl;
+                                    saida << "        domina a restricao " << lp_row_name(mip, j, name) << "\n";
+                                    //cout << rowsRemoved << "   " << rowsAdded << endl;
+#endif
+                                }
+
+                            }
+
+                        }
+#ifdef DEBUG
+                        saida << "\n";
+#endif
+
+                        if (rowsRemoved > 0) {
+                            string nome = "clq00" + to_string(contadorNome);
+                            contadorNome++;
+                            rowsAdded++;
+                            lp_add_row(mip, clq_set_clique_size(clqSet, i), idxCompl, coef, nome.c_str(), 'L', 0);
+                            resToCheck[k] = 0;
+                        }
 
                     }
+
                 }
                 endRestr=clock();
                 timeRestr += (endRestr-startRest)/double(CLOCKS_PER_SEC)*1000;
 
             }
 
-            cout.flush();
+            cout.flush(); saida.flush();
 
         }
 
@@ -497,8 +572,6 @@ int check_clique(LinearProgram* mip, int i, int *idx, double *coef, int n) {
 
     }
 
-    else {
-        return 0;
-    }
+    return 0;
 
 }
