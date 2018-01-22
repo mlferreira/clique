@@ -131,23 +131,17 @@ void clq_preproccess(LinearProgram *mip, string file) {
     int* idx = new int[nVar];
     int* idxCompl = new int[nVar];
     double* coef = new double[nVar];
+    double* coefCompl = new double[nVar];
     int* vetor = new int[nVar];
     int rowsRemoved = 0;
 #endif
 
     int resToCheck[nRes];
     for(int i=0; i<nRes; i++) {
-#ifdef PARALELO
-        n = lp_row(mip, i, idxT[0], coefT[0]);
-        resToCheck[i] = check_clique(mip, i, idxT[0], coefT[0], n);
-    }
-    fill(coefT[0], coefT[0]+nVar, 1.0);
-#else
         n = lp_row(mip, i, idx, coef);
         resToCheck[i] = check_clique(mip, i, idx, coef, n);
     }
     fill(coef, coef+nVar, 1.0);
-#endif
 
 #ifdef DEBUG
     int endPreprocess=clock();
@@ -265,29 +259,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
                 for (int i=0; i<clq_set_number_of_cliques(clqSet); i++) {
 
 
-
-                    //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
-                    saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
-
-
-                    for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
-                       if(clq_set_clique_elements(clqSet, i)[j] >= nVar){
-
-                           saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]-nVar << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
-                       }
-                        else{
-
-                            saida << clq_set_clique_elements(clqSet, i)[j] << " (" << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j], nomeRes) << ") ";
-
-                        }
-
-                    }
-                    saida << "\n";
-
-
-
-
-
                     // nao tem complemento
                     if(clq_set_clique_elements(clqSet, i)[clq_set_clique_size(clqSet, i)-1] < nVar) {
 
@@ -303,8 +274,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
                         for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
 #ifdef DEBUG
-                            saida << clq_set_clique_elements(clqSet, i)[j] << " ";
-                            //printf("%d ", clq_set_clique_elements(clqSet, i)[j]);
+                            saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]-nVar
+                                  << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
 #endif
 
                             //monta vetor de 0/1
@@ -367,7 +338,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                     else {
 
                         fill(vetor, vetor+nVar, 0);
-                        fill(coef, coef+nVar, 1.0);
+                        fill(coefCompl, coefCompl+nVar, 1.0);
 #ifdef DEBUG
                         //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
                         saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
@@ -377,19 +348,26 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
                         for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
 
+
+
+                            if(clq_set_clique_elements(clqSet, i)[j] >= nVar && vetor[clq_set_clique_elements(clqSet, i)[j]-nVar] == 0){
 #ifdef DEBUG
-                            saida << clq_set_clique_elements(clqSet, i)[j] << " ";
-                            //printf("%d ", clq_set_clique_elements(clqSet, i)[j]);
+                                saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]-nVar
+                                      << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
 #endif
-                            if (clq_set_clique_elements(clqSet, i)[j] < nVar) {
+                                idxCompl[j] = clq_set_clique_elements(clqSet, i)[j]-nVar;
+                                coefCompl[j] = -1.0;
+                            }
+                            else if (vetor[clq_set_clique_elements(clqSet, i)[j]] == 0){
+#ifdef DEBUG
+                                saida << clq_set_clique_elements(clqSet, i)[j] << " ("
+                                      << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j], nomeRes) << ") ";
+#endif
                                 //monta vetor de 0/1
                                 vetor[clq_set_clique_elements(clqSet, i)[j]] = 1;
                                 idxCompl[j] = clq_set_clique_elements(clqSet, i)[j];
                             }
-                            else if(vetor[clq_set_clique_elements(clqSet, i)[j]-nVar] == 0){
-                                idxCompl[j] = clq_set_clique_elements(clqSet, i)[j]-nVar;
-                                coef[j] = -1.0;
-                            }
+
                         }
 
 #ifdef DEBUG
@@ -432,7 +410,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                             string nome = "clq00" + to_string(contadorNome);
                             contadorNome++;
                             rowsAdded++;
-                            lp_add_row(mip, clq_set_clique_size(clqSet, i), idxCompl, coef, nome.c_str(), 'L', 0);
+                            lp_add_row(mip, clq_set_clique_size(clqSet, i), idxCompl, coefCompl, nome.c_str(), 'L', 0);
                             resToCheck[k] = 0;
                         }
 
@@ -531,6 +509,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
     delete[] idx;
     delete[] coef;
     delete[] rowsToRemove;
+    delete[] idxCompl;
+    delete[] coefCompl;
 #endif
 
 }
@@ -549,6 +529,10 @@ int check_dominance(int* var, int* res, int sizeRes) {
 }
 
 int check_clique(LinearProgram* mip, int i, int *idx, double *coef, int n) {
+
+    if(n==1) {
+        return 0;
+    }
 
     int min = 0;
 
