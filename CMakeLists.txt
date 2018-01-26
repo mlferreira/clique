@@ -3,7 +3,7 @@ project(clique)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(CMAKE_CXX_FLAGS "-Wall -g -std=c++11 -g3 -D_GLIBCXX_DEBUG -DDEBUG -DCBC -I/usr/include/coin -fopenmp")
+set(CMAKE_CXX_FLAGS "-Wall -g -std=c++11 -g3 -D_GLIBCXX_DEBUG -DDEBUG -DCBC -I/usr/include/coin -fopenmp -fsanitize=address")
 set(CMAKE_C_FLAGS   "-Wall -g            -g3 -D_GLIBCXX_DEBUG -DDEBUG -DCBC -I/usr/include/coin -fopenmp")
 
 set(CMAKE_EXE_LINKER_FLAGS "-L/opt/gurobi750/linux64//lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/opt/ibm/ILOG/CPLEX_Studio127//cplex/lib/x86-64_linux/static_pic -L/opt/gurobi750/linux64//lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../.. -L/opt/gurobi750/linux64//lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/opt/ibm/ILOG/CPLEX_Studio127//cplex/lib/x86-64_linux/static_pic -L/opt/gurobi750/linux64//lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/7.2.0/../../..")

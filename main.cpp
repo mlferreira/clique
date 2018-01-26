@@ -260,8 +260,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
                         for (int j=0; j<clq_set_clique_size(clqSet, i); j++) {
 #ifdef DEBUG
-                            saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]-nVar
-                                  << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
+                            //saida << clq_set_clique_elements(clqSet, i)[j] << " (" << clq_set_clique_elements(clqSet, i)[j]
+                            //     << " " << lp_col_name(mip, clq_set_clique_elements(clqSet, i)[j]-nVar, nomeRes) << ") ";
 #endif
 
                             //monta vetor de 0/1
