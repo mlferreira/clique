@@ -16,14 +16,8 @@ extern "C" {
 #include "clique.h"
 }
 
-#define LIMITE_GREEDY 1000
-
-
-
-//adicionar rows todas de uma vez
-//start tem que ter uma posicao a mais (ultima pos+1)
-
-
+#define LIMITE_GREEDY 100000
+#define LIMITE_ROWSADDED 500
 
 
 void clq_preproccess(LinearProgram *mip, string file = "resultado.lp");
@@ -78,7 +72,7 @@ int main(int argc, const char **argv) {
 
 
 void clq_preproccess(LinearProgram *mip, string file) {
-    int n=0, rowsAdded=0, contadorNome=0;
+    int n=0, rowsAdded=0, rowsAddedTotal=0, rowsRemoved=0, rowsRemovedTotal=0, contadorNome=0;
 #ifdef DEBUG
     int startRest, endRestr, startClique, endClique, start=clock();
     double timeClique=0.0, timeRestr=0.0;
@@ -126,7 +120,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
     double* coef = new double[nVar];
     double* coefCompl = new double[nVar];
     int* vetor = new int[nVar];
-    int rowsRemoved = 0;
 
     vector<int> rowsAdded_start;
     vector<int> rowsAdded_idx;
@@ -293,7 +286,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                                     if (j!=k) {
                                         resToCheck[j] = 0;
                                     }
-                                    rowsRemoved++;
+                                    rowsRemoved++; rowsRemovedTotal++;
 
 #ifdef DEBUG
                                     //cout << "        domina a restricao " << lp_row_name(mip, j, name) << endl;
@@ -311,7 +304,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                         if (rowsRemoved > 0) {
                             rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                             contadorNome++;
-                            rowsAdded++;
+                            rowsAdded++; rowsAddedTotal++;
                             rowsAdded_start.push_back(rowsAdded_coef.size());
                             rowsAdded_sense.push_back('L');
                             rowsAdded_rhs.push_back(1);
@@ -323,7 +316,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                             if (resToCheck[k] == 2) {
                                 rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                                 contadorNome++;
-                                rowsAdded++;
+                                rowsAdded++; rowsAddedTotal++;
                                 rowsAdded_start.push_back(rowsAdded_coef.size());
                                 rowsAdded_sense.push_back('G');
                                 rowsAdded_rhs.push_back(1);
@@ -393,7 +386,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                                     if (j!=k) {
                                         resToCheck[j] = 0;
                                     }
-                                    rowsRemoved++;
+                                    rowsRemoved++; rowsRemovedTotal++;
 
 #ifdef DEBUG
                                     //cout << "        domina a restricao " << lp_row_name(mip, j, name) << endl;
@@ -413,7 +406,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
                             resToCheck[k] = 0;
                             rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                             contadorNome++;
-                            rowsAdded++;
+                            rowsAdded++; rowsAddedTotal++;
                             rowsAdded_start.push_back(rowsAdded_coef.size());
                             rowsAdded_sense.push_back('L');
                             rowsAdded_rhs.push_back(0);
@@ -430,13 +423,27 @@ void clq_preproccess(LinearProgram *mip, string file) {
                 endRestr=clock();
                 timeRestr += (endRestr-startRest)/double(CLOCKS_PER_SEC)*1000;
 
-            }
+            } //if (status > 0)
 
             cout.flush(); saida.flush();
 
+        } //if (resToCheck[k] > 0)
+        
+        if(rowsAdded_idx.size() > LIMITE_ROWSADDED) {
+            //cout << rowsAdded_idx.size() << endl; cout.flush();
+            rowsAdded_start.push_back(rowsAdded_coef.size());
+            lp_add_rows(mip, rowsAdded, &rowsAdded_start[0], &rowsAdded_idx[0], &rowsAdded_coef[0], &rowsAdded_sense[0],
+                        &rowsAdded_rhs[0], &rowsAdded_names[0]);
+            rowsAdded = 0;
+            rowsAdded_start.clear();
+            rowsAdded_idx.clear();
+            rowsAdded_coef.clear();
+            rowsAdded_sense.clear();
+            rowsAdded_rhs.clear();
+            rowsAdded_names.clear();
         }
 
-    }
+    } //for (k<nRes)
 
     if(rowsRemoved > 0) {
         lp_remove_rows(mip, rowsRemoved, rowsToRemove);
@@ -460,13 +467,13 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
     resMax << indiceMaior << " " << resMaior << " " << nVarMaior << " " << tempoMaior << " " << nExpansoes;
 
-    saida << "\n\nRestricoes removidas:   " << rowsRemoved
-          << "\nRestricoes adicionadas: " << rowsAdded << "\n"
+    saida << "\n\nRestricoes removidas:   " << rowsRemovedTotal
+          << "\nRestricoes adicionadas: " << rowsAddedTotal << "\n"
           << "\nTempo execucao: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << "ms"
           << " (Total: " << (endFor-start)/double(CLOCKS_PER_SEC)*1000 << "ms)\n";
 
-    cout << "\n\nRestricoes removidas:   " << rowsRemoved
-         << "\nRestricoes adicionadas: " << rowsAdded << endl << endl
+    cout << "\n\nRestricoes removidas:   " << rowsRemovedTotal
+         << "\nRestricoes adicionadas: " << rowsAddedTotal << endl << endl
          << "\nTempo execucao: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << "ms "
          << " (Total: " << (endFor-start)/double(CLOCKS_PER_SEC)*1000 << "ms)" << endl; cout.flush();
 
@@ -482,8 +489,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
     fstream resultado("0000_resultados.txt", fstream::app);
     resultado << file << " "
-              << rowsRemoved << " "
-              << rowsAdded << " "
+              << rowsRemovedTotal << " "
+              << rowsAddedTotal << " "
               << "\n";
 
 
