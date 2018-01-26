@@ -245,7 +245,7 @@ const int vint_set_intersection( int intersection[], const int size, const int e
    return result;
 }
 
-int *vint_set_int_find( const int key, const int n, int numbers[] )
+const int *vint_set_int_find( const int key, const int n, int numbers[] )
 {
    return bsearch_int( numbers, n, key );
 }
@@ -429,7 +429,7 @@ NEXT_PARTITION:
 #undef HIGH
 }
 
-inline int *bsearch_int( const int v[], const size_t n, const int key )
+inline const int *bsearch_int( const int v[], const size_t n, const int key )
 {
   register int l = 0;
   register int r = n-1;

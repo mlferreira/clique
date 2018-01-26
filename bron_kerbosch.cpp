@@ -1,31 +1,26 @@
-#include "bron_kerbosch.h"
 #include "BKGraph.hpp"
-#include "clique.h"
-//#include "cut.h"
+
+extern "C" {
+    #include "bron_kerbosch.h"
+}
 
 struct _BronKerbosch
 {
     BKGraph *bkg;
     CliqueSet *clqSet;
-//    CutPool *cutPool;
-//    char usePool;
+    int minWeight;
+    size_t maxIt;
 };
 
-//BronKerbosch *bk_create(const CGraph *cgraph, char usePool)
 BronKerbosch *bk_create(const CGraph *cgraph)
 {
     BronKerbosch *result = (BronKerbosch *) xmalloc( sizeof(BronKerbosch) );
     result->bkg = new BKGraph(cgraph);
     result->clqSet = NULL;
-
-//    result->usePool = usePool;
-//    if(result->usePool)
-//        result->cutPool = cut_pool_create()
-
     return result;
 }
 
-int bk_run(BronKerbosch *bk, const int minViol, const double timeLimit)
+int bk_run(BronKerbosch *bk)
 {
     if (bk->clqSet)
     {
@@ -33,10 +28,22 @@ int bk_run(BronKerbosch *bk, const int minViol, const double timeLimit)
         bk->clqSet = NULL;
     }
 
-    int status = bk->bkg->execute( minViol, timeLimit );
+    int status = bk->bkg->execute();
     bk->clqSet =bk->bkg->getCliqueSet();
 
     return status;
+}
+
+void bk_set_min_weight(BronKerbosch *bk, int minWeight)
+{
+    bk->minWeight = minWeight;
+    bk->bkg->setMinWeight(minWeight);
+}
+
+void bk_set_max_it(BronKerbosch *bk, size_t maxIt)
+{
+    bk->maxIt = maxIt;
+    bk->bkg->setMaxIt(maxIt);
 }
 
 const CliqueSet *bk_get_clq_set( BronKerbosch *bk )

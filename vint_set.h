@@ -34,7 +34,7 @@ void vint_set_add_opt( IntSet *iset, const int elements[], int size );
 
 void vint_set_add_using_original_indexes( IntSet *iset, const int elements[], int size, const int orig[] );
 
-int *vint_set_int_find( const int key, const int n, int numbers[] );
+const int *vint_set_int_find( const int key, const int n, int numbers[] );
 
 /**
  * returns 1 if these int_set are equal, 0 otherwise
@@ -67,7 +67,7 @@ int *vint_set_force_elements_access( IntSet *iset );
 /* checks consistency: sorting */
 void vint_set_force_check( IntSet *iset );
 
-int *bsearch_int( const int v[], const size_t n, const int key );
+const int *bsearch_int( const int v[], const size_t n, const int key );
 
 void qsort_int( int v[], const size_t n );
 

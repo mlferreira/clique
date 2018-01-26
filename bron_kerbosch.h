@@ -3,30 +3,14 @@
 #ifndef BRON_KERBOSCH_H_INCLUDED
 #define BRON_KERBOSCH_H_INCLUDED
 
-typedef struct _BronKerbosch BronKerbosch;
-
-#ifdef __cplusplus
-extern "C"
-{
 #include "cgraph.h"
 #include "clique.h"
 
-BronKerbosch *bk_create(const CGraph *cgraph );
+typedef struct _BronKerbosch BronKerbosch;
 
-int bk_run(BronKerbosch *bk, const int minViol, const double timeLimit );;
+BronKerbosch *bk_create(const CGraph *cgraph);
 
-const CliqueSet *bk_get_clq_set( BronKerbosch *bk );
-
-int bk_get_max_weight( BronKerbosch *bk );
-
-void bk_free( BronKerbosch *bk );
-
-}
-#else
-
-BronKerbosch *bk_create(const CGraph *craph);
-
-int bk_run(BronKerbosch *bk, const int minViol, const double timeLimit );
+int bk_run(BronKerbosch *bk );
 
 const CliqueSet *bk_get_clq_set( BronKerbosch *bk );
 
@@ -34,12 +18,8 @@ int bk_get_max_weight( BronKerbosch *bk );
 
 void bk_free( BronKerbosch *bk );
 
-#endif
-
-
-
-
-/* returns 0 if complete search was done, 1 otherwise */
+void bk_set_min_weight(BronKerbosch *bk, int minWeight);
+void bk_set_max_it(BronKerbosch *bk, size_t maxIt);
 
 
 #endif

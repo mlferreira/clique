@@ -4,19 +4,27 @@
 #include <algorithm>
 #include <fstream>
 #include <ctime>
+#include <vector>
+
 using namespace std;
 extern "C" {
 #include "lp.h"
 #include "vint_set.h"
+#include "clique_separation.h"
 #include "clique_extender.h"
 #include "build_cgraph.h"
+#include "clique.h"
 }
-#ifdef _OPENMP
-#include <omp.h>
-#endif
 
-#define LIMITE_GREEDY 100000
-//#define PARALELO
+#define LIMITE_GREEDY 1000
+
+
+
+//adicionar rows todas de uma vez
+//start tem que ter uma posicao a mais (ultima pos+1)
+
+
+
 
 void clq_preproccess(LinearProgram *mip, string file = "resultado.lp");
 
@@ -112,21 +120,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
     int nRes = lp_rows(mip);
     int nVar = lp_cols(mip);
 
-#ifdef PARALELO
-    int** rowsToRemoveT = new int*[omp_get_num_threads()];
-    int** idxT = new int*[omp_get_num_threads()];
-    double** coefT = new double*[omp_get_num_threads()];
-    int** vetorT = new int*[omp_get_num_threads()];
-    int* rowsRemovedT = new int[omp_get_num_threads()];
-    for(int i=0; i<omp_get_num_threads(); i++) {
-        vetorT[i] = new int[nVar];
-        rowsToRemoveT[i] = new int[nVar];
-        idxT[i] = new int[nVar];
-        coefT[i] = new double[nVar];
-        fill(coefT[i], coefT[i]+nVar, 1.0);
-        rowsRemovedT[i] = 0;
-    }
-#else
     int* rowsToRemove = new int[nRes];
     int* idx = new int[nVar];
     int* idxCompl = new int[nVar];
@@ -134,7 +127,15 @@ void clq_preproccess(LinearProgram *mip, string file) {
     double* coefCompl = new double[nVar];
     int* vetor = new int[nVar];
     int rowsRemoved = 0;
-#endif
+
+    vector<int> rowsAdded_start;
+    vector<int> rowsAdded_idx;
+    vector<double> rowsAdded_coef;
+    vector<char> rowsAdded_sense;
+    vector<double> rowsAdded_rhs;
+    vector<const char*> rowsAdded_names;
+
+
 
     int resToCheck[nRes];
     for(int i=0; i<nRes; i++) {
@@ -171,19 +172,8 @@ void clq_preproccess(LinearProgram *mip, string file) {
     int startFor=clock();
 #endif
 
-#ifdef PARALELO
-#pragma omp parallel for
-#endif
-
     for(int k=0; k<nRes; k++) {
 
-#ifdef PARALELO
-        int *vetor = vetorT[omp_get_thread_num()];
-        int *idx = idxT[omp_get_thread_num()];
-        double *coef = coefT[omp_get_thread_num()];
-        int *rowsToRemove = rowsToRemoveT[omp_get_thread_num()];
-        int *rowsRemoved = rowsToRemoveT[omp_get_thread_num()];
-#endif
 
         if(resToCheck[k] > 0) {
 
@@ -210,7 +200,7 @@ void clq_preproccess(LinearProgram *mip, string file) {
             int cliqueW = n;
             int status=0;
             if(n > LIMITE_GREEDY) {
-//                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_PRIORITY_GREEDY);
+                status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_PRIORITY_GREEDY);
             }
             else {
                 status = clqe_extend(clqe, cg, &clique, cliqueW, CLQEM_EXACT);
@@ -253,9 +243,14 @@ void clq_preproccess(LinearProgram *mip, string file) {
                 /* novos cliques sao obtidos por meio da consulta seguinte */
                 const CliqueSet *clqSet = clqe_get_cliques(clqe);
 
+
+
 #ifdef DEBUG
                 startRest=clock();
 #endif
+
+                fill(vetor, vetor+nVar, 0);
+
                 for (int i=0; i<clq_set_number_of_cliques(clqSet); i++) {
 
 
@@ -263,8 +258,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
                     if(clq_set_clique_elements(clqSet, i)[clq_set_clique_size(clqSet, i)-1] < nVar) {
 
 
-                        fill(vetor, vetor+nVar, 0);
-                        fill(coef, coef+nVar, 1.0);
 #ifdef DEBUG
                         //printf("   %d (%d): ", i, clq_set_clique_size(clqSet, i));
                         saida << "    " << i << " (" << clq_set_clique_size(clqSet, i) << "): ";
@@ -305,7 +298,6 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #ifdef DEBUG
                                     //cout << "        domina a restricao " << lp_row_name(mip, j, name) << endl;
                                     saida << "        domina a restricao " << lp_row_name(mip, j, name) << "\n";
-                                    //cout << rowsRemoved << "   " << rowsAdded << endl;
 #endif
                                 }
 
@@ -317,17 +309,28 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #endif
 
                         if (rowsRemoved > 0) {
-                            string nome = "clq00" + to_string(contadorNome);
+                            rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                             contadorNome++;
                             rowsAdded++;
-                            lp_add_row(mip, clq_set_clique_size(clqSet, i),
-                                       const_cast<int *>(clq_set_clique_elements(clqSet, i)), coef, nome.c_str(), 'L',
-                                       1);
+                            rowsAdded_start.push_back(rowsAdded_coef.size());
+                            rowsAdded_sense.push_back('L');
+                            rowsAdded_rhs.push_back(1);
+                            for(int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+                                rowsAdded_idx.push_back(clq_set_clique_elements(clqSet, i)[j]);
+                                rowsAdded_coef.push_back(1);
+                            }
+
                             if (resToCheck[k] == 2) {
-                                nome = "clq00" + to_string(contadorNome);
+                                rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                                 contadorNome++;
                                 rowsAdded++;
-                                lp_add_row(mip, lp_row(mip, k, idx, coef), idx, coef, nome.c_str(), 'G', 1);
+                                rowsAdded_start.push_back(rowsAdded_coef.size());
+                                rowsAdded_sense.push_back('G');
+                                rowsAdded_rhs.push_back(1);
+                                for(int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+                                    rowsAdded_idx.push_back(clq_set_clique_elements(clqSet, i)[j]);
+                                    rowsAdded_coef.push_back(1);
+                                }
                             }
                             resToCheck[k] = 0;
                         }
@@ -407,12 +410,19 @@ void clq_preproccess(LinearProgram *mip, string file) {
 #endif
 
                         if (rowsRemoved > 0) {
-                            string nome = "clq00" + to_string(contadorNome);
+                            resToCheck[k] = 0;
+                            rowsAdded_names.push_back(("clq00" + to_string(contadorNome)).c_str());
                             contadorNome++;
                             rowsAdded++;
-                            lp_add_row(mip, clq_set_clique_size(clqSet, i), idxCompl, coefCompl, nome.c_str(), 'L', 0);
-                            resToCheck[k] = 0;
+                            rowsAdded_start.push_back(rowsAdded_coef.size());
+                            rowsAdded_sense.push_back('L');
+                            rowsAdded_rhs.push_back(0);
+                            for(int j=0; j<clq_set_clique_size(clqSet, i); j++) {
+                                rowsAdded_idx.push_back(idxCompl[j]);
+                                rowsAdded_coef.push_back(coefCompl[j]);
+                            }
                         }
+
 
                     }
 
@@ -428,17 +438,15 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
     }
 
-#ifdef PARALELO
-    int rowsRemoved = 0;
-    for(int i=0; i<omp_get_num_threads(); i++) {
-        lp_remove_rows(mip, rowsRemovedT[i], rowsToRemoveT[i]);
-        rowsRemoved += rowsRemovedT[i];
-    }
-#else
     if(rowsRemoved > 0) {
         lp_remove_rows(mip, rowsRemoved, rowsToRemove);
     }
-#endif
+    if(rowsAdded > 0) {
+        rowsAdded_start.push_back(rowsAdded_coef.size());
+        lp_add_rows(mip, rowsAdded, &rowsAdded_start[0], &rowsAdded_idx[0], &rowsAdded_coef[0], &rowsAdded_sense[0],
+                    &rowsAdded_rhs[0], &rowsAdded_names[0]);
+    }
+
 
 #ifdef DEBUG
     int endFor=clock();
@@ -465,14 +473,11 @@ void clq_preproccess(LinearProgram *mip, string file) {
 
 
     fstream tempo("0000_tempos.txt", fstream::app);
-    tempo //<< file << " "
-            //<< "leitura: " << (endLeitura-startLeitura)/double(CLOCKS_PER_SEC)*1000 << " "
-            << "grafo: " << (endGraph-startGraph)/double(CLOCKS_PER_SEC)*1000 << " "
+    tempo   << "grafo: " << (endGraph-startGraph)/double(CLOCKS_PER_SEC)*1000 << " "
             << "preprocessamento: " << (endPreprocess-startPreprocess)/double(CLOCKS_PER_SEC)*1000 << " "
             << "clique: " << timeClique << " "
             << "restricoes: " << timeRestr << " "
-            << "for: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << " "
-            ;//<< "\n";
+            << "for: " << (endFor-startFor)/double(CLOCKS_PER_SEC)*1000 << " ";
 
 
     fstream resultado("0000_resultados.txt", fstream::app);
@@ -492,26 +497,12 @@ void clq_preproccess(LinearProgram *mip, string file) {
     vint_set_clean( &clq );
     vint_set_clean( &clique );
     delete[] name;
-#ifdef PARALELO
-    for(int i=0; i<omp_get_num_threads(); i++) {
-        delete[] vetorT[i];
-        delete[] idxT[i];
-        delete[] coefT[i];
-        delete[] rowsToRemoveT[i];
-    }
-    delete[] vetorT;
-    delete[] idxT;
-    delete[] coefT;
-    delete[] rowsToRemoveT;
-    delete[] rowsRemovedT;
-#else
     delete[] vetor;
     delete[] idx;
     delete[] coef;
     delete[] rowsToRemove;
     delete[] idxCompl;
     delete[] coefCompl;
-#endif
 
 }
 

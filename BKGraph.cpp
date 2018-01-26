@@ -1,4 +1,5 @@
 #include <cassert>
+#include <climits>
 #include "BKGraph.hpp"
 #define INT_SIZE (8*sizeof(int))
 
@@ -19,9 +20,7 @@ BKGraph::BKGraph(const CGraph *cgraph)
         aux.setWeight(pesos[i]);
         int realDegree = cgraph_degree(cgraph, i);
         int check = cgraph_get_all_conflicting( cgraph, i, neighs, nVertices*2 );
-
         assert(check == realDegree);
-
         int mdegree = realDegree;
         for(int j = 0; j < realDegree; j++)
         {
@@ -37,6 +36,9 @@ BKGraph::BKGraph(const CGraph *cgraph)
     clqSet = clq_set_create();
     status = 0;
     maxWeight = 0;
+    it = 0;
+    maxIt = (INT_MAX/100);
+    minWeight = 0;
 
     delete[] neighs;
 }
@@ -192,9 +194,9 @@ void BKGraph::subtrairPeso(Clique* c, int peso)
 
 void BKGraph::algoritmoBronKerbosch(Clique *C, Clique*P, Clique *S, unsigned mask[], int **bit)
 {
-    double sec = ((double)(clock() - init)) / ((double)CLOCKS_PER_SEC);
-    if(sec > timeLimit)
+    if(it > maxIt)
         return;
+    it++;
 
     if((vazio(P) == 1) && (vazio1(S, vertices.size()) == 0))
     {
@@ -324,7 +326,7 @@ void BKGraph::insereOrdenado (Clique* P, int vertice)
 }
 
 
-int BKGraph::execute(int _minWeight, double _timeLimit)
+int BKGraph::execute()
 {
     unsigned int i;
     Clique* C = criarClique(vertices.size()/INT_SIZE + 1);
@@ -358,12 +360,7 @@ int BKGraph::execute(int _minWeight, double _timeLimit)
         }
     }
 
-    this->minWeight = _minWeight;
-    this->timeLimit = _timeLimit;
-    this->init = clock();
-
     algoritmoBronKerbosch(C, P, S, mask, bit);
-    double sec = ((double)(clock() - init)) / ((double)CLOCKS_PER_SEC);
 
     for(i = 0; i < vertices.size(); ++i)
         free(bit[i]);
@@ -375,7 +372,7 @@ int BKGraph::execute(int _minWeight, double _timeLimit)
     free(S);
     free(C);
 
-    return (sec >= timeLimit);
+    return (it > maxIt);
 }
 
 CliqueSet* BKGraph::getCliqueSet()
@@ -386,4 +383,16 @@ CliqueSet* BKGraph::getCliqueSet()
 int BKGraph::getMaxWeight()
 {
     return maxWeight;
+}
+
+void BKGraph::setMinWeight(int _minWeight)
+{
+    assert(_minWeight >= 0);
+    minWeight = _minWeight;
+}
+
+void BKGraph::setMaxIt(size_t _maxIt)
+{
+    assert(_maxIt > 0);
+    maxIt = _maxIt;
 }

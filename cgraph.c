@@ -19,14 +19,6 @@
 
 #define MIN_CLIQUE_ROW 300 /* mininum size for a row to be considered a clique row */
 
-typedef struct
-{
-    int node;
-    int degree;
-} NodeDegree;
-
-int cmp_by_node_degree( const void *v1, const void *v2 );
-
 struct _CGraph
 {
     /* per node stored conflicts
@@ -45,8 +37,6 @@ struct _CGraph
     int maxDegree;
     int lowDegree;
 
-    int *iv;  /* incidence vector */
-
     int *origIdx; /* if it is a preprocessed graph,
                     indicates for each node i its original node */
 
@@ -54,9 +44,6 @@ struct _CGraph
     char **nodeNames;
 
     int *w;
-
-    /* private data, used for processing */
-    NodeDegree *nd;
 };
 
 typedef struct
@@ -119,8 +106,6 @@ CGraph* cgraph_clone(const CGraph *cg)
     clone->minDegree = cg->minDegree;
     clone->maxDegree = cg->maxDegree;
     clone->lowDegree = cg->lowDegree;
-    clone->iv = xmalloc(sizeof(int) * clone->nodeSize);
-    memcpy(clone->iv, cg->iv, sizeof(int) * clone->nodeSize);
 
     if(cg->origIdx)
     {
@@ -149,13 +134,6 @@ CGraph* cgraph_clone(const CGraph *cg)
     }
     else
         clone->w = NULL;
-
-    clone->nd = xmalloc(sizeof(NodeDegree) * clone->nodeSize);
-    for(int i = 0; i < clone->nodeSize; i++)
-    {
-        clone->nd[i].node = cg->nd[i].node;
-        clone->nd[i].degree = cg->nd[i].degree;
-    }
 
     return clone;
 }
@@ -248,16 +226,11 @@ CGraph *cgraph_preprocess( const CGraph *cgraph, int nindexes[] )
                 continue;
 
             if ( nConflicts < MIN_CLIQUE_ROW )
-            {
                 /* not adding as clique anymore */
                 cgraph_add_clique_as_normal_conflicts( result, nEl, elClique );
-
-                continue;
-            }
-
-            /* large clique, adding as it is */
-
-            cgraph_add_clique( result, conflicts, nConflicts );
+            else
+                /* large clique, adding as it is */
+                cgraph_add_clique( result, conflicts, nConflicts );
             recomputeDegree = 1;
         }
     }
@@ -317,10 +290,6 @@ CGraph *cgraph_create( int initialColumns )
 
     result->degree = xmalloc( sizeof(int)*initialColumns );
     memset( result->degree, 0, sizeof(int)*initialColumns );
-    result->iv = xmalloc( sizeof(int)*initialColumns );
-    memset( result->iv, 0, sizeof(int)*initialColumns );
-
-    result->nd = xmalloc( sizeof(NodeDegree)*initialColumns );
 
     result->clqSet = clq_set_create();
 
@@ -387,7 +356,8 @@ void cgraph_add_node_conflicts_no_sim( CGraph *cgraph, const int node, const int
     //cgraph->degree[node] += size;
 
     if (size>0)
-        vint_set_add_opt( cgraph->nodeConflicts+node, conflicts, size );
+        //vint_set_add_opt( cgraph->nodeConflicts+node, conflicts, size );
+        vint_set_add( cgraph->nodeConflicts+node, conflicts, size );
 }
 
 void cgraph_add_clique( CGraph *cgraph, int clique[], const int size )
@@ -457,9 +427,6 @@ void cgraph_check_node_size( CGraph *cgraph, int requiredNodeSize )
     cgraph->nodeCliques = xrealloc( cgraph->nodeCliques, sizeof(IntSet)*newNodeSize );
     cgraph->degree = xrealloc( cgraph->degree, sizeof(int)*newNodeSize );
     memset( cgraph->degree+cgraph->nodeSize, 0, newNodeSize-cgraph->nodeSize );
-    cgraph->nd = xrealloc( cgraph->nd, sizeof(NodeDegree)*newNodeSize );
-    cgraph->iv = xrealloc( cgraph->iv, sizeof(int)*newNodeSize );
-    memset( cgraph->iv+cgraph->nodeSize, 0, newNodeSize-cgraph->nodeSize );
     if (cgraph->w)
         cgraph->w = xrealloc( cgraph->w, sizeof(int)*newNodeSize );
     if (cgraph->nodeNames)
@@ -531,8 +498,8 @@ int cgraph_get_all_conflicting( const CGraph *cgraph, int node, int neighs[], in
     char *iv = (char*) calloc(size, sizeof(char));
     const IntSet *isnc = cgraph->nodeConflicts+node;
     int nConfs = isnc->size;
-	const int *nodeConflicts = vint_set_get_elements(isnc);   
-	int currClique = 0, clqSize = 0; 
+	const int *nodeConflicts = vint_set_get_elements(isnc);
+	int currClique = 0, clqSize = 0;
 
     if(nConfs > maxSize)
     	goto NO_SPACE;
@@ -563,11 +530,6 @@ int cgraph_get_all_conflicting( const CGraph *cgraph, int node, int neighs[], in
             goto NO_SPACE;
     }
 
-    /*for(i = 0, j = 0; i < size; i++)
-    	if(iv[i])
-    		neighs[j++] = i;
-    assert(nConfs == j);*/
-
     free(iv);
 
     return nConfs;
@@ -578,195 +540,6 @@ NO_SPACE:
     fprintf( stderr, "at: %s:%d\n", __FILE__, __LINE__ );
     abort();
     exit( EXIT_FAILURE );
-}
-
-// int cgraph_get_all_conflicting( const CGraph *cgraph, int node, int neighs[], int maxSize )
-// {
-// #ifdef DEBUG
-//     assert( cgraph!=NULL );
-//     assert( (node>=0) && (node<cgraph_size(cgraph)) );
-//     assert( maxSize>0 );
-// #endif
-
-//     const IntSet *isnc = cgraph->nodeConflicts+node;
-//     int result = isnc->size;
-//     int currClique=0, clqSize=0;
-
-//     if ( result > maxSize )
-//         goto NO_SPACE;
-
-//     memcpy( neighs, vint_set_get_elements(isnc), sizeof(int)*vint_set_size(isnc) );
-
-//     /* now filling information from cliques, i.e., implicitly stored conflicts */
-//     const int nCliques = vint_set_size( cgraph->nodeCliques+node );
-//     const int *idxCliques = vint_set_get_elements( cgraph->nodeCliques+node );
-
-//     {
-//         for ( currClique=0 ; (currClique<nCliques) ; ++currClique )
-//         {
-//             clqSize = clq_set_clique_size( cgraph->clqSet, idxCliques[currClique] );
-//             const int *clqElements = clq_set_clique_elements( cgraph->clqSet, idxCliques[currClique] );
-
-//             int *ptr = neighs + result;
-//             result += clqSize-1;
-//             if ( result > maxSize )
-//                 goto NO_SPACE;
-
-//             /* copying all elements except itself */
-//             {
-//                 int j=0,i=0;
-//                 for ( ; (i<clqSize) ; i++ )
-//                 {
-//                     if (clqElements[i] == node)
-//                         continue;
-//                     ptr[j++] = clqElements[i];
-//                 }
-//             }
-
-//             qsort( neighs, result, sizeof(int), cgraph_cmp_int );
-
-//             /* conflicts in this clique may be already added, removing */
-//             int rep = 0;
-//             {
-//                 int j;
-//                 for ( j=1 ; (j<result) ; ++j )
-//                     if ( neighs[j] == neighs[j-1] )
-//                     {
-//                         neighs[j] = INT_MAX;
-//                         ++rep;
-//                     }
-//             }
-
-//             qsort( neighs, result, sizeof(int), cgraph_cmp_int );
-
-//             result -= rep;
-//         }
-//     }
-
-// #ifdef DEBUG
-//     {
-//         assert( result >= 0);
-//         assert( result < cgraph_size(cgraph) );
-//         assert( result <= maxSize );
-//         int i;
-//         /* all inside conflict with node */
-//         for ( i=0 ; (i<result) ; i++ )
-//         {
-//             assert( neighs[i]>=0 );
-//             assert( neighs[i]<cgraph_size(cgraph) );
-//             assert( neighs[i]!=node );
-//             assert( cgraph_conflicting_nodes(cgraph, node, neighs[i] ) );
-//         }
-//         /* all which conflict with node are inside */
-//         for ( i=0 ; (i<cgraph_size(cgraph)) ; i++ )
-//         {
-//             if ( (i!=node) && (cgraph_conflicting_nodes( cgraph, node, i )) )
-//                 assert( bsearch( &i, neighs, result, sizeof(int), cgraph_cmp_int ) != NULL );
-//         }
-//     }
-// #endif
-
-//     return result;
-
-// NO_SPACE:
-//     fprintf( stderr, "ERROR: cgraph_get_all_conflicting:: Not enough space specified in maxSize.\n" );
-//     fprintf( stderr, "Working with node %d, which appears in %d cliques. When adding clique %d size %d. Result %d. MaxSize %d.\n", node, vint_set_size(cgraph->nodeCliques+node), currClique, clqSize, result, maxSize );
-//     fprintf( stderr, "at: %s:%d\n", __FILE__, __LINE__ );
-//     abort();
-//     exit( EXIT_FAILURE );
-// }
-
-int cgraph_get_candidates_clique_insertion( const CGraph *cgraph, const int n, const int clique[], int candidates[], const int capacityCandidates )
-{
-    NodeDegree *nd = cgraph->nd;
-
-    /* clique sorted by degree (smallest to greatest) */
-    {
-        int i;
-        for ( i=0 ; (i<n) ; ++i )
-        {
-            nd[i].node = clique[i];
-            nd[i].degree = cgraph_degree( cgraph, clique[i] );
-        }
-    }
-
-    qsort( nd, n, sizeof(NodeDegree), cmp_by_node_degree );
-
-#ifdef DEBUG
-    {
-        /* checking if sorting is ok */
-        int i;
-        for ( i=0 ; (i<(n-1)) ; ++i )
-        {
-            assert( clique[i]<=clique[i+1] );
-            assert( nd[i].degree<=nd[i+1].degree );
-        }
-    }
-#endif
-
-    int nCandidates = cgraph_get_all_conflicting( cgraph, nd[0].node, candidates, capacityCandidates );
-
-    /* only conflicts which are not inserted will be considered */
-    {
-        int removals = 0;
-        int *cand = candidates;
-        const int *endCand = candidates + nCandidates;
-        for ( ; (cand<endCand) ; ++cand )
-        {
-            if (bsearch( cand, clique, n, sizeof(int), vint_set_cmp_int ))
-            {
-                ++removals;
-                *cand = INT_MAX;
-            }
-        }
-
-        if ( removals )
-        {
-            qsort( candidates, nCandidates, sizeof(int), vint_set_cmp_int );
-            nCandidates -= removals;
-        }
-    }
-
-#ifdef DEBUG
-    assert( nCandidates >= 0 ); /* non negativity */
-#endif
-
-    /* now we have all conflicts of the node with the smallest degree which are not
-       inserted in the clique. checking how many of these can expand the clique.
-       checking if they have conflict with other clique. */
-
-    if ( !nCandidates )
-        return 0;
-
-    {
-        int i, removals = 0;
-        for ( i=0 ; (i<nCandidates) ; ++i )
-        {
-            const int node = candidates[i];
-            int j;
-            for ( j=1 ; (j<n) ; ++j )
-            {
-                if (!cgraph_conflicting_nodes(cgraph, node, nd[j].node))
-                {
-                    candidates[i] = INT_MAX;
-                    ++removals;
-                    break;
-                }
-            } /* all other clique already in the clique */
-        } /* all candidates for insertion */
-
-        if ( removals )
-        {
-            qsort( candidates, nCandidates, sizeof(int), vint_set_cmp_int );
-            nCandidates -= removals;
-        }
-    }
-
-#ifdef DEBUG
-    assert( nCandidates >= 0 ); /* non negativity */
-#endif
-
-    return nCandidates;
 }
 
 void cgraph_save( CGraph *cgraph, const char *fileName )
@@ -1019,6 +792,7 @@ CGraph *cgraph_load( const char *fileName )
                         }
                     }
                     clq_set_add( clqSet, clqSize, clqElement, totalWeight );
+                    recomputeDegree = 1;
                 } /* reading clique */
                 else
                 {
@@ -1117,7 +891,6 @@ CGraph *cgraph_load( const char *fileName )
             const int *el = clq_set_clique_elements(clqSet, i);
             memcpy( t, el, sizeof(int)*size );
             cgraph_add_clique( cgraph, t, size );
-            recomputeDegree = 1;
         }
         free(t);
     }
@@ -1173,7 +946,7 @@ void cgraph_update_min_max_degree( CGraph *cgraph )
     {
         cgraph->minDegree = MIN( cgraph->minDegree, cgraph->degree[i] );
     	cgraph->maxDegree = MAX( cgraph->maxDegree, cgraph->degree[i] );
-    }    
+    }
 }
 
 int cgraph_degree( const CGraph *cgraph, const int node )
@@ -1202,12 +975,10 @@ void cgraph_free( CGraph **cgraph )
 
     free( (*cgraph)->nodeConflicts );
     free( (*cgraph)->nodeCliques );
-    free( (*cgraph)->nd );
 
     clq_set_free( &((*cgraph)->clqSet) );
 
     free( (*cgraph)->degree );
-    free( (*cgraph)->iv );
 
     if ((*cgraph)->origIdx)
         free( (*cgraph)->origIdx );
@@ -1342,20 +1113,15 @@ CGraph *cgraph_create_induced_subgraph( const CGraph *cgraph, const int nindexes
             if ( nindexes[ el[j] ] != -1 )
                 neighs[ newClqSize++ ] = nindexes[ el[j] ];
         }
+
         if ( newClqSize > 1 )
         {
             if ( newClqSize < MIN_CLIQUE_ROW )
-            {
                 /* not adding as clique anymore */
                 cgraph_add_clique_as_normal_conflicts( result, newClqSize, neighs );
-
-                continue;
-            }
             else
-            {
                 cgraph_add_clique( result, neighs, newClqSize );
-                recomputeDegree = 1;
-            }
+            recomputeDegree = 1;
         }
     }
 
@@ -1573,17 +1339,6 @@ void cgraph_check_preproc( const CGraph *ppgraph, const CGraph *cgraph )
 
 #endif
 
-int cmp_by_node_degree( const void *v1, const void *v2 )
-{
-    const NodeDegree *nd1 = v1;
-    const NodeDegree *nd2 = v2;
-
-    if ( nd2->degree != nd1->degree )
-        return (nd1->degree - nd2->degree);
-
-    return (nd1->node - nd2->node);
-}
-
 const int *cgraph_get_original_node_indexes( const CGraph *cgraph )
 {
     return cgraph->origIdx;
@@ -1614,10 +1369,9 @@ void cgraph_set_low_degree( CGraph *cgraph, const int lowDegree )
 
 void cgraph_add_clique_as_normal_conflicts( CGraph *cgraph, const int nEl, const int elClique[] )
 {
-    /* using iv as temporary area */
     int i,j,count;
     const int nconflicts=nEl-1;
-    int *iv = cgraph->iv;
+    int *iv = xmalloc(sizeof(int) * cgraph->nodeSize);
 
     for ( i=0 ; (i<nEl) ; ++i )
     {
@@ -1632,6 +1386,8 @@ void cgraph_add_clique_as_normal_conflicts( CGraph *cgraph, const int nEl, const
         }
         cgraph_add_node_conflicts_no_sim( cgraph, node, iv, nconflicts );
     }
+
+    free(iv);
 }
 
 int cgraph_get_n_conflicting( const CGraph *cgraph, int node, int neighs[], int n,
@@ -1880,20 +1636,6 @@ void cgraph_recompute_degree( CGraph *cgraph )
     }
 
     free(iv);
-
-    /*const int size = cgraph->nodeSize;
-    memset( cgraph->degree, 0, sizeof(int)*size );
-    int i, j;
-    for ( i=0 ; (i<size) ; ++i )
-       for ( j=i+1 ; (j<size) ; ++j )
-       {
-          if (cgraph_conflicting_nodes( cgraph, i, j ))
-          {
-             cgraph->degree[i]++;
-             cgraph->degree[j]++;
-          }
-       }
-     cgraph_update_min_max_degree( cgraph );*/
 }
 
 void nit_free( NeighIterator **nit )

@@ -48,17 +48,19 @@ public:
     void adicionarVerticeClique1(Clique* P, int vertice, unsigned mask[]);
     void algoritmoBronKerbosch(Clique *C, Clique*P, Clique *S, unsigned mask[], int **bit);
     void intersecaoOrdenado(Clique* P, int v, Clique* vetorAux, int cont, int P_sem_vizinho[]);
-    int execute(int, double);
+    int execute();//retorna 0 se o BK executou por completo. 1, caso contrario
     void intersecao1(Clique* S, Clique* Saux, int** bit, int vertice, unsigned mask[]);
     void excluirVizinhos(int P_sem_vizinhos_U[], Clique* P, int u);
     int busca(int cont, int P_sem_vizinho[], int vertice);
     CliqueSet* getCliqueSet();
     int getMaxWeight();
 
+    void setMinWeight(int _minWeight);
+    void setMaxIt(size_t _maxIt);
+
 private:
     int minWeight, maxWeight;
-    double timeLimit;
-    clock_t init;
+    size_t it, maxIt;
 
     const CGraph *cgraph;
     std::vector<BKVertex> vertices;

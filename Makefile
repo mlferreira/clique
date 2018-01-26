@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /home/melina/Documents/clion-2017.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /home/melina/Documents/clion-2017.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/haroldo/git/clique
+CMAKE_SOURCE_DIR = /home/melina/git/clique
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/haroldo/git/clique
+CMAKE_BINARY_DIR = /home/melina/git/clique
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/haroldo/git/clique
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/melina/Documents/clion-2017.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/melina/Documents/clion-2017.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/haroldo/git/clique/CMakeFiles /home/haroldo/git/clique/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/melina/git/clique/CMakeFiles /home/melina/git/clique/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/haroldo/git/clique/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/melina/git/clique/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -312,6 +312,33 @@ clique_extender.c.s:
 	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/clique_extender.c.s
 .PHONY : clique_extender.c.s
 
+clique_separation.o: clique_separation.c.o
+
+.PHONY : clique_separation.o
+
+# target to build an object file
+clique_separation.c.o:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/clique_separation.c.o
+.PHONY : clique_separation.c.o
+
+clique_separation.i: clique_separation.c.i
+
+.PHONY : clique_separation.i
+
+# target to preprocess a source file
+clique_separation.c.i:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/clique_separation.c.i
+.PHONY : clique_separation.c.i
+
+clique_separation.s: clique_separation.c.s
+
+.PHONY : clique_separation.s
+
+# target to generate assembly for a file
+clique_separation.c.s:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/clique_separation.c.s
+.PHONY : clique_separation.c.s
+
 lp.o: lp.cpp.o
 
 .PHONY : lp.o
@@ -474,6 +501,33 @@ vectormgm.c.s:
 	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/vectormgm.c.s
 .PHONY : vectormgm.c.s
 
+vint_queue.o: vint_queue.c.o
+
+.PHONY : vint_queue.o
+
+# target to build an object file
+vint_queue.c.o:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/vint_queue.c.o
+.PHONY : vint_queue.c.o
+
+vint_queue.i: vint_queue.c.i
+
+.PHONY : vint_queue.i
+
+# target to preprocess a source file
+vint_queue.c.i:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/vint_queue.c.i
+.PHONY : vint_queue.c.i
+
+vint_queue.s: vint_queue.c.s
+
+.PHONY : vint_queue.s
+
+# target to generate assembly for a file
+vint_queue.c.s:
+	$(MAKE) -f CMakeFiles/clique.dir/build.make CMakeFiles/clique.dir/vint_queue.c.s
+.PHONY : vint_queue.c.s
+
 vint_set.o: vint_set.c.o
 
 .PHONY : vint_set.o
@@ -508,8 +562,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... clique"
 	@echo "... edit_cache"
+	@echo "... clique"
 	@echo "... BKGraph.o"
 	@echo "... BKGraph.i"
 	@echo "... BKGraph.s"
@@ -531,6 +585,9 @@ help:
 	@echo "... clique_extender.o"
 	@echo "... clique_extender.i"
 	@echo "... clique_extender.s"
+	@echo "... clique_separation.o"
+	@echo "... clique_separation.i"
+	@echo "... clique_separation.s"
 	@echo "... lp.o"
 	@echo "... lp.i"
 	@echo "... lp.s"
@@ -549,6 +606,9 @@ help:
 	@echo "... vectormgm.o"
 	@echo "... vectormgm.i"
 	@echo "... vectormgm.s"
+	@echo "... vint_queue.o"
+	@echo "... vint_queue.i"
+	@echo "... vint_queue.s"
 	@echo "... vint_set.o"
 	@echo "... vint_set.i"
 	@echo "... vint_set.s"

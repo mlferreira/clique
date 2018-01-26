@@ -3,4 +3,4 @@
 Restricoes removidas:   0
 Restricoes adicionadas: 0
 
-Tempo execucao: 5120.9ms(Total: 5669.72ms)
+Tempo execucao: 25559.4ms (Total: 25939.7ms)

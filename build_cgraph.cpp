@@ -16,7 +16,7 @@ extern "C"
 	#include "memory.h"
 	#include "node_heap.h"
 	#include "build_cgraph.h"
-    #include "lp.h"
+	#include "lp.h"
 }
 
 using namespace std;
@@ -421,7 +421,7 @@ CGraph *build_cgraph_osi( const void *_solver )
     const OsiSolverInterface *solver = (const OsiSolverInterface *) _solver;
 
     if (solver->getNumIntegers()<2)
-        return 0;
+        return NULL;
 
     int cgraphSize = solver->getNumCols() * 2;
     CGraph *cgraph = cgraph_create( cgraphSize );
@@ -542,20 +542,20 @@ CGraph *build_cgraph_osi( const void *_solver )
     return cgraph;
 }
 
-CGraph* build_cgraph_lp(const void *_lp)
+CGraph *build_cgraph_lp( const void *_mip )
 {
     recomputeDegree = 0;
-    startCG = CoinCpuTime();
+	startCG = CoinCpuTime();
     const int threads = max(4, omp_get_num_procs());
     vector<vector< pair< int, int > > > cvecs(threads);
 
-    LinearProgram *lp = (LinearProgram *) _lp;
+    LinearProgram *mip = (LinearProgram *) _mip;
 
-    if(lp_num_binary_cols(lp) < 2)
+    if(lp_num_binary_cols(mip) < 2)
         return NULL;
 
-    const int nCols = lp_cols(lp);
-    const int nRows = lp_rows(lp);
+    const int nCols = lp_cols(mip);
+    const int nRows = lp_rows(mip);
     const int cgraphSize = nCols * 2;
     CGraph *cgraph = cgraph_create( cgraphSize );
     int *idxs = new int[nCols];
@@ -567,7 +567,7 @@ CGraph* build_cgraph_lp(const void *_lp)
     for(int i = 0; i < nCols; i++)
     {
         /* inserting trivial conflicts: variable-complement */
-        if(lp_is_binary(lp, i)) //consider only binary variables
+        if(lp_is_binary(mip, i))//consider only binary variables
             cvecs[0].push_back( pair<int, int>(i, i + nCols) );
     }
 
@@ -576,13 +576,13 @@ CGraph* build_cgraph_lp(const void *_lp)
     for(int idxRow = 0; idxRow < nRows; idxRow++)
     {
 
-        /*if(CoinCpuTime() - startCG >= MAX_TIME_CG)
-            break;*/
+    	/*if(CoinCpuTime() - startCG >= MAX_TIME_CG)
+    		break;*/
 
         const int numThread = omp_get_thread_num();
-        const int nElements = lp_row(lp, idxRow, idxs, coefs);
-        const double rhs = lp_rhs(lp, idxRow);
-        const char sense = lp_sense(lp, idxRow);
+        const int nElements = lp_row(mip, idxRow, idxs, coefs);
+        const double rhs = lp_rhs(mip, idxRow);
+        const char sense = lp_sense(mip, idxRow);
         vector< pair<int, double> > columns(nElements);
         int nBools = 0; // number of binary variables
         int nPos = 0; //number of positive coefficients
@@ -596,7 +596,7 @@ CGraph* build_cgraph_lp(const void *_lp)
         if ( sense == 'R' )  // lets not consider ranged constraints by now
         {
             char name[256];
-            printf("TODO: CHECK FOR RANGED CONSTRAINT (%s) rhs is %g\n", lp_row_name(lp, idxRow, name), rhs );
+            printf("TODO: CHECK FOR RANGED CONSTRAINT (%s) rhs is %g\n", lp_row_name(mip, idxRow, name), rhs );
             continue;
         }
 
@@ -606,7 +606,7 @@ CGraph* build_cgraph_lp(const void *_lp)
             columns[i].first = idxs[i];
             columns[i].second = coefs[i] * mult;
 
-            if(lp_is_binary(lp, columns[i].first))
+            if(lp_is_binary(mip, columns[i].first))
                 nBools++;
 
             if(columns[i].second <= -EPS)
@@ -622,8 +622,8 @@ CGraph* build_cgraph_lp(const void *_lp)
 
         /* special case: GUB constraints */
         if ( DBL_EQUAL( minCoef, maxCoef ) &&  DBL_EQUAL( maxCoef, rhs * mult ) &&
-             DBL_EQUAL(minCoef, 1.0) && ((sense=='E') || (sense=='L'))
-             && (nElements > 3) )
+            DBL_EQUAL(minCoef, 1.0) && ((sense=='E') || (sense=='L'))
+            && (nElements > 3) )
         {
             processClique( nElements, idxs, cgraph, cvecs[numThread] );
         }

@@ -1,6 +1,0 @@
-
-
-Restricoes removidas:   0
-Restricoes adicionadas: 0
-
-Tempo execucao: 678.702ms(Total: 56978.9ms)
